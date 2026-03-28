@@ -95,7 +95,7 @@ export function Cursor() {
         style={{ transform: 'translate3d(0,0,0)' }}
       >
 
-        {/* The Blob (Chaser) - blend mode isolated to element only */}
+        {/* The Blob (Chaser) - blend mode scoped to element, not full screen */}
         <motion.div
           className="absolute top-0 left-0 rounded-full will-change-transform"
           style={{
@@ -105,7 +105,6 @@ export function Cursor() {
             translateY: "-50%",
             backgroundColor: 'white',
             mixBlendMode: 'difference',
-            isolation: 'isolate',
           }}
           initial={{ width: 40, height: 40, opacity: 1 }}
           animate={{
@@ -124,12 +123,13 @@ export function Cursor() {
 
         {/* The Dot (Pointer) */}
         <motion.div
-          className="absolute top-0 left-0 bg-stone-900 rounded-full will-change-transform"
+          className="absolute top-0 left-0 bg-white rounded-full will-change-transform"
           style={{
             x: dotX,
             y: dotY,
             translateX: "-50%",
             translateY: "-50%",
+            mixBlendMode: 'difference',
           }}
           animate={{
             width: shouldHideDot ? 0 : 8,
