@@ -92,60 +92,52 @@ export function Cursor() {
     <>
       <div
         className="fixed inset-0 pointer-events-none z-[9999]"
-        style={{
-          mixBlendMode: 'difference',
-          transform: 'translate3d(0,0,0)',
-        }}
+        style={{ transform: 'translate3d(0,0,0)' }}
       >
-        <div
-          className="w-full h-full"
+
+        {/* The Blob (Chaser) - blend mode isolated to element only */}
+        <motion.div
+          className="absolute top-0 left-0 rounded-full will-change-transform"
           style={{
-            transform: 'translate3d(0,0,0)',
+            x: blobX,
+            y: blobY,
+            translateX: "-50%",
+            translateY: "-50%",
+            backgroundColor: 'white',
+            mixBlendMode: 'difference',
+            isolation: 'isolate',
           }}
-        >
+          initial={{ width: 40, height: 40, opacity: 1 }}
+          animate={{
+            width: isCardState ? 100 : isMenuItem ? 60 : isHovered ? 60 : 40,
+            height: isCardState ? 100 : isMenuItem ? 60 : isHovered ? 60 : 40,
+            scale: isClicking ? 0.9 : 1,
+            opacity: 1
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+            mass: 0.5
+          }}
+        />
 
-          {/* The Blob (Chaser) */}
-          <motion.div
-            className="absolute top-0 left-0 bg-white rounded-full will-change-transform"
-            style={{
-              x: blobX,
-              y: blobY,
-              translateX: "-50%",
-              translateY: "-50%",
-            }}
-            initial={{ width: 40, height: 40, opacity: 1 }}
-            animate={{
-              width: isCardState ? 100 : isMenuItem ? 60 : isHovered ? 60 : 40,
-              height: isCardState ? 100 : isMenuItem ? 60 : isHovered ? 60 : 40,
-              scale: isClicking ? 0.9 : 1,
-              opacity: 1
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20,
-              mass: 0.5
-            }}
-          />
-
-          {/* The Dot (Pointer) */}
-          <motion.div
-            className="absolute top-0 left-0 bg-white rounded-full will-change-transform"
-            style={{
-              x: dotX,
-              y: dotY,
-              translateX: "-50%",
-              translateY: "-50%",
-              mixBlendMode: 'difference'
-            }}
-            animate={{
-              width: shouldHideDot ? 0 : 8,
-              height: shouldHideDot ? 0 : 8,
-              opacity: shouldHideDot ? 0 : 1
-            }}
-            transition={{ duration: 0.1 }}
-          />
-        </div>
+        {/* The Dot (Pointer) */}
+        <motion.div
+          className="absolute top-0 left-0 bg-stone-900 rounded-full will-change-transform"
+          style={{
+            x: dotX,
+            y: dotY,
+            translateX: "-50%",
+            translateY: "-50%",
+          }}
+          animate={{
+            width: shouldHideDot ? 0 : 8,
+            height: shouldHideDot ? 0 : 8,
+            opacity: shouldHideDot ? 0 : 1
+          }}
+          transition={{ duration: 0.1 }}
+        />
       </div>
 
       <motion.div
