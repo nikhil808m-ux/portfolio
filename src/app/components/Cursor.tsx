@@ -92,19 +92,16 @@ export function Cursor() {
     <>
       <div
         className="fixed inset-0 pointer-events-none z-[9999]"
-        style={{ transform: 'translate3d(0,0,0)' }}
+        style={{ mixBlendMode: 'difference' }}
       >
-
-        {/* The Blob (Chaser) - blend mode scoped to element, not full screen */}
+        {/* The Blob (Chaser) */}
         <motion.div
-          className="absolute top-0 left-0 rounded-full will-change-transform"
+          className="absolute top-0 left-0 bg-white rounded-full will-change-transform"
           style={{
             x: blobX,
             y: blobY,
             translateX: "-50%",
             translateY: "-50%",
-            backgroundColor: 'white',
-            mixBlendMode: 'difference',
           }}
           initial={{ width: 40, height: 40, opacity: 1 }}
           animate={{
@@ -129,7 +126,6 @@ export function Cursor() {
             y: dotY,
             translateX: "-50%",
             translateY: "-50%",
-            mixBlendMode: 'difference',
           }}
           animate={{
             width: shouldHideDot ? 0 : 8,
