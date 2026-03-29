@@ -133,11 +133,14 @@ export function Home() {
               </div>
             </div>
 
-            <div className="mt-32 border-t border-stone-800 pt-12 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-stone-500 uppercase tracking-widest">
-              <span>© 2026 Nikhil Manoj. Designed & Built with React.</span>
-              <span className="flex items-center gap-2 mt-4 md:mt-0">
-                <MapPin className="w-3 h-3" /> Ahmedabad, India
-              </span>
+            <div className="mt-32 border-t border-stone-800 pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] font-mono text-stone-500 uppercase tracking-widest">
+              <span>Nikhil Manoj · Portfolio</span>
+              <div className="flex items-center gap-6 mt-4 md:mt-0">
+                <span className="flex items-center gap-2">
+                  <MapPin className="w-3 h-3" /> Bengaluru, India
+                </span>
+                <span>{new Date().getFullYear()}</span>
+              </div>
             </div>
           </motion.div>
         </div>
