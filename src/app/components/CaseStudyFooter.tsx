@@ -24,7 +24,7 @@ export function CaseStudyFooter({ currentSlug }: CaseStudyFooterProps) {
                 <div className="flex-1">
                     {prev ? (
                         <Link
-                            to={`/work/${prev.slug}`}
+                            to={`/case-studies/${prev.slug}`}
                             className="group inline-flex flex-col gap-2 text-left"
                         >
                             <span className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-stone-500 group-hover:text-stone-400 transition-colors">
@@ -61,7 +61,7 @@ export function CaseStudyFooter({ currentSlug }: CaseStudyFooterProps) {
                 <div className="flex-1 flex justify-end">
                     {next ? (
                         <Link
-                            to={`/work/${next.slug}`}
+                            to={`/case-studies/${next.slug}`}
                             className="group inline-flex flex-col gap-2 text-right"
                         >
                             <span className="flex items-center justify-end gap-2 text-[10px] font-mono uppercase tracking-widest text-stone-500 group-hover:text-stone-400 transition-colors">

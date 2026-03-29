@@ -1,28 +1,13 @@
-// src/app/components/case-studies/localai-manager/index.tsx
-// 
-// CASE STUDY PAGE — LocalAI Manager
-// Replace this file's contents with your exported Figma Make case study component.
-// The component must have a default export.
+import { CaseStudyFooter } from "../../CaseStudyFooter";
 
-import { Link } from "react-router";
-import { ArrowLeft } from "lucide-react";
-
-export default function LocalAICaseStudy() {
+export default function LocalAIManagerPage() {
   return (
-    <div className="snap-none min-h-screen bg-stone-50 px-6 md:px-12 py-32">
-      <Link
-        to="/"
-        className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-stone-400 hover:text-stone-900 transition-colors mb-16 group"
-      >
-        <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
-        Back to Home
-      </Link>
-      <h1 className="text-5xl font-display font-medium text-stone-900 tracking-tight">
-        LocalAI Manager
-      </h1>
-      <p className="mt-4 text-stone-400 font-mono text-sm">
-        — Replace this placeholder with your Figma Make case study export.
-      </p>
+    <div className="snap-none w-full bg-[#F8FAFC] min-h-screen relative flex flex-col">
+      <main className="flex-1 flex flex-col items-center justify-center py-32 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-display font-medium text-stone-900 tracking-tight mb-4">LocalAI Manager</h1>
+        <p className="text-stone-500 font-light max-w-lg mb-8">This case study is currently being documented. Please check back later.</p>
+      </main>
+      <CaseStudyFooter currentSlug="localai-manager" />
     </div>
   );
 }
