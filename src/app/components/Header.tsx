@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation, Link } from 'react-router';
 import { Magnetic } from './Magnetic';
 import { useCursor } from '../context/CursorContext';
+import { ArrowLeft } from 'lucide-react';
 
 interface HeaderProps {
   scrollContainerId?: string;
@@ -10,6 +11,8 @@ interface HeaderProps {
 
 export function Header({ scrollContainerId }: HeaderProps) {
   const { setCursorType } = useCursor();
+  const { pathname } = useLocation();
+  const isHome = pathname === '/';
 
   // State for visibility and background
   const [isVisible, setIsVisible] = useState(true);
@@ -108,10 +111,23 @@ export function Header({ scrollContainerId }: HeaderProps) {
         <div className="absolute inset-0 bg-stone-50/95 border-b border-stone-200/50 shadow-sm" />
       </motion.div>
 
+      {/* Logo or Back button depending on route */}
       <div className="interactive font-display font-bold text-xl tracking-tighter cursor-none z-10 text-stone-900">
-        <a href="/" className="hover:text-stone-600 transition-colors block">
-          NM<span className="text-stone-400">.</span>
-        </a>
+        {isHome ? (
+          <a href="/" className="hover:text-stone-600 transition-colors block">
+            NM<span className="text-stone-400">.</span>
+          </a>
+        ) : (
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-stone-400 hover:text-stone-900 transition-colors group"
+            onMouseEnter={() => setCursorType('menu-item')}
+            onMouseLeave={() => setCursorType('default')}
+          >
+            <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
+            Portfolio
+          </Link>
+        )}
       </div>
 
       <div className="hidden md:flex gap-8 text-xs font-mono tracking-widest uppercase z-10">

@@ -2,9 +2,6 @@
 // UPI Balance Visibility — Case Study
 // Full-width layout, no outer padding restrictors.
 
-import { Link } from "react-router";
-import { ArrowLeft } from "lucide-react";
-
 import { GrainOverlay } from './GrainOverlay';
 import { HeroSection } from './sections/HeroSection';
 import { ThoughtExperimentSection } from './sections/ThoughtExperimentSection';
@@ -25,15 +22,6 @@ export default function UPICaseStudy() {
     // snap-none overrides the Home page snap-y snap-mandatory from Root.tsx
     // so the case study scrolls freely
     <div className="snap-none w-full bg-[#F8FAFC] min-h-screen relative">
-
-      {/* Floating back button — top-left, above all content */}
-      <Link
-        to="/"
-        className="fixed top-6 left-6 z-50 inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors group bg-white/80 backdrop-blur-sm border border-slate-200 px-3 py-2 rounded-full shadow-sm"
-      >
-        <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
-        Portfolio
-      </Link>
 
       <GrainOverlay />
 
