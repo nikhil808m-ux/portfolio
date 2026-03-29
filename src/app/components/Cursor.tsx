@@ -92,6 +92,7 @@ export function Cursor() {
     <>
       <div
         className="fixed inset-0 pointer-events-none z-[9999]"
+        style={{ mixBlendMode: 'difference' }}
       >
         {/* The Blob (Chaser) */}
         <motion.div
@@ -101,7 +102,6 @@ export function Cursor() {
             y: blobY,
             translateX: "-50%",
             translateY: "-50%",
-            mixBlendMode: 'difference'
           }}
           initial={{ width: 40, height: 40, opacity: 1 }}
           animate={{
@@ -126,7 +126,6 @@ export function Cursor() {
             y: dotY,
             translateX: "-50%",
             translateY: "-50%",
-            mixBlendMode: 'difference'
           }}
           animate={{
             width: shouldHideDot ? 0 : 8,
