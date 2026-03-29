@@ -4,7 +4,8 @@ import { ProjectCard } from './ProjectCard';
 import { Hero } from './Hero';
 import { GridBackground } from './GridBackground';
 import { AboutSection } from './AboutSection';
-import { ChevronRight, Braces, Palette, GraduationCap, Briefcase, MousePointer, ArrowDown, MapPin, Mail, Linkedin, Twitter, Instagram, Layers, Code2 } from 'lucide-react';
+import { ChevronRight, Braces, Palette, GraduationCap, Briefcase, MousePointer, ArrowDown, MapPin, Layers, Code2 } from 'lucide-react';
+import { FaBehance, FaLinkedin } from 'react-icons/fa';
 import { useCursor } from '../context/CursorContext';
 import { projects } from '../data/projects';
 
@@ -114,19 +115,18 @@ export function Home() {
 
             <div className="flex flex-col items-center gap-8">
               <a
-                href="mailto:hello@nikhilmanoj.com"
+                href="mailto:hello@nikhilmanoj.me"
                 className="text-2xl md:text-3xl font-light hover:text-stone-300 transition-all interactive font-sans border-b border-stone-700 hover:border-stone-500 pb-1"
               >
-                hello@nikhilmanoj.com
+                hello@nikhilmanoj.me
               </a>
 
               <div className="flex gap-6 mt-8">
                 {[
-                  { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn" },
-                  { icon: <Twitter className="w-5 h-5" />, label: "Twitter" },
-                  { icon: <Instagram className="w-5 h-5" />, label: "Instagram" }
+                  { icon: <FaBehance className="w-5 h-5" />, label: "Behance", url: "https://www.behance.net/nikhilmanoj" },
+                  { icon: <FaLinkedin className="w-5 h-5" />, label: "LinkedIn", url: "https://www.linkedin.com/in/nikhilmanoj/" },
                 ].map((social, i) => (
-                  <a key={i} href="#" className="p-4 rounded-full border border-stone-700 bg-stone-800 hover:bg-stone-100 hover:text-stone-900 hover:border-white transition-all duration-300 interactive group" aria-label={social.label}>
+                  <a key={i} href={social.url} target="_blank" rel="noopener noreferrer" className="p-4 rounded-full border border-stone-700 bg-stone-800 hover:bg-stone-100 hover:text-stone-900 hover:border-white transition-all duration-300 interactive group" aria-label={social.label}>
                     {social.icon}
                   </a>
                 ))}
