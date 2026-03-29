@@ -3,6 +3,7 @@
 // Full-width layout, no outer padding restrictors.
 
 import { GrainOverlay } from './GrainOverlay';
+import { CaseStudyFooter } from '../../CaseStudyFooter';
 import { HeroSection } from './sections/HeroSection';
 import { ThoughtExperimentSection } from './sections/ThoughtExperimentSection';
 import { CashVsUpiSection } from './sections/CashVsUpiSection';
@@ -41,9 +42,7 @@ export default function UPICaseStudy() {
         <ReflectionSection />
       </main>
 
-      <footer className="py-12 bg-[#0F172A] text-center text-slate-500 text-sm relative z-10">
-        <p>© 2026 · The Missing Checkpoint · A speculative UX study by Nikhil Manoj</p>
-      </footer>
+      <CaseStudyFooter currentSlug="upi-balance" />
     </div>
   );
 }
