@@ -114,9 +114,9 @@ export function Header({ scrollContainerId }: HeaderProps) {
       {/* Logo or Back button depending on route */}
       <div className="interactive font-display font-bold text-xl tracking-tighter cursor-none z-10 text-stone-900">
         {isHome ? (
-          <a href="/" className="hover:text-stone-600 transition-colors block">
+          <Link to="/" className="hover:text-stone-600 transition-colors block">
             NM<span className="text-stone-400">.</span>
-          </a>
+          </Link>
         ) : (
           <Link
             to="/"
