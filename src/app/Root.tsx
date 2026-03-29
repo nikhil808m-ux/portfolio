@@ -21,15 +21,26 @@ function CursorResetter() {
 
 export function Root() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const isHome = pathname === "/";
 
-  // Reset scroll on route change
+  // Reset scroll on route change or scroll to hash if present
   useEffect(() => {
     if (scrollRef.current) {
+      if (hash) {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          // Small timeout to ensure the DOM is ready if we just switched routes
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+          return;
+        }
+      }
       scrollRef.current.scrollTop = 0;
     }
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return (
     <CursorProvider>
