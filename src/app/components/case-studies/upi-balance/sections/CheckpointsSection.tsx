@@ -4,24 +4,20 @@ import { CheckpointsIllustration } from '../illustrations/CheckpointsIllustratio
 
 export const CheckpointsSection: React.FC = () => {
   return (
-    <Section variant="base">
-      <div className="flex flex-col gap-12">
+    <Section variant="alt">
+      <div className="flex flex-col gap-16">
         <TextBlock 
-          title="Two Natural Financial Checkpoints" 
-          subtitle="Through conversations and observation, I noticed that people tend to think about money at two moments."
+          eyebrow="02 — Two Financial Checkpoints"
+          title={
+            <>
+              Physical currency had two.<br />
+              Digital kept one.
+            </>
+          } 
+          subtitle=""
         >
-          <p className="mb-4">
-            Before payment — when checking what they have.
-            <br />
-            After payment — when recalculating what remains.
-          </p>
-          <p className="mb-4">
-            Most UPI apps already support the first checkpoint. Users can reveal their balance on the home screen.
-          </p>
-          <p>
-            The second checkpoint feels compressed. After the green tick, the system moves forward. 
-            If someone wants to check balance, they can — but it requires navigating away from the confirmation screen.
-            The recalibration moment exists, but it is no longer embedded in the flow.
+          <p className="mb-4 text-slate-500 font-light text-[17px] leading-relaxed">
+            Talking to 28 high-frequency digital payment users made one thing undeniably clear. Around every transaction, there are two natural moments of financial awareness — one before, one after. Physical currency naturally supported both. Modern interfaces only carried one of them across.
           </p>
         </TextBlock>
 

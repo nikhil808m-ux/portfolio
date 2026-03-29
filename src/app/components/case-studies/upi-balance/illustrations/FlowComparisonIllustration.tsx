@@ -11,6 +11,7 @@ const GOOGLE_GRAY_TEXT = "text-[#3C4043]";
 const FlowNode = ({ label, variant, isLast, index }: { label: string, variant: 'grey' | 'blue', isLast?: boolean, index: number }) => (
   <div className="flex items-center">
     <motion.div 
+      style={{ transform: 'translateZ(0)' }}
       className={clsx(
         "px-4 py-2 rounded-full border text-sm font-medium whitespace-nowrap shadow-sm transition-all hover:shadow-md",
         variant === 'grey' 
@@ -19,17 +20,18 @@ const FlowNode = ({ label, variant, isLast, index }: { label: string, variant: '
       )}
       initial={{ opacity: 0, scale: 0.9, y: 5 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.1 }}
+      transition={{ duration: 0.3, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
       {label}
     </motion.div>
     {!isLast && (
       <motion.div 
+        style={{ transform: 'translateZ(0)' }}
         className="mx-2 text-gray-300"
         initial={{ opacity: 0, x: -5 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: (index * 0.1) + 0.1 }}
+        transition={{ duration: 0.3, delay: (index * 0.1) + 0.1 }}
         viewport={{ once: true }}
       >
         <ChevronRight size={18} strokeWidth={2.5} />
@@ -55,15 +57,15 @@ export const FlowComparisonIllustration: React.FC = () => {
   return (
     <div className="flex flex-col gap-8 w-full max-w-4xl mx-auto py-8 font-sans">
       <FlowRow 
-        title="Standard Flow" 
+        title="Current Flow — Checking balance today" 
         variant="grey" 
-        nodes={["Payment Success", "Done", "Home Screen", "Profile", "Check Balance", "Enter PIN", "View Balance"]} 
+        nodes={["Payment Success", "Tap Done", "Navigate to Balance", "Select Bank Account", "Enter UPI PIN", "View Balance"]} 
       />
       
       <FlowRow 
-        title="Optimized Flow" 
+        title="Proposed Flow — Checkpoint 2 restored" 
         variant="blue" 
-        nodes={["Payment Success", "Check Balance", "Enter PIN (if needed)", "View Balance"]} 
+        nodes={["Payment Success", "Tap View Balance", "Authenticate", "Balance in bottom sheet"]} 
       />
     </div>
   );

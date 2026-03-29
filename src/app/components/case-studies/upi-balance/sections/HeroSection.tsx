@@ -1,87 +1,63 @@
 import React from 'react';
 import { Section } from '../Section';
 import { HeroIllustration } from '../illustrations/HeroIllustration';
-import { motion } from 'motion/react';
-
-const GoogleGridPattern = () => (
-  <svg className="absolute inset-0 w-full h-full -z-10" width="100%" height="100%">
-    <defs>
-      <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
-        <circle cx="2" cy="2" r="1" fill="#E8EAED" />
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#grid-pattern)" />
-  </svg>
-);
 
 export const HeroSection: React.FC = () => {
   return (
-    <Section className="min-h-screen flex items-center pt-32 pb-24 relative overflow-hidden bg-white">
-      <GoogleGridPattern />
-      
-      {/* Abstract Gradient Blurs */}
-      <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-blue-50 mix-blend-multiply filter blur-3xl opacity-50 animate-blob" />
-      <div className="absolute top-[30%] right-[0%] w-[400px] h-[400px] rounded-full bg-green-50 mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-yellow-50 mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000" />
+    <Section className="min-h-screen flex items-center pt-32 pb-24 relative overflow-hidden bg-[#F8FAFC]">
+      {/* Strict Grid Background - Replaced AI Blurs */}
+      <div 
+        className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: 'linear-gradient(to right, #0F172A 1px, transparent 1px), linear-gradient(to bottom, #0F172A 1px, transparent 1px)',
+          backgroundSize: '80px 80px',
+          transform: 'translateZ(0)'
+        }}
+      />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full relative z-10">
-        <div className="flex flex-col gap-8 max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold tracking-wider uppercase rounded-full border border-blue-100">
+        <div className="flex flex-col gap-10 max-w-2xl">
+          <div>
+            <div className="flex items-center gap-4 mb-10 border-b border-slate-200 pb-4 w-max">
+              <span className="text-slate-900 text-[11px] font-bold tracking-[0.25em] uppercase">
                 UX Case Study
               </span>
-              <span className="h-px w-12 bg-gray-200"></span>
-              <span className="text-gray-400 text-xs font-medium tracking-wide">Feb 2026</span>
+              <span className="w-1 h-1 bg-slate-300 rounded-none"></span>
+              <span className="text-slate-400 text-[10px] font-mono tracking-widest uppercase">2026</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-semibold tracking-tighter text-gray-900 leading-[1.05] mb-6 font-sans">
-              After Payment <br/>
-              <span className="text-gray-900 font-bold">Successful</span>
+            <h1 className="text-5xl md:text-7xl lg:text-[80px] font-bold tracking-tighter text-slate-900 leading-[0.95] mb-8 font-sans">
+              The Lost <br/>
+              <span className="text-indigo-600">Reflection.</span>
             </h1>
             
-            <h2 className="text-2xl md:text-3xl font-normal text-gray-500 mb-8 leading-snug max-w-lg">
-              When payments became <span className="text-gray-900 font-medium">too smooth</span>, we lost our <span className="text-gray-900 font-medium">passive control</span>.
+            <h2 className="text-2xl md:text-[28px] font-light text-slate-500 mb-8 leading-snug max-w-lg tracking-tight">
+              How digital payments inadvertently erased the <span className="text-slate-900 font-medium">natural pause</span> for mental math.
             </h2>
-          </motion.div>
+          </div>
 
-          <motion.div 
-            className="prose prose-lg text-gray-600 leading-relaxed font-light"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-          >
+          <div className="prose prose-lg text-slate-600 leading-relaxed font-light">
             <p className="mb-6">
-              Cash had physical friction—bulk, counting, and the visual thinning of a wallet. This friction acted as a <strong>passive control mechanism</strong>, keeping us aware of our spending without active effort.
+              When we paid with physical currency, we always had an intuitive sense of our balance. Handing over notes and receiving change forced an automatic, unconscious calculation. That ritual is gone. Modern interfaces offer seamless speed, but they left behind the friction that kept us grounded.
             </p>
-            <p className="border-l-4 border-[#4285F4] pl-6 py-2 italic text-gray-500 bg-gray-50 rounded-r-lg">
-              "UPI removed this friction entirely. The result? We spend faster, track less, and often face the shock of <span className="text-red-500 font-medium">Insufficient Balance</span>."
+            <p className="border-l-[3px] border-indigo-600 pl-6 py-1 italic text-slate-500 font-serif text-xl tracking-tight">
+              "Every cash transaction ended with a quiet recalibration. Every digital payment ends with a green tick and nothing else."
             </p>
-          </motion.div>
+          </div>
           
-          <motion.div
-             className="flex gap-4 mt-4"
-             initial={{ opacity: 0 }}
-             animate={{ opacity: 1 }}
-             transition={{ delay: 0.6 }}
-          >
-            <div className="flex -space-x-2">
-               {[1,2,3].map(i => (
-                 <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] text-gray-500 font-bold">
-                   U{i}
-                 </div>
-               ))}
+          <div className="flex gap-10 mt-6 pt-8 border-t border-slate-200 flex-wrap">
+            <div className="flex flex-col gap-1 text-sm">
+              <span className="font-bold text-slate-900 tracking-widest uppercase text-[10px]">Domain</span> 
+              <span className="text-slate-500 font-light">Behavioral UX</span>
             </div>
-            <p className="text-sm text-gray-400 self-center">Based on interviews with daily UPI users.</p>
-          </motion.div>
+            <div className="flex flex-col gap-1 text-sm">
+              <span className="font-bold text-slate-900 tracking-widest uppercase text-[10px]">Focus</span> 
+              <span className="text-slate-500 font-light">Post-Payment Cognition</span>
+            </div>
+          </div>
         </div>
 
-        <div className="flex justify-center items-center lg:justify-end relative">
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-100/30 to-green-100/30 rounded-full blur-3xl -z-10 transform scale-150 opacity-80" />
+        <div className="flex justify-center items-center lg:justify-end relative mt-16 lg:mt-0">
           <HeroIllustration />
         </div>
       </div>

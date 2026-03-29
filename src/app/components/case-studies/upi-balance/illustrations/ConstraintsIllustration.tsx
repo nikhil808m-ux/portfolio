@@ -13,10 +13,11 @@ const GOOGLE_GRAY_600 = "#5F6368";
 
 const Node = ({ x, y, icon: Icon, label, color, sublabel, delay = 0, type = "default" }: any) => (
   <motion.g 
+    style={{ transform: 'translateZ(0)' }}
     transform={`translate(${x}, ${y})`}
     initial={{ opacity: 0, scale: 0.9, y: y + 10 }}
     whileInView={{ opacity: 1, scale: 1, y: y }}
-    transition={{ delay, duration: 0.6, type: "spring" }}
+    transition={{ delay, duration: 0.3, type: "spring" }}
     viewport={{ once: true }}
   >
     {/* Glow Effect */}
@@ -77,34 +78,20 @@ export const ConstraintsIllustration: React.FC = () => {
           fill="none" stroke={GOOGLE_BLUE} strokeWidth="2" strokeOpacity="0.15"
         />
 
-        {/* Animated Payment Packet (Green) */}
-        <motion.circle 
+        {/* Static Payment Indicator */}
+        <circle 
+          cx="400" cy="180"
           r="6" fill={GOOGLE_GREEN} stroke="white" strokeWidth="2"
           filter="drop-shadow(0 2px 3px rgba(52, 168, 83, 0.4))"
-          style={{ 
-            offsetPath: "path('M 120 180 L 680 180')",
-            offsetDistance: "var(--progress-payment)"
-          }}
-          initial={{ "--progress-payment": "0%" } as any}
-          animate={{ "--progress-payment": "100%" } as any}
-          transition={{ duration: 3, ease: "easeInOut", repeat: Infinity, repeatDelay: 1 }}
         />
 
-        {/* Animated Balance Packet (Blue Lock) */}
-        <motion.g
-          style={{ 
-            offsetPath: "path('M 120 150 C 250 50, 550 50, 680 150')",
-            offsetDistance: "var(--progress-balance)"
-          }}
-          initial={{ "--progress-balance": "0%", opacity: 0 } as any}
-          animate={{ "--progress-balance": "100%", opacity: 1 } as any}
-          transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, repeatDelay: 0.5 }}
-        >
+        {/* Static Balance Indicator */}
+        <g transform="translate(550, 100)">
           <circle r="14" fill="white" stroke={GOOGLE_BLUE} strokeWidth="2" className="drop-shadow-md" />
           <foreignObject x="-8" y="-8" width="16" height="16">
             <ShieldCheck size={16} color={GOOGLE_BLUE} />
           </foreignObject>
-        </motion.g>
+        </g>
 
         {/* Nodes positioned to avoid overlap */}
         <Node x="100" y="180" icon={Smartphone} label="User App" color={GOOGLE_BLUE} delay={0} />

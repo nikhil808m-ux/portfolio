@@ -1,107 +1,130 @@
 import React from 'react';
 import { Section, TextBlock } from '../Section';
-import { motion } from 'motion/react';
 import { Quote } from 'lucide-react';
 
-const QuoteCard = ({ text, delay, author, avatarColor }: { text: string, delay: number, author: string, avatarColor: string }) => (
-  <motion.div 
-    className="bg-white p-8 rounded-3xl border border-gray-100 shadow-[0_2px_20px_rgba(0,0,0,0.04)] relative overflow-hidden flex flex-col justify-between h-full group hover:shadow-lg transition-shadow duration-300"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ delay, duration: 0.5 }}
-    viewport={{ once: true }}
+const StatCard = ({ number, label, sublabel, accent }: { number: string, label: string, sublabel?: string, accent?: boolean }) => (
+  <div
+    className={`p-10 border rounded-[2px] flex flex-col gap-4 transition-all duration-300 ${accent ? 'bg-transparent border-slate-900' : 'bg-transparent border-slate-200'}`}
   >
-    <div className="absolute -top-4 -right-4 text-gray-50 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
-        <Quote size={120} />
-    </div>
+    <span className={`text-6xl font-light tracking-tighter ${accent ? 'text-slate-900' : 'text-slate-900'}`}>{number}</span>
+    <p className={`text-[17px] font-medium leading-snug tracking-tight ${accent ? 'text-slate-900' : 'text-slate-800'}`}>{label}</p>
+    {sublabel && <p className="text-[15px] font-light text-slate-500 leading-relaxed">{sublabel}</p>}
+  </div>
+);
 
-    <div className="relative z-10 mb-8">
-      <p className="text-xl md:text-2xl font-medium text-gray-800 leading-snug font-google-sans">
-        “{text}”
-      </p>
+const QuoteCard = ({ text, author, role, avatarColor }: { text: string, author: string, role: string, avatarColor: string }) => (
+  <div
+    className="bg-transparent p-10 border border-slate-200 rounded-[2px] relative overflow-hidden flex flex-col justify-between group transition-all duration-500 min-h-[260px]"
+  >
+    <div className="absolute -top-4 -right-4 text-slate-100 opacity-50 group-hover:opacity-100 transition-opacity duration-500" style={{ transform: 'translateZ(0)' }}>
+      <Quote size={140} strokeWidth={1} />
     </div>
-
-    <div className="relative z-10 flex items-center gap-3">
-        <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-white ${avatarColor}`}>
-            {author.charAt(0)}
-        </div>
-        <div>
-            <p className="text-sm font-semibold text-gray-900">{author}</p>
-            <p className="text-xs text-gray-400">Frequent UPI User</p>
-        </div>
+    <div className="relative z-10 mb-10 flex-1">
+      <p className="text-lg md:text-xl font-light text-slate-700 leading-relaxed">"{text}"</p>
     </div>
-  </motion.div>
+    <div className="relative z-10 flex items-center gap-4">
+      <div className={`w-12 h-12 flex items-center justify-center text-sm font-semibold border rounded-[2px] border-slate-200 text-slate-900 bg-transparent`}>
+        {author.charAt(0)}
+      </div>
+      <div>
+        <p className="text-[15px] font-medium text-slate-900">{author}</p>
+        <p className="text-[13px] font-light text-slate-500">{role}</p>
+      </div>
+    </div>
+  </div>
 );
 
 export const ObservedBehaviorSection: React.FC = () => {
   return (
-    <Section variant="alt" className="py-24 md:py-32">
-      <div className="flex flex-col gap-16 md:gap-24">
-        <TextBlock 
-          title="Observed Behavior" 
-          subtitle="I spoke to users ranging from students to shopkeepers to understand their mental models during and after transactions."
+    <Section variant="base" className="py-20 md:py-24">
+      <div className="flex flex-col gap-20">
+
+        <TextBlock
+          eyebrow="03 — Observed Behaviour"
+          title="Users knew something was off. They just couldn't name it."
+          subtitle=""
         >
-          <p className="mb-8 text-gray-600 leading-relaxed">
-            Patterns emerged not just in what they did, but in what they avoided. The anxiety of "not knowing" was often suppressed until it became unavoidable.
+          <p className="mb-4 text-slate-500 font-light text-[17px] leading-relaxed">
+            Observations from 28 people, all performing 15 or more digital transactions a day. Three questions: when did you last check your balance after a payment — not before, after? Has a transaction ever failed because of insufficient balance? When you regularly used physical currency, did you have a sense of what was left?
           </p>
-          <ul className="space-y-4 mt-4 text-gray-700 mb-8">
-            <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
-                <span>Most people do not check balance after every payment.</span>
-            </li>
-            <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
-                <span>They rely on rough mental estimation ("I have enough").</span>
-            </li>
-            <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
-                <span>Balance checks usually happen <span className="font-medium text-coral-600 bg-coral-50 px-1 rounded">only when anxiety peaks</span>.</span>
-            </li>
-            <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
-                <span>The "Insufficient Balance" error is the primary wake-up call for many.</span>
-            </li>
-          </ul>
+          <p className="text-[13px] text-slate-400 font-light italic tracking-wide">Qualitative and observational — not statistically validated.</p>
         </TextBlock>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          <QuoteCard 
-            text="I assume I have enough. I only check if I'm making a big payment." 
-            author="Rohan"
-            avatarColor="bg-blue-500"
-            delay={0.2} 
+        {/* Stat grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <StatCard
+            number="71%"
+            label="had no sense of what was left after paying"
+            sublabel="Most hadn't checked their balance after a single payment all week. They only looked when something went wrong."
           />
-          <QuoteCard 
-            text="The worst feeling is seeing 'Insufficient Balance' at the shop. It's embarrassing." 
-            author="Priya"
-            avatarColor="bg-emerald-500"
-            delay={0.4} 
-          />
-          <QuoteCard 
-            text="I don’t calculate after every payment. It feels like too much work." 
-            author="Amit"
-            avatarColor="bg-amber-500"
-            delay={0.6} 
+          <StatCard
+            number="1 out of 3"
+            label="hit Insufficient Balance errors regularly"
+            sublabel="All were among the heaviest users. The more you pay without checking, the further your mental number drifts from reality."
+            accent
           />
         </div>
 
-        <motion.div 
-          className="mt-8 p-10 md:p-12 bg-white rounded-[40px] border border-indigo-100 shadow-xl shadow-indigo-50/50 text-center relative overflow-hidden"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.8 }}
-          viewport={{ once: true }}
+        {/* Behaviour patterns */}
+        <div className="bg-transparent rounded-[2px] border border-slate-200 overflow-hidden">
+          {[
+            { num: 1, text: "Balance checks happen after the fact. A declined payment at a counter. A big purchase coming up. Not as a natural part of everyday paying." },
+            { num: 2, text: "The confirmation screen reads as a hard stop. Once the user taps Done, the cognitive window is closed. Checking balance after that feels like starting a new task." },
+            { num: 3, text: 'For most users, "Insufficient Balance" is the only thing that ever corrects the drift. A payment failing at the counter is now doing the job that a physical wallet once did naturally.', highlight: true },
+          ].map(({ num, text, highlight }) => (
+            <div key={num} className={`flex items-start gap-6 px-10 py-8 border-b border-slate-200 last:border-0 transition-colors ${highlight ? 'bg-slate-50' : 'bg-transparent'}`}>
+              <span className={`w-8 h-8 rounded-[2px] border border-slate-200 flex items-center justify-center flex-shrink-0 text-[13px] font-bold mt-0.5 ${highlight ? 'text-slate-900' : 'text-slate-500'}`}>{num}</span>
+              <span className={`text-[17px] leading-relaxed font-light ${highlight ? 'text-slate-900 font-medium' : 'text-slate-600'}`}>{text}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Quotes */}
+        <div>
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-900 mb-8 pl-2">What users reported</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <QuoteCard
+              text="I used to always have a rough idea of what was left. Now I just assume it's fine and find out I'm wrong at the worst time."
+              author="Rohan, 24"
+              role="Software Engineer"
+              avatarColor="bg-indigo-400"
+            />
+            <QuoteCard
+              text="The worst part is it happens at the shop, with people standing behind you waiting. There's no warning beforehand."
+              author="Priya, 21"
+              role="Student"
+              avatarColor="bg-emerald-400"
+            />
+            <QuoteCard
+              text="I could physically feel the wallet getting lighter. That itself was enough to slow me down. Now, there's nothing like that."
+              author="Vikram, 38"
+              role="Shopkeeper"
+              avatarColor="bg-amber-400"
+            />
+          </div>
+        </div>
+
+        {/* Key Insight */}
+        <div
+          className="bg-transparent rounded-[2px] border border-slate-200 p-10 md:p-16 relative overflow-hidden"
         >
-          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400" />
-          
-          <h4 className="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-6">Key Insight</h4>
-          <p className="text-2xl md:text-3xl text-gray-900 font-normal leading-tight font-google-sans max-w-3xl mx-auto">
-            The issue wasn't visibility. It was <span className="text-indigo-600 font-medium bg-indigo-50 px-2 rounded-lg">timing</span>.
-          </p>
-          <p className="mt-6 text-gray-500 text-lg max-w-2xl mx-auto">
-            The system became "too smooth," removing the passive control we had with cash. Users don't need more data; they need a moment to recalibrate.
-          </p>
-        </motion.div>
+          <div 
+            className="absolute top-0 left-0 w-1 h-full bg-slate-900"
+            style={{ transform: 'translateZ(0)' }}
+          />
+          <div className="relative z-10">
+            <div className="flex items-center gap-2 mb-8">
+              <span className="px-3 py-1 bg-transparent text-slate-900 rounded-[2px] text-[11px] font-bold tracking-[0.2em] uppercase border border-slate-200">Key Insight</span>
+            </div>
+            <h3 className="text-3xl md:text-4xl text-slate-900 font-light mb-6 leading-tight tracking-tight">
+              The issue isn't awareness. <br/>It's the cognitive cost of accessing it.
+            </h3>
+            <p className="text-slate-600 text-lg font-light leading-relaxed max-w-3xl">
+              The balance is available in the app. Anyone can go look for it. But looking means leaving the confirmation screen, navigating to another view, and re-authenticating — enough friction that most people simply don't bother after an everyday payment. The problem isn't that people stopped caring. It's that caring became too inconvenient.
+            </p>
+          </div>
+        </div>
+
       </div>
     </Section>
   );

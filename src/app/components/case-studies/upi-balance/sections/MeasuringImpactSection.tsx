@@ -1,41 +1,95 @@
 import React from 'react';
 import { Section, TextBlock } from '../Section';
-import { motion } from 'motion/react';
-import { Target, BarChart2, Heart, MousePointer } from 'lucide-react';
+import { Activity, ShieldCheck, Scale } from 'lucide-react';
+import { clsx } from 'clsx';
 
-const ImpactMetric = ({ label, icon: Icon, delay }: { label: string, icon: any, delay: number }) => (
-  <motion.div 
-    className="flex items-center gap-4 p-6 bg-white rounded-xl border border-gray-100 shadow-sm"
-    initial={{ opacity: 0, y: 10 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ delay, duration: 0.5 }}
-    viewport={{ once: true }}
+const ImpactMetric = ({ 
+  title, 
+  desc, 
+  delay, 
+  icon: Icon,
+  invert 
+}: { 
+  title: string, 
+  desc: string, 
+  delay: number,
+  icon: any,
+  invert?: boolean 
+}) => (
+  <div
+    className={clsx(
+      "flex flex-col p-8 md:p-12 lg:p-16 border-b border-r border-slate-200",
+      invert ? "bg-emerald-50" : "bg-white"
+    )}
   >
-    <div className="p-3 bg-indigo-50 text-indigo-600 rounded-full">
-      <Icon size={20} />
+    {/* Architectural Icon Box */}
+    <div className={clsx(
+      "mb-16",
+      invert ? "text-slate-300" : "text-emerald-600"
+    )}>
+      <Icon size={24} strokeWidth={1.5} />
     </div>
-    <span className="font-medium text-gray-700">{label}</span>
-  </motion.div>
+
+    {/* Content */}
+    <div className="mt-auto flex flex-col gap-6">
+        <h4 className={clsx(
+          "text-[18px] lg:text-[20px] font-medium tracking-tight",
+          invert ? "text-slate-900" : "text-slate-900"
+        )}>
+          {title}
+        </h4>
+        <p className={clsx(
+          "text-[16px] font-light leading-relaxed",
+          invert ? "text-slate-600" : "text-slate-500"
+        )}>
+          {desc}
+        </p>
+    </div>
+  </div>
 );
 
 export const MeasuringImpactSection: React.FC = () => {
   return (
-    <Section variant="base" className="py-24">
-      <div className="flex flex-col gap-12">
-        <TextBlock 
-          title="Measuring Impact" 
-          subtitle="If this were shipped, I would track these specific signals."
-        />
+    <Section variant="alt" className="py-20 md:py-24">
+      <div className="flex flex-col">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="col-span-1 md:col-span-2">
-            <ImpactMetric label="Frequency of immediate post-transaction balance checks" icon={Target} delay={0.2} />
-          </div>
-          <ImpactMetric label="Self-reported financial control" icon={BarChart2} delay={0.4} />
-          <ImpactMetric label="Reported anxiety levels" icon={Heart} delay={0.5} />
-          <ImpactMetric label="Interaction rate with View Balance" icon={MousePointer} delay={0.6} />
-          <ImpactMetric label="Impact on confirmation dwell time" icon={Target} delay={0.7} />
+        {/* Header Area */}
+        <div className="max-w-3xl mb-12 md:mb-16">
+            <TextBlock
+              eyebrow="10 — Impact"
+              title="Friction that serves a purpose."
+              subtitle=""
+            >
+              <p className="text-slate-500 font-light text-[17px] leading-relaxed">
+                By analyzing the qualitative outcomes of the prototype testing, three core behavioral shifts emerged. The intervention didn't just solve a navigation issue; it restored a missing psychological need.
+              </p>
+            </TextBlock>
         </div>
+
+        {/* Architectural Grid for Impact Metrics */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-l border-slate-200">
+            
+          <ImpactMetric
+            icon={Activity}
+            title="Active Recalibration"
+            desc="Users began processing their financial standing organically post-payment, mimicking the cognitive loop of physical currency."
+            delay={0}
+          />
+          <ImpactMetric
+            icon={ShieldCheck}
+            title="Maintained Privacy"
+            desc="Because the action remains entirely voluntary and hidden behind standard authentication, trust and comfort levels remained high."
+            delay={0.1}
+          />
+          <ImpactMetric
+            icon={Scale}
+            title="Balanced Efficiency"
+            desc="The primary flow remains frictionless for those who simply want to pay and leave, satisfying both behavioral archetypes perfectly."
+            delay={0.2}
+          />
+
+        </div>
+
       </div>
     </Section>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
 import { clsx } from 'clsx';
-import { motion } from 'motion/react';
 
 interface SectionProps {
   id?: string;
@@ -11,22 +10,22 @@ interface SectionProps {
 
 export const Section: React.FC<SectionProps> = ({ id, className, children, variant = 'base' }) => {
   const bgColors = {
-    base: 'bg-[#F6F7F9] text-[#1F2937]',
-    alt: 'bg-[#EEF2F7] text-[#1F2937]',
-    dark: 'bg-[#121417] text-[#F9FAFB]',
-    emerald: 'bg-[#1FA774] text-white',
+    base: 'bg-[#F8FAFC] text-slate-900',
+    alt: 'bg-white text-slate-900',
+    dark: 'bg-[#0F172A] text-slate-50',
+    emerald: 'bg-[#10B981] text-white',
   };
 
   return (
     <section 
       id={id}
       className={clsx(
-        'w-full py-20 px-6 md:px-12 lg:px-24 flex justify-center',
+        'w-full py-20 md:py-24 px-6 md:px-12 lg:px-24 xl:px-32 flex justify-center transition-colors duration-500 relative',
         bgColors[variant],
         className
       )}
     >
-      <div className="max-w-4xl w-full">
+      <div className="max-w-screen-xl w-full">
         {children}
       </div>
     </section>
@@ -34,8 +33,9 @@ export const Section: React.FC<SectionProps> = ({ id, className, children, varia
 };
 
 interface TextBlockProps {
-  title?: string;
-  subtitle?: string;
+  eyebrow?: string;
+  title?: React.ReactNode;
+  subtitle?: React.ReactNode;
   children: React.ReactNode;
   className?: string;
   align?: 'left' | 'center';
@@ -43,6 +43,7 @@ interface TextBlockProps {
 }
 
 export const TextBlock: React.FC<TextBlockProps> = ({ 
+  eyebrow,
   title, 
   subtitle, 
   children, 
@@ -54,50 +55,45 @@ export const TextBlock: React.FC<TextBlockProps> = ({
   
   return (
     <div className={clsx(
-      'flex flex-col gap-4 mb-12', 
+      'flex flex-col gap-6 mb-16', 
       align === 'center' ? 'items-center text-center' : 'items-start text-left',
       className
     )}>
+      {eyebrow && (
+        <div className="flex items-center gap-2 mb-4">
+          <span className="px-3 py-1 bg-transparent text-slate-900 rounded-[2px] text-[11px] font-bold tracking-[0.2em] uppercase border border-slate-200">
+            {eyebrow}
+          </span>
+        </div>
+      )}
       {title && (
-        <motion.h2 
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+        <h2 
           className={clsx(
-            "text-3xl md:text-4xl font-semibold tracking-tight",
-            isDark ? "text-gray-900" : "text-white"
+            "text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1]",
+            isDark ? "text-slate-900" : "text-white"
           )}
         >
           {title}
-        </motion.h2>
+        </h2>
       )}
       {subtitle && (
-        <motion.h3 
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+        <h3 
           className={clsx(
-            "text-xl md:text-2xl font-medium",
-            isDark ? "text-[#5C6AC4]" : "text-emerald-200"
+            "text-2xl md:text-3xl font-light tracking-tight leading-snug",
+            isDark ? "text-slate-500" : "text-slate-300"
           )}
         >
           {subtitle}
-        </motion.h3>
+        </h3>
       )}
-      <motion.div 
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+      <div 
         className={clsx(
-          "text-lg leading-relaxed max-w-2xl",
-          isDark ? "text-gray-600" : "text-gray-300"
+          "text-lg leading-relaxed max-w-3xl font-light",
+          isDark ? "text-slate-600" : "text-slate-300"
         )}
       >
         {children}
-      </motion.div>
+      </div>
     </div>
   );
 };

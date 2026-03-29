@@ -1,51 +1,60 @@
 import React from 'react';
 import { Section, TextBlock } from '../Section';
-import { motion } from 'motion/react';
-import { Check, X, Shield, Zap, Wind } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 
-const BoundaryCard = ({ title, icon: Icon, type, delay }: { title: string, icon: any, type: 'allow' | 'avoid', delay: number }) => (
-  <motion.div 
-    className={`p-6 rounded-xl border ${type === 'allow' ? 'bg-emerald-50 border-emerald-100' : 'bg-red-50 border-red-100'} flex items-center gap-4`}
-    initial={{ opacity: 0, x: type === 'allow' ? 20 : -20 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ delay, duration: 0.5 }}
-    viewport={{ once: true }}
+const BoundaryPair = ({ allowText, avoidText, delay }: { allowText: string, avoidText: string, delay: number }) => (
+  <div 
+    className="flex flex-col md:flex-row gap-6 w-full"
   >
-    <div className={`p-2 rounded-full ${type === 'allow' ? 'bg-emerald-100 text-emerald-600' : 'bg-red-100 text-red-600'}`}>
-      <Icon size={20} />
+    <div className="flex-1 p-8 rounded-[2px] bg-transparent border border-slate-900 flex items-start gap-6">
+      <div className="mt-1 w-6 h-6 rounded-[2px] border border-slate-900 text-slate-900 flex items-center justify-center flex-shrink-0">
+        <Check size={14} strokeWidth={2.5} />
+      </div>
+      <span className="text-[17px] font-medium text-slate-900 leading-relaxed">
+        {allowText}
+      </span>
     </div>
-    <span className={`font-medium ${type === 'allow' ? 'text-emerald-800' : 'text-red-800'}`}>
-      {title}
-    </span>
-  </motion.div>
+    
+    <div className="hidden md:flex items-center text-slate-300">
+        <span className="tracking-[0.5em]">···</span>
+    </div>
+
+    <div className="flex-1 p-8 rounded-[2px] bg-transparent border border-slate-200 flex items-start gap-6">
+      <div className="mt-1 w-6 h-6 rounded-[2px] border border-slate-300 text-slate-400 flex items-center justify-center flex-shrink-0">
+        <X size={14} strokeWidth={2.5} />
+      </div>
+      <span className="text-[17px] text-slate-500 leading-relaxed font-light">
+        {avoidText}
+      </span>
+    </div>
+  </div>
 );
 
 export const DesignBoundarySection: React.FC = () => {
   return (
-    <Section variant="base" className="py-24">
-      <div className="flex flex-col gap-12">
+    <Section variant="alt" className="py-20 md:py-24">
+      <div className="flex flex-col gap-16">
         <TextBlock 
-          title="Defining the Intervention" 
-          subtitle="The goal was not to slow down UPI, but to restore the passive control we lost."
+          eyebrow="04 — Defining the Intervention"
+          title="Restore the checkpoint. Don't rebuild the friction." 
+          subtitle=""
         >
-          <p className="mb-4">
-            Cash gave us control through physical friction. UPI removed that friction.
-            To fix the "insufficient balance" problem, we shouldn't add the friction back.
-          </p>
-          <p>
-            Instead, we need to design a <strong>digital equivalent of the empty wallet feeling</strong>—a passive signal that informs without interrupting.
+          <p className="text-slate-500 font-light text-[17px] leading-relaxed max-w-3xl">
+            The goal is not to add friction or recreate what physical currency did manually. It's to put the post-payment check back into the confirmation flow — quietly, voluntarily, without getting in the way of people who don't need it. We must solve for awareness, but protect for privacy.
           </p>
         </TextBlock>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <BoundaryCard title="Restore passive awareness" icon={Zap} type="allow" delay={0.2} />
-          <BoundaryCard title="Reintroduce active friction" icon={X} type="avoid" delay={0.3} />
-          
-          <BoundaryCard title="Respect existing habits" icon={Shield} type="allow" delay={0.4} />
-          <BoundaryCard title="Force balance checks" icon={X} type="avoid" delay={0.5} />
-          
-          <BoundaryCard title="Prevent 'Insufficient Balance'" icon={Check} type="allow" delay={0.6} />
-          <BoundaryCard title="Induce spending guilt" icon={X} type="avoid" delay={0.7} />
+        <div className="flex flex-col gap-6">
+          <BoundaryPair 
+            allowText="Restore the reflection moment within the confirmation screen, maintaining zero extra navigation." 
+            avoidText="Add mandatory steps before the flow is complete or route the user away from the success screen." 
+            delay={0} 
+          />
+          <BoundaryPair 
+            allowText="Make the balance check voluntary and user-initiated, keeping sensitive data hidden until requested." 
+            avoidText="Auto-display the balance or force-feed financial information, introducing major privacy risks." 
+            delay={0.1} 
+          />
         </div>
       </div>
     </Section>

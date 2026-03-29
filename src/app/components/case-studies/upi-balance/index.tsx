@@ -1,13 +1,6 @@
 // src/app/components/case-studies/upi-balance/index.tsx
-// 
-// CASE STUDY PAGE — UPI Balance Visibility
-// Replace this file's contents with your exported Figma Make case study component.
-// The component must have a default export.
-// Root.tsx wraps this automatically with: Cursor, Header, NoiseOverlay, CursorProvider.
-// You do NOT need to import or re-add those in your case study.
-//
-// SCROLL NOTE: Root.tsx uses snap-y snap-mandatory. Add className="snap-none" to your
-// outermost div to allow free scrolling within the case study.
+// UPI Balance Visibility — Case Study
+// Full-width layout, no outer padding restrictors.
 
 import { Link } from "react-router";
 import { ArrowLeft } from "lucide-react";
@@ -23,24 +16,28 @@ import { ExploringDirectionsSection } from './sections/ExploringDirectionsSectio
 import { TechnicalFeasibilitySection } from './sections/TechnicalFeasibilitySection';
 import { FinalInterventionSection } from './sections/FinalInterventionSection';
 import { FlowComparisonSection } from './sections/FlowComparisonSection';
+import { PrototypeValidationSection } from './sections/PrototypeValidationSection';
 import { MeasuringImpactSection } from './sections/MeasuringImpactSection';
 import { ReflectionSection } from './sections/ReflectionSection';
 
 export default function UPICaseStudy() {
   return (
-    <div className="snap-none min-h-screen bg-stone-50 px-6 md:px-12 py-32">
+    // snap-none overrides the Home page snap-y snap-mandatory from Root.tsx
+    // so the case study scrolls freely
+    <div className="snap-none w-full bg-[#F8FAFC] min-h-screen relative">
+
+      {/* Floating back button — top-left, above all content */}
       <Link
         to="/"
-        className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-stone-400 hover:text-stone-900 transition-colors mb-16 group"
+        className="fixed top-6 left-6 z-50 inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors group bg-white/80 backdrop-blur-sm border border-slate-200 px-3 py-2 rounded-full shadow-sm"
       >
         <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
-        Back to Home
+        Portfolio
       </Link>
-      <h1 className="text-5xl font-display font-medium text-stone-900 tracking-tight">
-        UPI Balance Visibility
-      </h1>
+
       <GrainOverlay />
-      <main className="relative z-10 flex flex-col mt-16">
+
+      <main className="relative z-10 flex flex-col w-full">
         <HeroSection />
         <ThoughtExperimentSection />
         <CashVsUpiSection />
@@ -51,11 +48,13 @@ export default function UPICaseStudy() {
         <TechnicalFeasibilitySection />
         <FinalInterventionSection />
         <FlowComparisonSection />
+        <PrototypeValidationSection />
         <MeasuringImpactSection />
         <ReflectionSection />
       </main>
-      <footer className="py-12 bg-[#EEF2F7] text-center text-gray-400 text-sm relative z-10">
-        <p>© 2024 Nikhil Manoj. UPI Balance Visibility — UX Case Study.</p>
+
+      <footer className="py-12 bg-[#0F172A] text-center text-slate-500 text-sm relative z-10">
+        <p>© 2026 · The Missing Checkpoint · A speculative UX study by Nikhil Manoj</p>
       </footer>
     </div>
   );
