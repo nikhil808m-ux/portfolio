@@ -3,7 +3,7 @@
 This document provides a comprehensive overview of the design system, technical architecture, and recent evolution of the Nikhil Manoj Portfolio website for future AI context.
 
 ## 1. Project Identity
-- **Goal:** A high-end, high-performance personal portfolio for a UX Designer & Full-stack Developer.
+- **Goal:** A high-end, high-performance personal portfolio for a Product Designer with skills in UI, UX, and coding.
 - **Tone:** Minimal, technical, premium, tactile (using grain/noise textures), and motion-heavy.
 - **Domain:** `nikhilmanoj.me`
 - **Deployment:** Vercel (auto-deploys from `main` branch).
