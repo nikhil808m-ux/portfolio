@@ -4,6 +4,11 @@ This document provides a comprehensive overview of the design system, technical 
 
 ## 1. Project Identity
 - **Goal:** A high-end, high-performance personal portfolio for a Product Designer with skills in UI, UX, and coding.
+- **Typography:**
+  - `Inter` (Sans-serif) for body copy.
+  - `Space Grotesk` (Display) for headings.
+  - `JetBrains Mono` for technical/labels.
+  - `IBM Plex Mono` & `IBM Plex Sans` (specifically for the Local AI case study).
 - **Tone:** Minimal, technical, premium, tactile (using grain/noise textures), and motion-heavy.
 - **Domain:** `nikhilmanoj.me`
 - **Deployment:** Vercel (auto-deploys from `main` branch).
