@@ -133,8 +133,8 @@ export function Header({ scrollContainerId }: HeaderProps) {
       <div className="hidden md:flex gap-8 text-xs font-mono tracking-widest uppercase z-10">
         {['Work', 'About', 'Contact'].map((item) => (
           <Magnetic key={item} strength={0.3}>
-            <a
-              href={`#${item.toLowerCase()}`}
+            <Link
+              to={`/#${item.toLowerCase()}`}
               onMouseEnter={() => setCursorType('menu-item')}
               onMouseLeave={() => setCursorType('default')}
               className="hover:text-stone-600 transition-colors interactive relative group cursor-none font-medium text-stone-500 block px-2 py-1"
@@ -143,7 +143,7 @@ export function Header({ scrollContainerId }: HeaderProps) {
                 {'//'} {item}
               </span>
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-stone-900 group-hover:w-full transition-all duration-300" />
-            </a>
+            </Link>
           </Magnetic>
         ))}
       </div>
