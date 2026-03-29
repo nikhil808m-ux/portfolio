@@ -24,12 +24,12 @@ export const projects: Project[] = [
   },
   {
     slug: "localai-manager",
-    title: "LocalAI Manager",
-    category: "Desktop App \u2022 Visual Design",
-    description: "Making powerful AI tools accessible to non-technical creatives. Transforming complex terminal commands into a friendly, drag-and-drop interface.",
-    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1080&auto=format&fit=crop",
+    title: "local/ai",
+    category: "Mobile App \u2022 Product Design",
+    description: "A privacy-first AI chat app that runs entirely on-device. No accounts, no cloud, just your thoughts staying where they belong.",
+    imageUrl: "/case-study/localai-manager/b6f2dd4b5e84f60e05686ff034f11c912be0fe01.png",
     year: "2024",
-    tags: ["Product Design", "Visual Systems", "Accessibility"],
+    tags: ["Product Design", "UI UX", "AI"],
     status: "published"
   },
   {
