@@ -8,6 +8,7 @@ const UPIBalancePage = lazy(() => import("./components/case-studies/upi-balance/
 const LocalAIManagerPage = lazy(() => import("./components/case-studies/localai-manager/index"));
 const NirmaanFinancialPage = lazy(() => import("./components/case-studies/nirmaan-financial/index"));
 const FluxKeyConsolePage = lazy(() => import("./components/case-studies/fluxkey-console/index"));
+const AboutPage = lazy(() => import("./components/AboutPage"));
 
 // Fallback component (could be replaced with a skeleton later)
 const PageLoader = () => (
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
     Component: Root,
     children: [
       { index: true, Component: Home },
+      {
+        path: "about",
+        element: <SuspenseWrapper><AboutPage /></SuspenseWrapper>
+      },
       {
         path: "case-studies/upi-balance",
         element: <SuspenseWrapper><UPIBalancePage /></SuspenseWrapper>

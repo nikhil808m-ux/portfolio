@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Palette, Braces, ChevronRight } from 'lucide-react';
 import { useCursor } from '../context/CursorContext';
+import { Link } from 'react-router';
 
 export function AboutSection() {
   const { setCursorType } = useCursor();
@@ -74,10 +75,11 @@ export function AboutSection() {
           style={{ willChange: "transform, opacity" }}
           className="flex justify-center"
         >
-          <a href="#" className="group interactive inline-flex items-center gap-4 px-8 py-4 rounded-full border border-stone-300 hover:border-stone-900 hover:bg-white transition-all duration-300 bg-stone-50/50">
+          {/* Note: I will update this link next to point to the new /about route */}
+          <Link to="/about" className="group interactive inline-flex items-center gap-4 px-8 py-4 rounded-full border border-stone-300 hover:border-stone-900 hover:bg-white transition-all duration-300 bg-stone-50/50">
             <span className="font-sans text-sm tracking-wide text-stone-600 group-hover:text-stone-900 font-medium">About Me</span>
             <ChevronRight className="w-4 h-4 text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
         </motion.div>
 
       </div>
