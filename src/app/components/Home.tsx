@@ -65,12 +65,12 @@ export function Home() {
                 Selected Works
               </span>
               <h2 className="text-5xl md:text-7xl font-medium tracking-tight text-stone-900 font-display">
-                Crafting <span className="text-stone-400 italic font-serif">Clarity.</span>
+                Designing for <span className="text-stone-400 italic font-serif">clarity.</span>
               </h2>
             </div>
             <div className="hidden md:block text-right pb-2">
-              <p className="text-stone-500 max-w-xs text-sm font-sans leading-relaxed text-right">
-                A collection of projects focusing on user needs, visual storytelling, and measurable impact.
+              <p className="text-stone-500 max-w-xs text-sm font-sans leading-relaxed text-right ml-auto">
+                A selection of projects focused on real problems and thoughtful interactions.
               </p>
             </div>
           </motion.div>

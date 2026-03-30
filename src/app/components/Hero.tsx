@@ -74,7 +74,8 @@ export function Hero() {
               transition={{ ...revealTransition, delay: 0.5 }}
               className="text-xl md:text-2xl text-stone-600 font-light leading-relaxed"
             >
-              I craft <span className="text-stone-900 font-medium">intuitive interfaces</span> that simplify complexity. Bringing <span className="text-stone-800 font-serif italic">joy</span> back to digital interactions.
+              I design <span className="text-stone-900 font-medium">interfaces</span> that simplify complexity.<br />
+              Making digital interactions feel <span className="text-stone-800 font-serif italic">clear and natural</span>.
             </motion.p>
 
             <motion.div

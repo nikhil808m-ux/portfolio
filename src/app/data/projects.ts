@@ -14,12 +14,12 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "upi-balance",
-    title: "UPI Balance Visibility",
-    category: "Fintech \u2022 UX Case Study",
-    description: "Reducing transaction anxiety by integrating balance visibility directly into the 'Payment Successful' screen. A simple fix for a massive user pain point.",
+    title: "The Lost Reflection",
+    category: "Fintech • Behavioral UX",
+    description: "Reducing transaction anxiety by adding balance visibility to the ‘Payment Successful’ screen. A simple intervention for a common but overlooked problem.",
     imageUrl: "https://images.unsplash.com/photo-1726137065519-c9a1b9eca951?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBwYXltZW50JTIwYXBwJTIwaW50ZXJmYWNlJTIwZmludGVjaHxlbnwxfHx8fDE3NzIzMDcyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     year: "2024",
-    tags: ["Behavioral Design", "Micro-interactions", "User Research"],
+    tags: ["Behavioral UX", "Interaction Design"],
     status: "published"
   },
   {
