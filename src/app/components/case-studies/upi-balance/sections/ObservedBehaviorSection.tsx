@@ -45,9 +45,13 @@ export const ObservedBehaviorSection: React.FC = () => {
           subtitle=""
         >
           <p className="mb-4 text-slate-500 font-light text-[17px] leading-relaxed">
-            Observations from 28 people, all performing 15 or more digital transactions a day. Three questions: when did you last check your balance after a payment — not before, after? Has a transaction ever failed because of insufficient balance? When you regularly used physical currency, did you have a sense of what was left?
+            I spoke to people who use UPI multiple times a day.<br /><br />
+            Most don’t check their balance after a payment.<br /><br />
+            Not because they don’t care. It just takes effort.<br /><br />
+            You have to leave the screen, navigate elsewhere, and authenticate again.<br /><br />
+            For a small payment, most people don’t bother.<br /><br />
+            The balance is there. Just not where you need it.
           </p>
-          <p className="text-[13px] text-slate-400 font-light italic tracking-wide">Qualitative and observational — not statistically validated.</p>
         </TextBlock>
 
         {/* Stat grid */}
@@ -108,7 +112,7 @@ export const ObservedBehaviorSection: React.FC = () => {
         <div
           className="bg-transparent rounded-[2px] border border-slate-200 p-10 md:p-16 relative overflow-hidden"
         >
-          <div 
+          <div
             className="absolute top-0 left-0 w-1 h-full bg-slate-900"
             style={{ transform: 'translateZ(0)' }}
           />
@@ -117,7 +121,7 @@ export const ObservedBehaviorSection: React.FC = () => {
               <span className="px-3 py-1 bg-transparent text-slate-900 rounded-[2px] text-[11px] font-bold tracking-[0.2em] uppercase border border-slate-200">Key Insight</span>
             </div>
             <h3 className="text-3xl md:text-4xl text-slate-900 font-light mb-6 leading-tight tracking-tight">
-              The issue isn't awareness. <br/>It's the cognitive cost of accessing it.
+              The issue isn't awareness. <br />It's the cognitive cost of accessing it.
             </h3>
             <p className="text-slate-600 text-lg font-light leading-relaxed max-w-3xl">
               The balance is available in the app. Anyone can go look for it. But looking means leaving the confirmation screen, navigating to another view, and re-authenticating — enough friction that most people simply don't bother after an everyday payment. The problem isn't that people stopped caring. It's that caring became too inconvenient.

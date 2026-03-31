@@ -13,17 +13,20 @@ export const ThoughtExperimentSection: React.FC = () => {
               The Premise
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight leading-[1.1]">
             The Thought That Clarified It
           </h2>
-          
+
           <div className="prose prose-lg text-slate-500 font-light leading-relaxed">
             <p className="mb-6">
-              To make the core problem clearer, I looked at the mechanics of a simple cash transaction.
+              To make this clearer, think about a simple cash transaction.
             </p>
             <p>
-              You hand over a ₹500 note for a ₹150 coffee. The cashier counts out and hands you back ₹350. In that brief, physical exchange of receiving change, something crucial happens in the background.
+              You hand over a ₹500 note for something that costs ₹150. The cashier counts and gives you ₹350 back.
+            </p>
+            <p className="mt-6">
+              In that moment, without trying, you know what’s left.
             </p>
           </div>
         </div>
@@ -33,7 +36,7 @@ export const ThoughtExperimentSection: React.FC = () => {
             className="mb-10"
           >
             <p className="text-xl md:text-2xl font-light text-slate-600 leading-relaxed mb-8">
-              As you receive the physical notes, your brain instinctively registers the new total. You do the math. You mentally recalibrate exactly what is left in your possession. The medium forces you to acknowledge the remainder.
+              You don’t calculate it step by step. It just clicks.
             </p>
           </div>
 
@@ -41,7 +44,7 @@ export const ThoughtExperimentSection: React.FC = () => {
             className="bg-slate-50 p-8 border border-slate-200"
           >
             <p className="text-lg text-slate-900 font-medium leading-relaxed">
-              With UPI, the payment is confirmed instantly, but the change is invisible. A green tick shows the money left, but you are never forced to calculate what remains. <span className="text-blue-600">The cognitive pause—the mental adjustment of your balance—has been engineered out entirely.</span>
+              With UPI, the payment is confirmed instantly, but nothing replaces that moment. You see the green tick, but you don’t really register what remains. <span className="text-blue-600">That small pause, where your balance updated in your head, is simply gone.</span>
             </p>
           </div>
         </div>

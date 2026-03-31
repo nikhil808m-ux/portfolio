@@ -6,7 +6,7 @@ export const HeroSection: React.FC = () => {
   return (
     <Section className="min-h-screen flex items-center pt-32 pb-24 relative overflow-hidden bg-[#F8FAFC]">
       {/* Strict Grid Background - Replaced AI Blurs */}
-      <div 
+      <div
         className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none"
         style={{
           backgroundImage: 'linear-gradient(to right, #0F172A 1px, transparent 1px), linear-gradient(to bottom, #0F172A 1px, transparent 1px)',
@@ -25,33 +25,36 @@ export const HeroSection: React.FC = () => {
               <span className="w-1 h-1 bg-slate-300 rounded-none"></span>
               <span className="text-slate-400 text-[10px] font-mono tracking-widest uppercase">2026</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl lg:text-[80px] font-bold tracking-tighter text-slate-900 leading-[0.95] mb-8 font-sans">
-              The Lost <br/>
+              The Lost <br />
               <span className="text-indigo-600">Reflection.</span>
             </h1>
-            
+
             <h2 className="text-2xl md:text-[28px] font-light text-slate-500 mb-8 leading-snug max-w-lg tracking-tight">
-              How digital payments inadvertently erased the <span className="text-slate-900 font-medium">natural pause</span> for mental math.
+              How digital payments removed a <span className="text-slate-900 font-medium">small but important</span> moment.
             </h2>
           </div>
 
           <div className="prose prose-lg text-slate-600 leading-relaxed font-light">
             <p className="mb-6">
-              When we paid with physical currency, we always had an intuitive sense of our balance. Handing over notes and receiving change forced an automatic, unconscious calculation. That ritual is gone. Modern interfaces offer seamless speed, but they left behind the friction that kept us grounded.
+              When you paid with cash, you always had a rough sense of what was left. You handed over a note, got some change back, and without really thinking about it, your brain updated the number.<br /><br />
+              You didn’t try to calculate it. It just happened.<br /><br />
+              With UPI, the payment goes through instantly. You see the green tick, and you move on.<br /><br />
+              That moment never happens anymore.
             </p>
             <p className="border-l-[3px] border-indigo-600 pl-6 py-1 italic text-slate-500 font-serif text-xl tracking-tight">
-              "Every cash transaction ended with a quiet recalibration. Every digital payment ends with a green tick and nothing else."
+              "With cash, you always knew what was left. With UPI, you just know the payment went through."
             </p>
           </div>
-          
+
           <div className="flex gap-10 mt-6 pt-8 border-t border-slate-200 flex-wrap">
             <div className="flex flex-col gap-1 text-sm">
-              <span className="font-bold text-slate-900 tracking-widest uppercase text-[10px]">Domain</span> 
+              <span className="font-bold text-slate-900 tracking-widest uppercase text-[10px]">Domain</span>
               <span className="text-slate-500 font-light">Behavioral UX</span>
             </div>
             <div className="flex flex-col gap-1 text-sm">
-              <span className="font-bold text-slate-900 tracking-widest uppercase text-[10px]">Focus</span> 
+              <span className="font-bold text-slate-900 tracking-widest uppercase text-[10px]">Focus</span>
               <span className="text-slate-500 font-light">Post-Payment Cognition</span>
             </div>
           </div>
