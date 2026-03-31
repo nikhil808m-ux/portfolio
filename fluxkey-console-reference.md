@@ -1,15 +1,12 @@
 # FluxKey Console Case Study Reference
 
-*This is an automatically generated structure of the text, headings, and images used in the case study.*
+*Detailed metadata: typography, bounding boxes, and screen placement.*
 
 
 ---
-### File: `src\app\components\case-studies\fluxkey-console\index.tsx`
+## File: `src\app\components\case-studies\fluxkey-console\index.tsx`
 ---
 
-
-## FluxKey Console
-
-This case study is currently being documented. Please check back later.
-
-- This case study is currently being documented. Please check back later.
+- FluxKey Console This case study is currently being documented. Please check back later.
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `snap-none w-full bg-[#F8FAFC] min-h-screen relative flex flex-col`

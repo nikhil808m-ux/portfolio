@@ -1,369 +1,303 @@
 # UPI Balance Visibility Case Study Reference
 
-*This is an automatically generated structure of the text, headings, and images used in the case study.*
+*Detailed metadata: typography, bounding boxes, and screen placement.*
 
 
 ---
-### File: `src\app\components\case-studies\upi-balance\illustrations\CheckpointsIllustration.tsx`
+## File: `src\app\components\case-studies\upi-balance\illustrations\CheckpointsIllustration.tsx`
+---
+
+- {showCheckpoint && ( {showCheckpoint} )} {title} {description}
+  - **Tag**: `motion.div`
+  - **Font/Style/Layout**: `relative flex flex-col items-center z-10 w-1/3`
+- {/* Cash Flow */} Physical Cash Experience {/* Flow Arrows */} {/* Solid Line Background */}
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `w-full max-w-4xl mx-auto py-8 flex flex-col gap-12`
+- Digital Experience {/* Flow Arrows */} {/* Line Background */}
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `relative p-10 md:p-12 bg-white rounded-[2px] border border-slate-300 overflow-hidden`
+
+---
+## File: `src\app\components\case-studies\upi-balance\illustrations\ConstraintsIllustration.tsx`
+---
+
+- {/* Background Grid Pattern */} {/* 1. Payment Flow Path (Straight) */} {/* 2. Balance Check Path (Curved Top) */} {/* Static Payment Indicator */} {/* Static Balance Indicator */} {/* Nodes positioned to avoid overlap */} {/* Middle Node - Slightly offset to show complexity */} {/* Legend / Caption */} Payment
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `w-full h-[360px] relative bg-white rounded-[24px] border border-gray-200 shadow-sm mt-8 overflow-visible`
+📦 **Structural Box**: `div` | `flex items-center gap-2 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full border border-gray-200 shadow-sm`
+
+---
+## File: `src\app\components\case-studies\upi-balance\illustrations\FinalInterventionIllustration.tsx`
+---
+
+- {/* Status Bar */} 9:41
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `flex flex-col items-center justify-center py-6 w-full font-sans`
+📦 **Structural Box**: `div` | `flex flex-col items-center pt-[80px] px-6 h-full relative z-0 bg-white`
+📦 **Structural Box**: `div` | `absolute top-[60px] left-6`
+- ₹ 250
+  - **Tag**: `motion.div`
+  - **Font/Style/Layout**: `flex items-start justify-center text-[#202124] mb-3`
+- Paid to Coffee Shop merchant@upi
+  - **Tag**: `motion.div`
+  - **Font/Style/Layout**: `flex flex-col items-center text-center mb-10`
+- Feb 28, 2026 09:41 AM UPI transaction ID: 230821123456
+  - **Tag**: `motion.div`
+  - **Font/Style/Layout**: `w-full mb-auto flex flex-col items-center`
+- setShowBalance(true)} className="flex-[1.2] py-3.5 px-4 bg-white border border-[#DADCE0] text-[#1A73E8] rounded-full font-medium flex items-center justify-center hover:bg-[#F1F3F4] transition-colors" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 1.2, duration: 0.3 }} > View balance Done
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `flex flex-col w-full gap-4 mb-8`
+- Powered by UPI
+  - **Tag**: `motion.div`
+  - **Font/Style/Layout**: `flex items-center justify-center gap-2 text-[12px] text-[#5F6368] mt-4`
+📦 **Structural Box**: `div` | `absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-slate-900 rounded-full opacity-20`
+
+---
+## File: `src\app\components\case-studies\upi-balance\illustrations\FlowComparisonIllustration.tsx`
+---
+
+📦 **Structural Box**: `div` | `flex items-center`
+📦 **Structural Box**: `div` | `flex flex-col gap-4`
+- 
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `flex flex-col gap-8 w-full max-w-4xl mx-auto py-8 font-sans`
+
+---
+## File: `src\app\components\case-studies\upi-balance\illustrations\HeroIllustration.tsx`
+---
+
+- {/* Strict Grid Background - Maintained from the new style */} {/* Main Composition - Restored Hardware Accelerated Phone Silhouette */} {/* Phone Body */} {/* Success Stamp Circle */} {/* Checkmark SVG inside the hardware accelerated div */} {/* Floating UI Elements */} {/* Animated Confetti Burst */} {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => { const colors = ['bg-indigo-400', 'bg-emerald-400', 'bg-amber-400']; // Pre-calculate positions to avoid inline layout thrashing const radian = (angle * Math.PI) / 180; const startX = 0; const startY = 0; const endX = Math.cos(radian) * 80; const endY = Math.sin(radian) * 80; return ( ); })}
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `relative w-full h-[500px] lg:h-[600px] flex items-center justify-center mb-16`
+- Fig. 1 / Friction Loss The green tick. And then — nothing.
+  - **Tag**: `motion.div`
+  - **Font/Style/Layout**: `absolute bottom-4 right-4 md:bottom-8 md:right-8 bg-white border border-slate-200 px-4 py-3 max-w-[260px] shadow-sm z-20`
+
+---
+## File: `src\app\components\case-studies\upi-balance\illustrations\ThoughtExperimentIllustration.tsx`
+---
+
+- {/* Cash side */} {/* Stack of notes */} {[...Array(5)].map((_, i) => ( 500 ))} 500
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `w-full max-w-2xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 py-12`
+📦 **Structural Box**: `div` | `h-px w-12 bg-gray-200 md:w-px md:h-12 hidden md:block shrink-0`
+📦 **Structural Box**: `div` | `flex flex-col items-center justify-center h-full gap-3 pt-4`
+
+---
+## File: `src\app\components\case-studies\upi-balance\index.tsx`
+---
+
+📦 **Structural Box**: `div` | `snap-none w-full bg-[#F8FAFC] min-h-screen relative`
+
+---
+## File: `src\app\components\case-studies\upi-balance\Section.tsx`
 ---
 
 
-## {title}
+### {title}
+   - **Tag**: `h2`
+   - **Font/Placement Styles**: ``
 
-{description}
-
-
-## Physical Cash Experience
-
-- Physical Cash Experience
-
-## Digital Experience
-
+### {subtitle}
+   - **Tag**: `h3`
+   - **Font/Placement Styles**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\illustrations\FinalInterventionIllustration.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\CashVsUpiSection.tsx`
 ---
 
-- Feb 28, 2026 09:41 AM
-- UPI transaction ID: 230821123456
+📦 **Structural Box**: `div` | `flex items-center gap-2 mb-6`
 
-## Account balance
-
-₹9,750.00
-
-- State Bank of India •••• 1234
+### {headline}
+   - **Tag**: `h3`
+   - **Font/Placement Styles**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\illustrations\FlowComparisonIllustration.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\DesignBoundarySection.tsx`
 ---
 
-
-## {title}
-
-
----
-### File: `src\app\components\case-studies\upi-balance\illustrations\HeroIllustration.tsx`
----
-
-Fig. 1 / Friction Loss
-
-The green tick. And then — nothing.
-
-
----
-### File: `src\app\components\case-studies\upi-balance\Section.tsx`
----
-
-
-## {title}
-
-
-## {subtitle}
-
+📦 **Structural Box**: `div` | `flex flex-col md:flex-row gap-6 w-full`
+- {allowText}
+  - **Tag**: `span`
+  - **Font/Style/Layout**: `text-[17px] font-medium text-slate-900 leading-relaxed`
+- ···
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `hidden md:flex items-center text-slate-300`
+📦 **Structural Box**: `div` | `flex-1 p-8 rounded-[2px] bg-transparent border border-slate-200 flex items-start gap-6`
+- {avoidText}
+  - **Tag**: `span`
+  - **Font/Style/Layout**: `text-[17px] text-slate-500 leading-relaxed font-light`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\CashVsUpiSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\ExploringDirectionsSection.tsx`
 ---
 
-
-## {headline}
-
-With physical currency, the payment and the recalibration happened together. You saw the notes leave. You felt the change returning. By the time the transaction was done, you already had a rough number in your head. You didn't choose to do that math. The physical act did it for you.
-
-- With physical currency, the payment and the recalibration happened together. You saw the notes leave. You felt the change returning. By the time the transaction was done, you already had a rough number in your head. You didn't choose to do that math. The physical act did it for you.
-Want to check your balance after paying? Here's what that actually takes:
-
-- Want to check your balance after paying? Here's what that actually takes:
-{step}
-
-Five steps. By which point most people have moved on entirely.
-
-- Five steps. By which point most people have moved on entirely.
-
-## Cash inherently provided a sense of balance. That awareness didn't disappear because people stopped caring—it disappeared because UPI gave it nowhere to happen.
-
-- Cash inherently provided a sense of balance. That awareness didn't disappear because people stopped caring—it disappeared because UPI gave it nowhere to happen.
+📦 **Structural Box**: `div` | `flex gap-6 items-start group cursor-pointer`
+📦 **Structural Box**: `div` | `flex-1 p-5 flex flex-col items-center`
+📦 **Structural Box**: `div` | `w-full mt-auto mb-6 p-4 bg-transparent border border-slate-200 rounded-[2px] flex flex-col items-center gap-1.5`
+📦 **Structural Box**: `div` | `mt-auto mb-6 w-full p-3 border border-slate-200 bg-transparent rounded-[2px] flex items-center justify-center gap-2`
+- 
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `absolute top-4 right-4 w-6 h-6 bg-slate-900 rounded-[2px] flex items-center justify-center text-white`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\CheckpointsSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\HeroSection.tsx`
 ---
 
-- Physical currency had two.
-Talking to 28 high-frequency digital payment users made one thing undeniably clear. Around every transaction, there are two natural moments of financial awareness — one before, one after. Physical currency naturally supported both. Modern interfaces only carried one of them across.
-
-- Talking to 28 high-frequency digital payment users made one thing undeniably clear. Around every transaction, there are two natural moments of financial awareness — one before, one after. Physical currency naturally supported both. Modern interfaces only carried one of them across.
-
----
-### File: `src\app\components\case-studies\upi-balance\sections\DesignBoundarySection.tsx`
----
-
-The goal is not to add friction or recreate what physical currency did manually. It's to put the post-payment check back into the confirmation flow — quietly, voluntarily, without getting in the way of people who don't need it. We must solve for awareness, but protect for privacy.
-
-- The goal is not to add friction or recreate what physical currency did manually. It's to put the post-payment check back into the confirmation flow — quietly, voluntarily, without getting in the way of people who don't need it. We must solve for awareness, but protect for privacy.
+- {/* Strict Grid Background - Replaced AI Blurs */} UX Case Study 2026 The Lost Reflection. How digital payments inadvertently erased the natural pause for mental math. When we paid with physical currency, we always had an intuitive sense of our balance. Handing over notes and receiving change forced an automatic, unconscious calculation. That ritual is gone. Modern interfaces offer seamless speed, but they left behind the friction that kept us grounded. "Every cash transaction ended with a quiet recalibration. Every digital payment ends with a green tick and nothing else." Domain Behavioral UX Focus Post-Payment Cognition
+  - **Tag**: `Section`
+  - **Font/Style/Layout**: `min-h-screen flex items-center pt-32 pb-24 relative overflow-hidden bg-[#F8FAFC]`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\ExploringDirectionsSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\MeasuringImpactSection.tsx`
 ---
 
-
-## {title}
-
-{desc}
-
-- You've spent ₹1,200 today
-Before looking for solutions, I spent time with the existing Payment Successful screen. What is it actually designed to do? Get you out. Efficiently. It is a very well-designed dead end.
-
-- Before looking for solutions, I spent time with the existing Payment Successful screen. What is it actually designed to do? Get you out. Efficiently. It is a very well-designed dead end.
-Figure 01 — The Dead End
-
-- Figure 01 — The Dead End
-
-## Four directions explored
-
-- Four directions explored
-The constraint was clear: bring the recalibration moment back without slowing the transaction down, exposing balance by default, or adding a mandatory step. These four directions were explored in order. The first was ruled out by architecture. The next two by UX problems. That left one.
-
-- The constraint was clear: bring the recalibration moment back without slowing the transaction down, exposing balance by default, or adding a mandatory step. These four directions were explored in order. The first was ruled out by architecture. The next two by UX problems. That left one.
-
-## Concept 1: Auto-Display
-
-- Concept 1: Auto-Display
-Simplest on the surface. Show the balance as soon as the payment confirms.
-
-- Simplest on the surface. Show the balance as soon as the payment confirms.
-
-## Concept 2: Voluntary Chip
-
-- Concept 2: Voluntary Chip
-An optional "View Balance" chip. User-initiated, stays firmly within context.
-
-- An optional "View Balance" chip. User-initiated, stays firmly within context.
-- Zero extra navigation
-
-## Concept 3: Masked Row
-
-- Concept 3: Masked Row
-Balance present but masked. Tap the row to reveal it.
-
-- Balance present but masked. Tap the row to reveal it.
-- Interaction confusion
-
-## Concept 4: Contextual Nudge
-
-- Concept 4: Contextual Nudge
-A smart nudge: once spending crosses a threshold, show an alert.
-
-- A smart nudge: once spending crosses a threshold, show an alert.
-- Feels like surveillance
-- Crosses into force-feeding
+📦 **Structural Box**: `div` | `mt-auto flex flex-col gap-6`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\FinalInterventionSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\ObservedBehaviorSection.tsx`
 ---
 
-We return to the final moment. The payment is successful, the transaction is logged, but the cognitive loop is left open. Here is how we close it—without breaking the flow, without forcing an interaction, and without violating the architecture.
-
-- We return to the final moment. The payment is successful, the transaction is logged, but the cognitive loop is left open. Here is how we close it—without breaking the flow, without forcing an interaction, and without violating the architecture.
-
-## Voluntary & seamless
-
-The core 'Done' flow remains completely untouched. The reflection opportunity sits alongside it—revealed smoothly via a bottom sheet within the success screen. The user never leaves the moment; the financial context remains intact.
-
-- The core 'Done' flow remains completely untouched. The reflection opportunity sits alongside it—revealed smoothly via a bottom sheet within the success screen. The user never leaves the moment; the financial context remains intact.
-
-## Restores the mental math
-
-- Restores the mental math
-Seeing the updated balance immediately after paying achieves what counting change once did. "Spent ₹250. ₹9,750 left." Two steps instead of five, exactly when it matters most.
-
-- Seeing the updated balance immediately after paying achieves what counting change once did. "Spent ₹250. ₹9,750 left." Two steps instead of five, exactly when it matters most.
+📦 **Structural Box**: `div` | `bg-transparent p-10 border border-slate-200 rounded-[2px] relative overflow-hidden flex flex-col justify-between group transition-all duration-500 min-h-[260px]`
+📦 **Structural Box**: `div` | `relative z-10 mb-10 flex-1`
+📦 **Structural Box**: `div` | `relative z-10 flex items-center gap-4`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\FlowComparisonSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\ReflectionSection.tsx`
 ---
 
-The previous process of checking a balance post-payment required completely abandoning the transaction context. By placing the action inside the success state, we reduce cognitive load and friction significantly.
-
-- The previous process of checking a balance post-payment required completely abandoning the transaction context. By placing the action inside the success state, we reduce cognitive load and friction significantly.
-
-## Previous Flow (5 Steps)
-
-- Previous Flow (5 Steps)
-
-## Optimized Flow (2 Steps)
-
-- Optimized Flow (2 Steps)
-- 60% Reduction in Interaction Cost
+- {/* Strict Grid Background - Replaced AI Blurs */} 11 — Conclusion Interfaces should empower speed, but protect reflection. When we design strictly for metrics like completion rate and time-on-screen, we risk removing the natural human pauses that keep us grounded. True efficiency isn't just about moving fast. It's about moving with intent.
+  - **Tag**: `Section`
+  - **Font/Style/Layout**: `!bg-[#1C1C1C] py-20 md:py-24 relative overflow-hidden border-t border-zinc-800`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\HeroSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\sections\ThoughtExperimentSection.tsx`
+---
+
+- The Premise The Thought That Clarified It To make the core problem clearer, I looked at the mechanics of a simple cash transaction. You hand over a ₹500 note for a ₹150 coffee. The cashier counts out and hands you back ₹350. In that brief, physical exchange of receiving change, something crucial happens in the background. As you receive the physical notes, your brain instinctively registers the new total. You do the math. You mentally recalibrate exactly what is left in your possession. The medium forces you to acknowledge the remainder. With UPI, the payment is confirmed instantly, but the change is invisible. A green tick shows the money left, but you are never forced to calculate what remains. The cognitive pause—the mental adjustment of your balance—has been engineered out entirely.
+  - **Tag**: `Section`
+  - **Font/Style/Layout**: `relative overflow-hidden py-20 md:py-24`
+
+---
+## File: `src\app\components\case-studies\upi-balance\ui\accordion.tsx`
+---
+
+- svg]:rotate-180", className, )} {...props} > {children}
+  - **Tag**: `AccordionPrimitive.Header`
+  - **Font/Style/Layout**: `flex`
+- {children}
+  - **Tag**: `AccordionPrimitive.Content`
+  - **Font/Style/Layout**: `data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm`
+
+---
+## File: `src\app\components\case-studies\upi-balance\ui\carousel.tsx`
+---
+
+📦 **Structural Box**: `div` | `overflow-hidden`
+
+---
+## File: `src\app\components\case-studies\upi-balance\ui\chart.tsx`
 ---
 
 
-## The Lost 
-              Reflection.
-
-
-## How digital payments inadvertently erased the natural pause for mental math.
-
-- How digital payments inadvertently erased the
-When we paid with physical currency, we always had an intuitive sense of our balance. Handing over notes and receiving change forced an automatic, unconscious calculation. That ritual is gone. Modern interfaces offer seamless speed, but they left behind the friction that kept us grounded.
-
-- When we paid with physical currency, we always had an intuitive sense of our balance. Handing over notes and receiving change forced an automatic, unconscious calculation. That ritual is gone. Modern interfaces offer seamless speed, but they left behind the friction that kept us grounded.
-"Every cash transaction ended with a quiet recalibration. Every digital payment ends with a green tick and nothing else."
-
-- "Every cash transaction ended with a quiet recalibration. Every digital payment ends with a green tick and nothing else."
-- Post-Payment Cognition
+### {children}
+   - **Tag**: `ChartContext.Provider`
+   - **Font/Placement Styles**: ``
+- {item.value.toLocaleString()}
+  - **Tag**: `span`
+  - **Font/Style/Layout**: `text-foreground font-mono font-medium tabular-nums`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\MeasuringImpactSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\command.tsx`
+---
+
+📦 **Structural Box**: `div` | `flex h-9 items-center gap-2 border-b px-3`
+
+---
+## File: `src\app\components\case-studies\upi-balance\ui\context-menu.tsx`
 ---
 
 
-## {title}
-
-{desc}
-
-By analyzing the qualitative outcomes of the prototype testing, three core behavioral shifts emerged. The intervention didn't just solve a navigation issue; it restored a missing psychological need.
-
-- By analyzing the qualitative outcomes of the prototype testing, three core behavioral shifts emerged. The intervention didn't just solve a navigation issue; it restored a missing psychological need.
+### {children}
+   - **Tag**: `ContextMenuPrimitive.CheckboxItem`
+   - **Font/Placement Styles**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\ObservedBehaviorSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\dropdown-menu.tsx`
 ---
 
-{label}
+- ); } function DropdownMenuTrigger({ ...props }: React.ComponentProps) { return ( ); } function DropdownMenuContent({ className, sideOffset = 4, ...props }: React.ComponentProps) { return (
+  - **Tag**: `DropdownMenuPrimitive.Portal`
+  - **Font/Style/Layout**: ``
 
-{sublabel}
-
-"{text}"
-
-{author}
-
-{role}
-
-Observations from 28 people, all performing 15 or more digital transactions a day. Three questions: when did you last check your balance after a payment — not before, after? Has a transaction ever failed because of insufficient balance? When you regularly used physical currency, did you have a sense of what was left?
-
-- Observations from 28 people, all performing 15 or more digital transactions a day. Three questions: when did you last check your balance after a payment — not before, after? Has a transaction ever failed because of insufficient balance? When you regularly used physical currency, did you have a sense of what was left?
-Qualitative and observational — not statistically validated.
-
-- Qualitative and observational — not statistically validated.
-What users reported
-
-
-## The issue isn't awareness. It's the cognitive cost of accessing it.
-
-- The issue isn't awareness.
-- It's the cognitive cost of accessing it.
-The balance is available in the app. Anyone can go look for it. But looking means leaving the confirmation screen, navigating to another view, and re-authenticating — enough friction that most people simply don't bother after an everyday payment. The problem isn't that people stopped caring. It's that caring became too inconvenient.
-
-- The balance is available in the app. Anyone can go look for it. But looking means leaving the confirmation screen, navigating to another view, and re-authenticating — enough friction that most people simply don't bother after an everyday payment. The problem isn't that people stopped caring. It's that caring became too inconvenient.
+### {children}
+   - **Tag**: `DropdownMenuPrimitive.CheckboxItem`
+   - **Font/Placement Styles**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\PrototypeValidationSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\form.tsx`
 ---
 
-The working prototype was tested with 30+ individuals — some from the initial interviews, most completely cold. The phone was handed over on the payment success screen with no introduction. The only prompt: "You've just paid for something. What do you do next?"
-
-- The working prototype was tested with 30+ individuals — some from the initial interviews, most completely cold. The phone was handed over on the payment success screen with no introduction. The only prompt: "You've just paid for something. What do you do next?"
-The vast majority tapped "View Balance" intuitively without any prompting. A few tapped "Done" out of pure muscle memory, realized what they missed, and actively returned to try it.
-
-- The vast majority tapped "View Balance" intuitively without any prompting. A few tapped "Done" out of pure muscle memory, realized what they missed, and actively returned to try it.
-The universal reaction across both behavioral groups was simple: "Why wasn't this always there?"
-
-- The universal reaction across both behavioral groups was simple:
-- "Why wasn't this always there?"
+- ); } function FormMessage({ className, ...props }: React.ComponentProps) { const { error, formMessageId } = useFormField(); const body = error ? String(error?.message ?? "") : props.children; if (!body) { return null; } return ( {body}
+  - **Tag**: `p`
+  - **Font/Style/Layout**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\ReflectionSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\menubar.tsx`
 ---
 
 
-## Interfaces should empower speed, but protect reflection.
-
-- Interfaces should empower speed, but
-When we design strictly for metrics like completion rate and time-on-screen, we risk removing the natural human pauses that keep us grounded. True efficiency isn't just about moving fast. It's about moving with intent.
-
-- When we design strictly for metrics like completion rate and time-on-screen, we risk removing the natural human pauses that keep us grounded. True efficiency isn't just about moving fast. It's about moving with intent.
+### {children}
+   - **Tag**: `MenubarPrimitive.CheckboxItem`
+   - **Font/Placement Styles**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\TechnicalFeasibilitySection.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\pagination.tsx`
 ---
 
-- The obvious solution doesn't exist.
-- And that's not a design choice.
-Showing the balance automatically on the confirmation screen seems like the obvious fix. But digging into the payment stack architecture reveals why that isn't possible. The answer closes the door on automatic solutions completely.
-
-- Showing the balance automatically on the confirmation screen seems like the obvious fix. But digging into the payment stack architecture reveals why that isn't possible. The answer closes the door on automatic solutions completely.
-
-## The Architectural Constraint
-
-- The Architectural Constraint
-The payload contains transaction results, not the updated account balance. That number sits with the issuer bank and requires a separate, explicit API call.
-
-- The payload contains transaction results, not the updated account balance. That number sits with the issuer bank and requires a separate, explicit API call.
-
-## The Regulatory Reality
-
-- The Regulatory Reality
-Mandatory SMS notifications arrive out of context, often displaying sensitive info on the lock screen. The checkpoint happens at the wrong place and time.
-
-- Mandatory SMS notifications arrive out of context, often displaying sensitive info on the lock screen. The checkpoint happens at the wrong place and time.
-
-## Voluntary Action
-
-Balance enquiries must be user-initiated by mandate. A deliberate, voluntary tap is the only architecturally viable and privacy-respecting solution.
-
-- Balance enquiries must be user-initiated by mandate. A deliberate, voluntary tap is the only architecturally viable and privacy-respecting solution.
-"You tap it. The system responds. In a small way, that deliberate action is closer to counting physical change than any automatic display could ever be."
-
-- "You tap it. The system responds. In a small way, that deliberate action is closer to counting physical change than any automatic display could ever be."
+- More pages
+  - **Tag**: `span`
+  - **Font/Style/Layout**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\sections\ThoughtExperimentSection.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\sheet.tsx`
 ---
 
 
-## The Thought That Clarified It
-
-- The Thought That Clarified It
-To make the core problem clearer, I looked at the mechanics of a simple cash transaction.
-
-- To make the core problem clearer, I looked at the mechanics of a simple cash transaction.
-You hand over a ₹500 note for a ₹150 coffee. The cashier counts out and hands you back ₹350. In that brief, physical exchange of receiving change, something crucial happens in the background.
-
-As you receive the physical notes, your brain instinctively registers the new total. You do the math. You mentally recalibrate exactly what is left in your possession. The medium forces you to acknowledge the remainder.
-
-- As you receive the physical notes, your brain instinctively registers the new total. You do the math. You mentally recalibrate exactly what is left in your possession. The medium forces you to acknowledge the remainder.
-With UPI, the payment is confirmed instantly, but the change is invisible. A green tick shows the money left, but you are never forced to calculate what remains. The cognitive pause—the mental adjustment of your balance—has been engineered out entirely.
-
-- With UPI, the payment is confirmed instantly, but the change is invisible. A green tick shows the money left, but you are never forced to calculate what remains.
-- The cognitive pause—the mental adjustment of your balance—has been engineered out entirely.
+### ; } function SheetPortal({ ...props }: React.ComponentProps) { return ; } function SheetOverlay({ className, ...props }: React.ComponentProps) { return ( ); } function SheetContent({ className, children, side = "right", ...props }: React.ComponentProps & { side?: "top" | "right" | "bottom" | "left"; }) { return ( {children} Close
+   - **Tag**: `SheetPrimitive.Close`
+   - **Font/Placement Styles**: ``
 
 ---
-### File: `src\app\components\case-studies\upi-balance\ui\chart.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\sidebar.tsx`
 ---
 
-- & React.ComponentProps
-- ) : ( !hideIndicator && (
+
+### button]:hidden" style={ { "--sidebar-width": SIDEBAR_WIDTH_MOBILE, } as React.CSSProperties } side={side} > Sidebar Displays the mobile sidebar. {children}
+   - **Tag**: `Sheet`
+   - **Font/Placement Styles**: ``
+- {/* This is what handles the sidebar gap on desktop */} {children}
+  - **Tag**: `div`
+  - **Font/Style/Layout**: `group peer text-sidebar-foreground hidden md:block`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\ui\form.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\table.tsx`
 ---
 
-); } function FormMessage({ className, ...props }: React.ComponentProps) { const { error, formMessageId } = useFormField(); const body = error ? String(error?.message ?? "") : props.children; if (!body) { return null; } return ( {body}
-
-
----
-### File: `src\app\components\case-studies\upi-balance\ui\pagination.tsx`
----
-
-- , "size"> & React.ComponentProps
+📦 **Structural Box**: `div` | `relative w-full overflow-x-auto`
 
 ---
-### File: `src\app\components\case-studies\upi-balance\ui\sidebar.tsx`
+## File: `src\app\components\case-studies\upi-balance\ui\toggle-group.tsx`
 ---
 
-{children} ); } function Sidebar({ side = "left", variant = "sidebar", collapsible = "offcanvas", className, children, ...props }: React.ComponentProps & { side?: "left" | "right"; variant?: "sidebar" | "floating" | "inset"; collapsible?: "offcanvas" | "icon" | "none"; }) { const { isMobile, state, openMobile, setOpenMobile } = useSidebar(); if (collapsible === "none") { return ( {children} ); } if (isMobile) { return ( button]:hidden" style={ { "--sidebar-width": SIDEBAR_WIDTH_MOBILE, } as React.CSSProperties } side={side} > Sidebar Displays the mobile sidebar. {children} ); } return ( {/* This is what handles the sidebar gap on desktop */} {children} ); } function SidebarTrigger({ className, onClick, ...props }: React.ComponentProps) { const { toggleSidebar } = useSidebar(); return ( { onClick?.(event); toggleSidebar(); }} {...props} > Toggle Sidebar ); } function SidebarRail({ className, ...props }: React.ComponentProps) { const { toggleSidebar } = useSidebar(); return ( ); } function SidebarInset({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarInput({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarHeader({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarFooter({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarSeparator({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarContent({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarGroup({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarGroupLabel({ className, asChild = false, ...props }: React.ComponentProps & { asChild?: boolean }) { const Comp = asChild ? Slot : "div"; return ( svg]:size-4 [&>svg]:shrink-0", "group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0", className, )} {...props} /> ); } function SidebarGroupAction({ className, asChild = false, ...props }: React.ComponentProps & { asChild?: boolean }) { const Comp = asChild ? Slot : "button"; return ( svg]:size-4 [&>svg]:shrink-0", // Increases the hit area of the button on mobile. "after:absolute after:-inset-2 md:after:hidden", "group-data-[collapsible=icon]:hidden", className, )} {...props} /> ); } function SidebarGroupContent({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarMenu({ className, ...props }: React.ComponentProps) { return ( ); } function SidebarMenuItem({ className, ...props }: React.ComponentProps) { return ( ); } const sidebarMenuButtonVariants = cva( "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm outline-hidden ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0", { variants: { variant: { default: "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground", outline: "bg-background shadow-[0_0_0_1px_hsl(var(--sidebar-border))] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]", }, size: { default: "h-8 text-sm", sm: "h-7 text-xs", lg: "h-12 text-sm group-data-[collapsible=icon]:p-0!", }, }, defaultVariants: { variant: "default", size: "default", }, }, ); function SidebarMenuButton({ asChild = false, isActive = false, variant = "default", size = "default", tooltip, className, ...props }: React.ComponentProps & { asChild?: boolean; isActive?: boolean; tooltip?: string | React.ComponentProps; } & VariantProps) { const Comp = asChild ? Slot : "button"; const { isMobile, state } = useSidebar(); const button = ( ); if (!tooltip) { return button; } if (typeof tooltip === "string") { tooltip = { children: tooltip, }; } return ( {button}
+- {children}
+  - **Tag**: `ToggleGroupPrimitive.Root`
+  - **Font/Style/Layout**: ``
 
-- Displays the mobile sidebar.
+---
+## File: `src\app\components\case-studies\upi-balance\ui\tooltip.tsx`
+---
+
+- {children}
+  - **Tag**: `TooltipPrimitive.Portal`
+  - **Font/Style/Layout**: ``
