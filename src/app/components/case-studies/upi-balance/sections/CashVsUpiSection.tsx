@@ -20,8 +20,8 @@ const ComparisonCard = ({
   return (
     <div
       className={`relative p-10 md:p-12 rounded-[2px] overflow-hidden h-full flex flex-col transition-all duration-500 ${isCash
-          ? 'bg-transparent border border-slate-200'
-          : 'bg-white border border-slate-300'
+        ? 'bg-transparent border border-slate-200'
+        : 'bg-white border border-slate-300'
         }`}
     >
       <div className={`w-16 h-16 rounded-[2px] border flex items-center justify-center mb-10 ${isCash ? 'bg-transparent border-slate-200 text-slate-900' : 'bg-slate-900 border-slate-900 text-white'
@@ -48,7 +48,7 @@ const ComparisonCard = ({
 export const CashVsUpiSection: React.FC = () => {
   return (
     <Section className="bg-white py-20 md:py-24 border-b border-slate-200" id="cash-vs-digital">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-24 items-end">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-12 items-end">
         <div>
           <TextBlock
             eyebrow="01 — The Vanished Ritual"
