@@ -37,7 +37,7 @@ export const projects: Project[] = [
   {
     slug: "nirmaan-financial",
     title: "Nirmaan",
-    category: "SaaS \u2022 Dashboard Design",
+    category: "Mobile App \u2022 Product Design",
     description: "A decision-support tool for creative founders that makes pricing consequences visible in real time. It helps them understand the impact of decisions as they make them.",
     imageUrl: "/nirmaan.png",
     year: "2026",
