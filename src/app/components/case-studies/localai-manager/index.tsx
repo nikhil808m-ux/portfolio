@@ -10617,7 +10617,7 @@ function OneFlowSection() {
 function Text80() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">10 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">10 —</p>
     </div>
   );
 }
@@ -10694,7 +10694,7 @@ function Heading31() {
 function Paragraph31() {
   return (
     <div className="relative shrink-0 w-full" data-name="Paragraph">
-      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[458px]">{`On-device responses are fast enough that thereâ€™s no real waiting state. Without spinners or loading feedback, the interface has to feel trustworthy through immediacy alone. That changed how a lot of interactions were designed.`}</p>
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[458px]">{`On-device responses are fast enough that there's no real waiting state. Without spinners or loading feedback, the interface has to feel trustworthy through immediacy alone. That changed how a lot of interactions were designed.`}</p>
     </div>
   );
 }
@@ -10720,7 +10720,7 @@ function Heading32() {
 function Paragraph32() {
   return (
     <div className="relative shrink-0 w-full" data-name="Paragraph">
-      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[461px]">{`Remote connection still needs a relay to establish the link across networks. It doesnâ€™t touch any data, but explaining that clearly without breaking the â€œno serversâ€ expectation is still unresolved.`}</p>
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[461px]">{`Remote connection still needs a relay to establish the link across networks. It doesn't touch any data, but explaining that clearly without breaking the "no servers" expectation is still unresolved.`}</p>
     </div>
   );
 }
@@ -10765,7 +10765,7 @@ function ReflectionSection() {
 function Text81() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">11 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">11 —</p>
     </div>
   );
 }
