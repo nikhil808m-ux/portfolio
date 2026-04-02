@@ -18,7 +18,7 @@ export const projects: Project[] = [
     title: "The Lost Reflection",
     category: "Fintech • Behavioral UX",
     description: "Reducing transaction anxiety by adding balance visibility to the ‘Payment Successful’ screen. A simple intervention for a common but overlooked problem.",
-    imageUrl: "https://images.unsplash.com/photo-1726137065519-c9a1b9eca951?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBwYXltZW50JTIwYXBwJTIwaW50ZXJmYWNlJTIwZmludGVjaHxlbnwxfHx8fDE3NzIzMDcyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/gpay.jpeg",
     year: "2026",
     tags: ["Behavioral UX", "Interaction Design"],
     status: "published"
