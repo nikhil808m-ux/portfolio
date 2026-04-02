@@ -49,6 +49,10 @@ This document provides a comprehensive overview of the design system, technical 
 2. **Navigation Unified:** Converted all menu and footer links to use `Link` component with root-relative hashes.
 3. **Cursor Polish:** Balanced the blend modes to work across both Home (dark/light sections) and Case Studies (light-only sections).
 4. **Local Branding:** Updated contact details to `hello@nikhilmanoj.me` and location to **Bengaluru, India**.
+5. **Dedicated About Page:** Extracted the inline about section into a new `/about` route. It features a unified two-column bio layout, a vertical Journey Timeline, and a custom full-width charcoal dark footer with resume links.
+6. **UPI Case Study Refinement**: Performed a structured copy overhaul across the Hero, Thought Experiment, Observed Behavior, and Cash vs UPI sections to improve storytelling and scanability.
+7. **AI Reference Manifests**: Generated detailed `.md` reference files for all case studies containing typography, layout, and image metadata to support future AI-assisted edits.
+8. **Portfolio Copy Refinement:** Refined Hero copy to focus on designing clear interfaces, shortened Selected Works introduction, and updated UPI case study headers for a stronger behavioral design focus.
 
 ---
-*Generated: March 29, 2026. Keep this updated after major architectural shifts.*
+*Generated: March 30, 2026. Keep this updated after major architectural shifts.*

@@ -1,8 +1,7 @@
-import svgPaths from "./svg-0cm4e12p1a";
-import { imgGroup, imgVector, imgGroup1, imgGroup2, imgGroup3, imgVector1, imgGroup4, imgGroup5, imgGroup6, imgGroup7, imgGroup8, imgGroup9, imgGroup10, imgGroup11, imgVector2 } from "./svg-w097q";
-import { CaseStudyFooter } from "../../CaseStudyFooter";
+﻿import { CaseStudyFooter } from "../../CaseStudyFooter";
 import { GrainOverlay } from "../upi-balance/GrainOverlay";
 
+import svgPaths from "./svg-0cm4e12p1a";
 const img0021 = "/case-study/localai-manager/b6f2dd4b5e84f60e05686ff034f11c912be0fe01.png";
 const imgImage1 = "/case-study/localai-manager/82edf973d06c5d3a4a15f92c9198dda7dc5a2873.png";
 const imgImage5 = "/case-study/localai-manager/031b5acc39a0aea149b1b4843b6fdb550b3ebfbb.png";
@@ -11,8 +10,9 @@ const imgImage7 = "/case-study/localai-manager/d675a8151426b00fe35a99bfef6273bb7
 const imgImage9 = "/case-study/localai-manager/f5fdbef405bb3f4f52a85299def722091ca41566.png";
 const imgImage10 = "/case-study/localai-manager/c8b1f35a1516343b119afa637d9e1e704de03872.png";
 const imgImage8 = "/case-study/localai-manager/f0de1ba9b9d5f6c9e7092057e5e0d7bb8e77fdf0.png";
-const imgVector3 = "/case-study/localai-manager/be03817a4722a74704227afd24a5e1a9f3f6169e.png";
+const imgVector3 = "/case-study/localai-manager/26156732bf68c9368923adacd607e30b5f92cfc4.png";
 const imgWhatsNextSection = "/case-study/localai-manager/d4924deaa9a4a5bf1910ed3c8564a427d5256820.png";
+import { imgVector, imgGroup, imgGroup1, imgGroup2, imgVector1, imgGroup3, imgGroup4, imgGroup5, imgGroup6, imgGroup7, imgGroup8, imgGroup9, imgGroup10, imgVector2 } from "./svg-w097q";
 
 function Container2() {
   return (
@@ -43,11 +43,9 @@ function Paragraph() {
 
 function Paragraph1() {
   return (
-    <div className="font-['IBM_Plex_Sans:Light',sans-serif] font-light h-[165px] leading-[41.25px] relative shrink-0 text-[30px] w-full" data-name="Paragraph">
-      <p className="absolute left-0 text-[#d1d5dc] top-0 w-[624px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`Every major AI assistant requires you to send your most sensitive thinking to a server you don't control.`}</p>
-      <p className="absolute left-0 text-[#c8b98a] top-[123.55px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Solution was a structural alternative.
-      </p>
+    <div className="font-['IBM_Plex_Sans:Light',sans-serif] h-[165px] leading-[41.25px] not-italic relative shrink-0 text-[30px] w-full" data-name="Paragraph">
+      <p className="absolute left-0 text-[#d1d5dc] top-0 w-[624px]">{`Every major AI assistant requires you to send your most sensitive thinking to a server you don't control.`}</p>
+      <p className="absolute left-0 text-[#c8b98a] top-[123.55px] whitespace-nowrap">Solution was a structural alternative.</p>
     </div>
   );
 }
@@ -134,11 +132,9 @@ function Heading1() {
   return (
     <div className="h-[117px] relative shrink-0 w-[896px]" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light_Italic',sans-serif] font-light italic leading-[0] left-[448.16px] text-[0px] text-center text-white top-[-0.4px] tracking-[-0.9px] w-[780px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light_Italic',sans-serif] italic leading-[0] left-[448.16px] text-[0px] text-center text-white top-[-0.4px] tracking-[-0.9px] w-[780px]">
           <span className="leading-[58.5px] text-[36px]">{`"you give AI your drafts, your notes, your half-formed thoughts. is your data really `}</span>
-          <span className="font-['IBM_Plex_Sans:Bold_Italic',sans-serif] font-bold leading-[58.5px] text-[#c8b98a] text-[36px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-            private?
-          </span>
+          <span className="font-['IBM_Plex_Sans:Bold_Italic',sans-serif] leading-[58.5px] text-[#c8b98a] text-[36px]">private?</span>
           <span className="leading-[58.5px] text-[36px]">{`"`}</span>
         </p>
       </div>
@@ -157,7 +153,7 @@ function Container6() {
 function Text2() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">02 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">02 â€”</p>
     </div>
   );
 }
@@ -182,7 +178,7 @@ function Container9() {
 function Paragraph2() {
   return (
     <div className="h-[117px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[495px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`You open ChatGPT, type something private, and somewhere a server logs it. You agreed to that when you signed up. Most people don't think about it until they type something they wish they hadn't.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[495px]">{`You open ChatGPT, type something private, and somewhere a server logs it. You agreed to that when you signed up. Most people don't think about it until they type something they wish they hadn't.`}</p>
     </div>
   );
 }
@@ -207,7 +203,7 @@ function Container11() {
 function Paragraph3() {
   return (
     <div className="h-[146.25px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[497px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`Ollama and LM Studio are genuinely good — the problem isn't that they exist, it's that they assume too much. They assume you have a spare PC, that you're comfortable in a terminal, and that you don't mind being tethered to a desk. Most people who want private AI don't fit that description.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[497px]">{`Ollama and LM Studio are genuinely good â€” the problem isn't that they exist, it's that they assume too much. They assume you have a spare PC, that you're comfortable in a terminal, and that you don't mind being tethered to a desk. Most people who want private AI don't fit that description.`}</p>
     </div>
   );
 }
@@ -243,7 +239,7 @@ function ProblemSection() {
 function Text3() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">03 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">03 â€”</p>
     </div>
   );
 }
@@ -260,9 +256,7 @@ function Heading3() {
 function Paragraph4() {
   return (
     <div className="h-[117px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[643px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        I wanted to build an AI app that works like any other app on your phone. You download it, open it, it works. No account. No internet required. No configuration. The model runs on your device and what you type stays there. That is the whole product.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[643px]">I wanted to build an AI app that works like any other app on your phone. You download it, open it, it works. No account. No internet required. No configuration. The model runs on your device and what you type stays there. That is the whole product.</p>
     </div>
   );
 }
@@ -270,9 +264,7 @@ function Paragraph4() {
 function Paragraph5() {
   return (
     <div className="h-[87.75px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[645px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        If you have a PC and want access to larger models, you can pair it once. The app uses it when available and falls back to the phone when not. But that is extra. The app does not need it to be useful and most users will never think about it.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[645px]">If you have a PC and want access to larger models, you can pair it once. The app uses it when available and falls back to the phone when not. But that is extra. The app does not need it to be useful and most users will never think about it.</p>
     </div>
   );
 }
@@ -298,7 +290,7 @@ function HypothesisSection() {
 function Text4() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">04 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">04 â€”</p>
     </div>
   );
 }
@@ -323,7 +315,7 @@ function Heading5() {
 function Paragraph6() {
   return (
     <div className="h-[182px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[265px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`A lawyer drafting arguments. A therapist writing session notes. A journalist protecting sources. They use AI every day but cannot afford to send that work to a server they don't control. LOCAL/AI gives them the tool without the exposure.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] left-0 not-italic text-[#d1d5dc] text-[16px] top-[-0.4px] w-[265px]">{`A lawyer drafting arguments. A therapist writing session notes. A journalist protecting sources. They use AI every day but cannot afford to send that work to a server they don't control. LOCAL/AI gives them the tool without the exposure.`}</p>
     </div>
   );
 }
@@ -371,7 +363,7 @@ function Heading6() {
 function Paragraph7() {
   return (
     <div className="h-[182px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[267px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`They don't want to sign up. They don't want to think about which company has their data or what the terms say. They want to open an app, ask a question, and get an answer. No account. No cloud. Just the phone in their hand.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] left-0 not-italic text-[#d1d5dc] text-[16px] top-[-0.4px] w-[267px]">{`They don't want to sign up. They don't want to think about which company has their data or what the terms say. They want to open an app, ask a question, and get an answer. No account. No cloud. Just the phone in their hand.`}</p>
     </div>
   );
 }
@@ -419,7 +411,7 @@ function Heading7() {
 function Paragraph8() {
   return (
     <div className="h-[182px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[262px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`Already runs Ollama. Has opinions about model quantisation. Wants a well-designed mobile interface that doesn't make them choose between privacy and usability. LOCAL/AI is the app this person has been waiting for someone to build.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] left-0 not-italic text-[#d1d5dc] text-[16px] top-[-0.4px] w-[262px]">{`Already runs Ollama. Has opinions about model quantisation. Wants a well-designed mobile interface that doesn't make them choose between privacy and usability. LOCAL/AI is the app this person has been waiting for someone to build.`}</p>
     </div>
   );
 }
@@ -479,7 +471,7 @@ function AudienceSection() {
 function Text5() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">05 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">05 â€”</p>
     </div>
   );
 }
@@ -496,7 +488,7 @@ function Heading8() {
 function Paragraph9() {
   return (
     <div className="absolute h-[117px] left-0 top-[64.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[660px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`Three commitments defined this product before any screen was designed. They weren't constraints in the limiting sense — they were the product. Every layout decision, every label, every interaction pattern had to be consistent with all three at once. That turned out to be more generative than restrictive.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[660px]">{`Three decisions shaped the product from the start. Every screen and interaction had to align with all three.`}</p>
     </div>
   );
 }
@@ -523,7 +515,7 @@ function Text6() {
 function Heading9() {
   return (
     <div className="absolute content-stretch flex h-[24.75px] items-start left-0 top-0 w-[341.038px]" data-name="Heading 3">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Medium',sans-serif] leading-[24.75px] min-h-px min-w-px not-italic relative text-[#e8e4dc] text-[18px]">No internet required.</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Medium',sans-serif] leading-[24.75px] min-h-px min-w-px not-italic relative text-[#e8e4dc] text-[18px]">No internet required</p>
     </div>
   );
 }
@@ -545,7 +537,7 @@ function Container27() {
 
 function Container26() {
   return (
-    <div className="h-[130px] relative shrink-0 w-[341.038px]" data-name="Container">
+    <div className="relative shrink-0 w-[341.038px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[12px] items-start relative size-full">
         <Text6 />
         <Container27 />
@@ -556,11 +548,9 @@ function Container26() {
 
 function Paragraph10() {
   return (
-    <div className="h-[130px] relative shrink-0 w-[633.362px]" data-name="Paragraph">
+    <div className="relative shrink-0 w-[633.362px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#9a9690] text-[16px] top-[-0.4px] w-[633px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          The app had to be completely useful with airplane mode on. This ruled out any feature that phoned home, any onboarding that needed a connection check, any trust signal that came from a server response. It also meant the first launch experience had to feel complete — not a promise of what the app would do once configured, but the actual thing, working, right now.
-        </p>
+        <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#9a9690] text-[16px] w-[633px]">The app works fully offline. No onboarding that depends on a connection, no features that rely on a server. The first launch has to feel complete, not like a setup step.</p>
       </div>
     </div>
   );
@@ -568,9 +558,9 @@ function Paragraph10() {
 
 function Container25() {
   return (
-    <div className="bg-[#111] h-[210.8px] relative shrink-0 w-[1102.4px]" data-name="Container">
+    <div className="bg-[#111] relative shrink-0 w-[1102.4px]" data-name="Container">
       <div aria-hidden="true" className="absolute border-[#222] border-b-[0.8px] border-solid inset-0 pointer-events-none" />
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-start pb-[0.8px] pl-[40px] pt-[40px] relative size-full">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-start pb-[40px] pl-[40px] pt-[40px] relative size-full">
         <Container26 />
         <Paragraph10 />
       </div>
@@ -591,7 +581,7 @@ function Text7() {
 function Heading10() {
   return (
     <div className="absolute content-stretch flex h-[24.75px] items-start left-0 top-0 w-[341.038px]" data-name="Heading 3">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Medium',sans-serif] leading-[24.75px] min-h-px min-w-px not-italic relative text-[#e8e4dc] text-[18px]">No account. No signup.</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Medium',sans-serif] leading-[24.75px] min-h-px min-w-px not-italic relative text-[#e8e4dc] text-[18px]">No account</p>
     </div>
   );
 }
@@ -613,7 +603,7 @@ function Container31() {
 
 function Container30() {
   return (
-    <div className="h-[130px] relative shrink-0 w-[341.038px]" data-name="Container">
+    <div className="relative shrink-0 w-[341.038px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[12px] items-start relative size-full">
         <Text7 />
         <Container31 />
@@ -624,11 +614,9 @@ function Container30() {
 
 function Paragraph11() {
   return (
-    <div className="h-[130px] relative shrink-0 w-[633.362px]" data-name="Paragraph">
+    <div className="relative shrink-0 w-[633.362px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#9a9690] text-[16px] top-[-0.4px] w-[629px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Identity is where privacy collapses. The moment you create an account, there is a record that you exist as a user, that you used the app, and potentially when. Removing the account entirely meant the product had to establish trust through behaviour rather than through a privacy policy. Every interaction had to be self-evidently local. The absence of a login screen is itself a design statement.
-        </p>
+        <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#9a9690] text-[16px] w-[629px]">No signup, no identity layer. Trust comes from how the product behaves, not from policies or promises.</p>
       </div>
     </div>
   );
@@ -636,9 +624,9 @@ function Paragraph11() {
 
 function Container29() {
   return (
-    <div className="bg-[#111] h-[210.8px] relative shrink-0 w-[1102.4px]" data-name="Container">
+    <div className="bg-[#111] relative shrink-0 w-[1102.4px]" data-name="Container">
       <div aria-hidden="true" className="absolute border-[#222] border-b-[0.8px] border-solid inset-0 pointer-events-none" />
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-start pb-[0.8px] pl-[40px] pt-[40px] relative size-full">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-start pb-[40px] pl-[40px] pt-[40px] relative size-full">
         <Container30 />
         <Paragraph11 />
       </div>
@@ -659,7 +647,7 @@ function Text8() {
 function Heading11() {
   return (
     <div className="absolute content-stretch flex h-[24.75px] items-start left-0 top-0 w-[341.038px]" data-name="Heading 3">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Medium',sans-serif] leading-[24.75px] min-h-px min-w-px not-italic relative text-[#e8e4dc] text-[18px]">Nothing leaves by default.</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Medium',sans-serif] leading-[24.75px] min-h-px min-w-px not-italic relative text-[#e8e4dc] text-[18px]">Nothing leaves by default</p>
     </div>
   );
 }
@@ -681,7 +669,7 @@ function Container35() {
 
 function Container34() {
   return (
-    <div className="h-[156px] relative shrink-0 w-[341.038px]" data-name="Container">
+    <div className="relative shrink-0 w-[341.038px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[12px] items-start relative size-full">
         <Text8 />
         <Container35 />
@@ -692,11 +680,9 @@ function Container34() {
 
 function Paragraph12() {
   return (
-    <div className="h-[156px] relative shrink-0 w-[633.362px]" data-name="Paragraph">
+    <div className="relative shrink-0 w-[633.362px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#9a9690] text-[16px] top-[-0.4px] w-[628px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Web access exists as an optional toggle — the model can fetch live information when the user explicitly enables it. But the default is off. And even when on, no account means no identity is attached to the request. The constraint shaped where the toggle lives in settings — not under Compute, where it would read as a capability, but under Privacy, where it reads as a disclosure. The label does the explaining. The toggle just confirms the choice.
-        </p>
+        <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#9a9690] text-[16px] w-[628px]">Web access is optional and turned off by default. When enabled, itâ€™s a clear, user-controlled action. The placement and labeling make that explicit.</p>
       </div>
     </div>
   );
@@ -704,8 +690,8 @@ function Paragraph12() {
 
 function Container33() {
   return (
-    <div className="bg-[#111] h-[236px] relative shrink-0 w-[1102.4px]" data-name="Container">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-start pl-[40px] pt-[40px] relative size-full">
+    <div className="bg-[#111] relative shrink-0 w-[1102.4px]" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-start pb-[40px] pl-[40px] pt-[40px] relative size-full">
         <Container34 />
         <Paragraph12 />
       </div>
@@ -715,7 +701,7 @@ function Container33() {
 
 function Container24() {
   return (
-    <div className="absolute h-[659.2px] left-[24px] rounded-[14px] top-[293.79px] w-[1104px]" data-name="Container">
+    <div className="absolute h-auto left-[24px] rounded-[14px] top-[293.79px] w-[1104px]" data-name="Container">
       <div className="content-stretch flex flex-col items-start overflow-clip p-[0.8px] relative rounded-[inherit] size-full">
         <Container25 />
         <Container29 />
@@ -728,15 +714,15 @@ function Container24() {
 
 function Paragraph13() {
   return (
-    <div className="absolute h-[16.5px] left-[24px] top-[1032.99px] w-[1104px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[551.8px] not-italic text-[#5c5a57] text-[11px] text-center top-[-0.2px] whitespace-nowrap">these three commitments made the design problems obvious — and the solutions follow from them.</p>
+    <div className="absolute h-[16.5px] left-[24px] top-[844.99px] w-[1104px]" data-name="Paragraph">
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[551.8px] not-italic text-[#5c5a57] text-[11px] text-center top-[-0.2px] whitespace-nowrap">these three commitments made the design problems obvious â€” and the solutions follow from them.</p>
     </div>
   );
 }
 
 function DecisionsSection() {
   return (
-    <div className="absolute border-[#222] border-solid border-t-[0.8px] h-[1050.287px] left-[183.6px] top-[3092.25px] w-[1152px]" data-name="DecisionsSection">
+    <div className="absolute border-[#222] border-solid border-t-[0.8px] h-[862.287px] left-[183.6px] top-[3092.25px] w-[1152px]" data-name="DecisionsSection">
       <Container23 />
       <Container24 />
       <Paragraph13 />
@@ -747,7 +733,7 @@ function DecisionsSection() {
 function Text9() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">06 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">06 â€”</p>
     </div>
   );
 }
@@ -764,9 +750,7 @@ function Heading12() {
 function Paragraph14() {
   return (
     <div className="absolute h-[146.25px] left-[24px] top-[152.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        The phone runs models locally on its NPU — no network, no account, no server. That is the baseline and the complete product for most users. For those who want more, a PC can be paired over local Wi-Fi to run larger models. For users away from home the connection tunnels peer-to-peer through a minimal relay that brokers the handshake and steps aside — it never sees inference content.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]">The phone runs models locally on its NPU â€” no network, no account, no server. That is the baseline and the complete product for most users. For those who want more, a PC can be paired over local Wi-Fi to run larger models. For users away from home the connection tunnels peer-to-peer through a minimal relay that brokers the handshake and steps aside â€” it never sees inference content.</p>
     </div>
   );
 }
@@ -803,7 +787,7 @@ function Text10() {
   return (
     <div className="flex-[1_0_0] h-[15.988px] min-h-px min-w-px relative" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[#c8b98a] text-[12px] tracking-[1.2px] uppercase whitespace-nowrap">local network · direct</p>
+        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[#c8b98a] text-[12px] tracking-[1.2px] uppercase whitespace-nowrap">local network Â· direct</p>
       </div>
     </div>
   );
@@ -835,7 +819,7 @@ function Text11() {
   return (
     <div className="h-[15.988px] relative shrink-0 w-[260.4px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[12px] text-[rgba(200,185,138,0.6)] tracking-[1.2px] uppercase whitespace-nowrap">remote · peer-to-peer via relay</p>
+        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[12px] text-[rgba(200,185,138,0.6)] tracking-[1.2px] uppercase whitespace-nowrap">remote Â· peer-to-peer via relay</p>
       </div>
     </div>
   );
@@ -845,9 +829,7 @@ function Text12() {
   return (
     <div className="h-[16.5px] relative shrink-0 w-[304.288px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[16.5px] left-0 text-[#6a7282] text-[11px] top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          relay brokers connection only — never sees inference content.
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[16.5px] left-0 not-italic text-[#6a7282] text-[11px] top-[-0.2px] whitespace-nowrap">relay brokers connection only â€” never sees inference content.</p>
       </div>
     </div>
   );
@@ -915,9 +897,7 @@ function Container49() {
 function Container50() {
   return (
     <div className="h-[20px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[20px] left-[62.68px] text-[#6a7282] text-[14px] text-center top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        1-3B Parameters
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[20px] left-[62.68px] not-italic text-[#6a7282] text-[14px] text-center top-[-0.2px] whitespace-nowrap">1-3B Parameters</p>
     </div>
   );
 }
@@ -978,9 +958,7 @@ function Container54() {
 function Container55() {
   return (
     <div className="h-[20px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[20px] left-[57.5px] text-[#6a7282] text-[14px] text-center top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        7-34B Parameters
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[20px] left-[57.5px] not-italic text-[#6a7282] text-[14px] text-center top-[-0.2px] whitespace-nowrap">7-34B Parameters</p>
     </div>
   );
 }
@@ -1017,7 +995,7 @@ function Container38() {
 
 function ArchitectureSection() {
   return (
-    <div className="absolute h-[649.438px] left-0 top-[4270.54px] w-[1519.2px]" data-name="ArchitectureSection">
+    <div className="absolute h-[649.438px] left-0 top-[4082.54px] w-[1519.2px]" data-name="ArchitectureSection">
       <Container37 />
       <Container38 />
     </div>
@@ -1027,7 +1005,7 @@ function ArchitectureSection() {
 function Text13() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">07 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">07 â€”</p>
     </div>
   );
 }
@@ -1044,9 +1022,7 @@ function Heading13() {
 function Paragraph15() {
   return (
     <div className="absolute h-[117px] left-[24px] top-[128.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Before color, type, or interaction, every screen existed as proportional blocks inside a phone frame. These lo-fi wireframes show the spatial structure of each screen — what goes where and how much room it takes — before any visual decisions were made.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]">Before color, type, or interaction, every screen existed as proportional blocks inside a phone frame. These lo-fi wireframes show the spatial structure of each screen â€” what goes where and how much room it takes â€” before any visual decisions were made.</p>
     </div>
   );
 }
@@ -1064,7 +1040,7 @@ function Text14() {
   return (
     <div className="flex-[1_0_0] min-h-px min-w-px relative w-[118.8px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[59.5px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat — empty state</p>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[59.5px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat â€” empty state</p>
       </div>
     </div>
   );
@@ -1159,7 +1135,7 @@ function Text15() {
   return (
     <div className="flex-[1_0_0] min-h-px min-w-px relative w-[85.8px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[43px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat — active</p>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[43px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat â€” active</p>
       </div>
     </div>
   );
@@ -2492,7 +2468,7 @@ function Container230() {
   return (
     <div className="h-[24px] relative shrink-0 w-[1152px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[15px] left-[576.5px] not-italic text-[#555444] text-[10px] text-center top-[5px] tracking-[1px] uppercase whitespace-nowrap">lo-fi · proportional wireframes · structural layout only</p>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[15px] left-[576.5px] not-italic text-[#555444] text-[10px] text-center top-[5px] tracking-[1px] uppercase whitespace-nowrap">lo-fi Â· proportional wireframes Â· structural layout only</p>
       </div>
     </div>
   );
@@ -2517,7 +2493,7 @@ function Container57() {
 
 function IdeationSection() {
   return (
-    <div className="absolute h-[1176.088px] left-0 top-[5047.98px] w-[1519.2px]" data-name="IdeationSection">
+    <div className="absolute h-[1176.088px] left-0 top-[4859.98px] w-[1519.2px]" data-name="IdeationSection">
       <Container56 />
       <Container57 />
     </div>
@@ -2527,7 +2503,7 @@ function IdeationSection() {
 function Text22() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">08 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">08 â€”</p>
     </div>
   );
 }
@@ -2544,9 +2520,7 @@ function Heading14() {
 function Paragraph16() {
   return (
     <div className="absolute h-[58.5px] left-[24px] top-[120.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[618px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        The key states of the app across onboarding, active chat sessions, and system configuration.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[618px]">The key states of the app across onboarding, active chat sessions, and system configuration.</p>
     </div>
   );
 }
@@ -2571,7 +2545,7 @@ function Heading15() {
 function Container238() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding — phase 1</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding â€” phase 1</p>
     </div>
   );
 }
@@ -2579,9 +2553,7 @@ function Container238() {
 function Container239() {
   return (
     <div className="h-[42.25px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.04px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[249px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Establish the core premise immediately. No servers, absolute privacy.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.04px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[249px]">Establish the core premise immediately. No servers, absolute privacy.</p>
     </div>
   );
 }
@@ -2636,9 +2608,7 @@ function Heading16() {
 function Paragraph17() {
   return (
     <div className="absolute h-[40px] left-[14.4px] top-[222.5px] w-[220px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[20px] left-[110.26px] text-[#9a9690] text-[12px] text-center top-[0.4px] w-[204px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        AI that runs entirely on your hardware. No accounts, no cloud, no exceptions.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[20px] left-[110.26px] not-italic text-[#9a9690] text-[12px] text-center top-[0.4px] w-[204px]">AI that runs entirely on your hardware. No accounts, no cloud, no exceptions.</p>
     </div>
   );
 }
@@ -2652,7 +2622,7 @@ function Container247() {
     <div className="absolute h-[30px] left-[16px] top-0 w-[192.8px]" data-name="Container">
       <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[0] left-0 not-italic text-[#9a9690] text-[10px] top-[-0.2px] w-[156px]">
         <span className="leading-[15px]">runs offline</span>
-        <span className="leading-[15px] text-[#5c5a57]">{` · no internet required`}</span>
+        <span className="leading-[15px] text-[#5c5a57]">{` Â· no internet required`}</span>
       </p>
     </div>
   );
@@ -2676,7 +2646,7 @@ function Container250() {
     <div className="absolute h-[30px] left-[16px] top-0 w-[192.8px]" data-name="Container">
       <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[0] left-0 not-italic text-[#9a9690] text-[10px] top-[-0.2px] w-[192px]">
         <span className="leading-[15px]">stays on device</span>
-        <span className="leading-[15px] text-[#5c5a57]">{` · nothing leaves your hardware`}</span>
+        <span className="leading-[15px] text-[#5c5a57]">{` Â· nothing leaves your hardware`}</span>
       </p>
     </div>
   );
@@ -2700,7 +2670,7 @@ function Container253() {
     <div className="absolute h-[30px] left-[16px] top-0 w-[192.8px]" data-name="Container">
       <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[0] left-0 not-italic text-[#9a9690] text-[10px] top-[-0.2px] w-[180px]">
         <span className="leading-[15px]">extends to your pc</span>
-        <span className="leading-[15px] text-[#5c5a57]">{` · pair once for larger models`}</span>
+        <span className="leading-[15px] text-[#5c5a57]">{` Â· pair once for larger models`}</span>
       </p>
     </div>
   );
@@ -2792,235 +2762,6 @@ function ScreensSection2() {
   );
 }
 
-function Group() {
-  return (
-    <div className="absolute inset-[7.78%_53.71%_91.63%_44.96%]" data-name="Group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30239 3.30144">
-        <g id="Group" opacity="0.3">
-          <path d={svgPaths.p27309980} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Group1() {
-  return (
-    <div className="absolute inset-[7.78%_50.8%_91.63%_47.88%]" data-name="Group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30239 3.30144">
-        <g id="Group" opacity="0.3">
-          <path d={svgPaths.p27309980} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function MaskGroup() {
-  return (
-    <div className="absolute inset-[17.94%_40.45%_73.44%_40.45%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 47.5544 47.5407">
-        <g id="Mask group">
-          <mask height="48" id="mask0_2_3029" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="48" x="0" y="0">
-            <g id="Group">
-              <path d={svgPaths.pecafe00} fill="var(--fill-0, white)" id="Vector" />
-            </g>
-          </mask>
-          <g mask="url(#mask0_2_3029)">
-            <path d={svgPaths.p3dfcd00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.14" id="Vector_2" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function MaskGroup1() {
-  return (
-    <div className="absolute inset-[50.63%_6.37%_37.12%_6.37%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 217.297 67.6134">
-        <g id="Mask group">
-          <mask height="68" id="mask0_2_2822" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="0">
-            <g id="Group">
-              <path d={svgPaths.p219e9f00} fill="var(--fill-0, white)" id="Vector" />
-            </g>
-          </mask>
-          <g mask="url(#mask0_2_2822)">
-            <path d={svgPaths.p11ebcb00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.1" id="Vector_2" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function MaskGroup2() {
-  return (
-    <div className="absolute inset-[84.26%_6.37%_10.05%_6.37%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 217.297 31.4296">
-        <g id="Mask group">
-          <mask height="32" id="mask0_2_2666" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="0">
-            <g id="Group">
-              <path d={svgPaths.p1a7b980} fill="var(--fill-0, white)" id="Vector" />
-            </g>
-          </mask>
-          <g mask="url(#mask0_2_2666)">
-            <path d={svgPaths.p1fa64b00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.22" id="Vector_2" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Group2() {
-  return (
-    <div className="absolute inset-[86.52%_60.45%_12.31%_36.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.715px_-1.073px] mask-size-[8.586px_8.584px]" data-name="Group" style={{ maskImage: `url('${imgGroup}')` }}>
-      <div className="absolute inset-[-8.41%_-7.57%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.23894 7.52113">
-          <g id="Group">
-            <path d={svgPaths.p29071d00} id="Vector" stroke="var(--stroke-0, #C8B98A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.08333" />
-            <path d="M2.68822 6.97946H5.55073" id="Vector_2" stroke="var(--stroke-0, #C8B98A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.08333" />
-            <path d="M4.11947 5.54863V6.97946" id="Vector_3" stroke="var(--stroke-0, #C8B98A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.08333" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function ClipPathGroup() {
-  return (
-    <div className="absolute contents inset-[86.33%_60.16%_12.12%_36.39%]" data-name="Clip path group">
-      <Group2 />
-    </div>
-  );
-}
-
-function Frame() {
-  return (
-    <div className="absolute h-[552px] left-[-0.2px] overflow-clip top-[0.25px] w-[249px]" data-name="Frame">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 552">
-        <path d="M249 0H0V552H249V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
-      </svg>
-      <Group />
-      <Group1 />
-      <div className="absolute inset-[7.78%_44.96%_91.63%_50.8%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.5676 3.30144">
-          <path d={svgPaths.p35ff1700} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[13.01%_94.93%_86.21%_4.21%]" data-name="Vector">
-        <div className="absolute inset-[-12.62%_-25.23%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.22988 5.3752">
-            <path d={svgPaths.pbdb42e0} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.08333" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute inset-[17.94%_40.45%_73.44%_40.45%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 47.5544 47.5407">
-          <path d={svgPaths.pecafe00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.06" id="Vector" />
-        </svg>
-      </div>
-      <MaskGroup />
-      <div className="absolute inset-[20.99%_46.91%_77.05%_46.91%]" data-name="Vector">
-        <div className="absolute inset-[-8.11%_-5.68%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 17.1616 12.5345">
-            <path d={svgPaths.p292a1800} id="Vector" stroke="var(--stroke-0, #C8B98A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.75" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute inset-[23.5%_48.76%_76.5%_48.76%]" data-name="Vector">
-        <div className="absolute inset-[-0.88px_-14.19%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.91491 1.75">
-            <path d="M0.875 0.875H7.03991" id="Vector" stroke="var(--stroke-0, #C8B98A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.75" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute bottom-[76.5%] left-1/2 right-1/2 top-[22.95%]" data-name="Vector">
-        <div className="absolute inset-[-28.39%_-0.88px]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1.75 4.83156">
-            <path d="M0.875 0.875V3.95657" id="Vector" stroke="var(--stroke-0, #C8B98A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.75" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute inset-[30.83%_42.43%_68.31%_42.2%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 38.2826 4.76727">
-          <path d={svgPaths.p2dd26400} fill="var(--fill-0, #5C5A57)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[33.78%_23.77%_63.97%_23.88%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 130.335 12.4134">
-          <path d={svgPaths.paa31a30} fill="var(--fill-0, #E8E4DC)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[38.37%_17.57%_54.96%_17.63%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 161.348 36.8282">
-          <path d={svgPaths.p3be7bf00} fill="var(--fill-0, #9A9690)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[50.63%_6.37%_37.12%_6.37%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 217.297 67.6134">
-          <path d={svgPaths.p219e9f00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.04" id="Vector" />
-        </svg>
-      </div>
-      <MaskGroup1 />
-      <div className="absolute inset-[53.12%_88.12%_46.41%_10.82%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 2.64191 2.64115">
-          <path d={svgPaths.p1da52600} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[52.93%_37.92%_45.83%_15.22%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 116.679 6.82737">
-          <path d={svgPaths.p3c9ae680} fill="var(--fill-0, #9A9690)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[56.42%_88.12%_43.1%_10.82%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 2.64191 2.64115">
-          <path d={svgPaths.p17027900} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[56.22%_27.39%_42.53%_15.28%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 142.744 6.88548">
-          <path d={svgPaths.p1d433a00} fill="var(--fill-0, #9A9690)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[59.72%_88.12%_39.8%_10.82%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 2.64191 2.64115">
-          <path d={svgPaths.p3f8d9930} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[59.52%_15.11%_39.23%_15.26%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 173.383 6.88546">
-          <path d={svgPaths.pa0ee480} fill="var(--fill-0, #9A9690)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[67.65%_7.78%_31.33%_8.01%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 209.681 5.63356">
-          <path d={svgPaths.p25df9f00} fill="var(--fill-0, #5C5A57)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[84.26%_6.37%_10.05%_6.37%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 217.297 31.4296">
-          <path d={svgPaths.p1a7b980} fill="var(--fill-0, #C8B98A)" fillOpacity="0.1" id="Vector" />
-        </svg>
-      </div>
-      <MaskGroup2 />
-      <ClipPathGroup />
-      <div className="absolute inset-[86.66%_36.5%_12.3%_42.55%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 52.1632 5.72073">
-          <path d={svgPaths.p2bab9200} fill="var(--fill-0, #C8B98A)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute inset-[93.16%_38.53%_5.48%_38.82%]" data-name="Vector">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 56.4054 7.51935">
-          <path d={svgPaths.p2c275280} fill="var(--fill-0, #5C5A57)" id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
 function PhoneFrame() {
   return (
     <div className="absolute bg-[#0f0f0f] border-[#1e1e1e] border-[5.6px] border-solid h-[563px] left-0 overflow-clip rounded-[40px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] top-0 w-[260px]" data-name="PhoneFrame">
@@ -3029,7 +2770,6 @@ function PhoneFrame() {
       <div className="absolute h-[552px] left-[-0.2px] top-[1.25px] w-[249px]" data-name="image 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage1} />
       </div>
-      <Frame />
     </div>
   );
 }
@@ -3046,7 +2786,7 @@ function Container236() {
 function Container260() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding — phase 2</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding â€” phase 2</p>
     </div>
   );
 }
@@ -3054,7 +2794,7 @@ function Container260() {
 function Container261() {
   return (
     <div className="h-[63.375px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.42px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[247px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`The model list appears before the first message. No surprises about what's on the device.`}</p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.42px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[247px]">{`The model list appears before the first message. No surprises about what's on the device.`}</p>
     </div>
   );
 }
@@ -3132,9 +2872,7 @@ function Heading17() {
 function Paragraph18() {
   return (
     <div className="h-[40px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[20px] left-0 text-[#9a9690] text-[12px] top-[0.4px] w-[177px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        these models are already on your device. no download needed.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[20px] left-0 not-italic text-[#9a9690] text-[12px] top-[0.4px] w-[177px]">these models are already on your device. no download needed.</p>
     </div>
   );
 }
@@ -3480,7 +3218,7 @@ function Container258() {
 function Container287() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding — phase 3</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding â€” phase 3</p>
     </div>
   );
 }
@@ -3488,9 +3226,7 @@ function Container287() {
 function Container288() {
   return (
     <div className="h-[42.25px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.4px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[231px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Introduce the PC extension paradigm as strictly optional but highly beneficial.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.4px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[231px]">Introduce the PC extension paradigm as strictly optional but highly beneficial.</p>
     </div>
   );
 }
@@ -3591,9 +3327,7 @@ function Heading18() {
 function Paragraph20() {
   return (
     <div className="absolute h-[54px] left-[20px] top-[148.5px] w-[208.8px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[18px] left-[104.72px] text-[#9a9690] text-[12px] text-center top-[-0.2px] w-[183px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        pair your pc once to unlock larger models and faster responses. your phone stays the controller.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[18px] left-[104.72px] not-italic text-[#9a9690] text-[12px] text-center top-[-0.2px] w-[183px]">pair your pc once to unlock larger models and faster responses. your phone stays the controller.</p>
     </div>
   );
 }
@@ -3651,7 +3385,7 @@ function Container301() {
 function Text36() {
   return (
     <div className="absolute h-[28px] left-[16px] top-0 w-[159.2px]" data-name="Text">
-      <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[14px] left-0 not-italic text-[#9a9690] text-[10px] top-[-1px] w-[126px]">still fully private — local network only</p>
+      <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[14px] left-0 not-italic text-[#9a9690] text-[10px] top-[-1px] w-[126px]">still fully private â€” local network only</p>
     </div>
   );
 }
@@ -3681,7 +3415,7 @@ function Container295() {
 function Paragraph21() {
   return (
     <div className="absolute h-[24px] left-[24.4px] top-[404.1px] w-[200px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[12px] left-[100.4px] not-italic text-[#5c5a57] text-[8px] text-center top-[-0.2px] w-[188px]">requires local network access · no data leaves your network</p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[12px] left-[100.4px] not-italic text-[#5c5a57] text-[8px] text-center top-[-0.2px] w-[188px]">requires local network access Â· no data leaves your network</p>
     </div>
   );
 }
@@ -3816,7 +3550,7 @@ function Heading19() {
 function Container306() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat — phone mode</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat â€” phone mode</p>
     </div>
   );
 }
@@ -3824,9 +3558,7 @@ function Container306() {
 function Container307() {
   return (
     <div className="h-[63.375px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.04px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[246px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        A system pill records the switch in the conversation. The monitor icon on the right shows the PC is still available.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.04px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[246px]">A system pill records the switch in the conversation. The monitor icon on the right shows the PC is still available.</p>
     </div>
   );
 }
@@ -3940,9 +3672,7 @@ function Container312() {
 function Container313() {
   return (
     <div className="h-[84.5px] opacity-90 relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-0 text-[#e8e4dc] text-[13px] top-[-0.4px] w-[199px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Quantum gravity attempts to unify general relativity, which describes macro-scale gravity, with quantum mechanics...
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-0 not-italic text-[#e8e4dc] text-[13px] top-[-0.4px] w-[199px]">Quantum gravity attempts to unify general relativity, which describes macro-scale gravity, with quantum mechanics...</p>
     </div>
   );
 }
@@ -4009,7 +3739,7 @@ function Container304() {
 function Container316() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat — PC session active</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat â€” PC session active</p>
     </div>
   );
 }
@@ -4017,9 +3747,7 @@ function Container316() {
 function Container317() {
   return (
     <div className="h-[63.375px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.41px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[258px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        The header pill and byline both name the PC. The user always knows where compute is happening.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.41px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[258px]">The header pill and byline both name the PC. The user always knows where compute is happening.</p>
     </div>
   );
 }
@@ -4071,9 +3799,7 @@ function ScreensSection13() {
 function Container320() {
   return (
     <div className="absolute bg-[#151515] border-[#1e1e1e] border-[0.8px] border-solid h-[57.575px] left-[48.53px] rounded-bl-[16px] rounded-br-[16px] rounded-tl-[16px] rounded-tr-[6px] top-[259.73px] w-[184.275px]" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[16px] left-[12px] text-[#e8e4dc] text-[12px] top-[12px] w-[128px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Explain quantum gravity simply.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[16px] left-[12px] not-italic text-[#e8e4dc] text-[12px] top-[12px] w-[128px]">Explain quantum gravity simply.</p>
     </div>
   );
 }
@@ -4187,9 +3913,7 @@ function Container330() {
 function Container331() {
   return (
     <div className="h-[63.375px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.44px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[242px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        History and compute toggle. The PC connection lives alongside previous chats, easily accessible.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.44px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[242px]">History and compute toggle. The PC connection lives alongside previous chats, easily accessible.</p>
     </div>
   );
 }
@@ -4257,9 +3981,7 @@ function Container335() {
 function Container337() {
   return (
     <div className="bg-[#1e1e1e] h-[31.5px] overflow-clip relative rounded-[8px] shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#e8e4dc] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Explain quantum grav...
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#e8e4dc] text-[13px] top-[4.8px] whitespace-nowrap">Explain quantum grav...</p>
     </div>
   );
 }
@@ -4267,9 +3989,7 @@ function Container337() {
 function Container338() {
   return (
     <div className="h-[31.5px] overflow-clip relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Python script debug
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap">Python script debug</p>
     </div>
   );
 }
@@ -4277,9 +3997,7 @@ function Container338() {
 function Container339() {
   return (
     <div className="h-[31.5px] overflow-clip relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Mediterranean recipes
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap">Mediterranean recipes</p>
     </div>
   );
 }
@@ -4305,9 +4023,7 @@ function Container340() {
 function Container341() {
   return (
     <div className="absolute h-[31.5px] left-[16px] overflow-clip top-[232.5px] w-[167.2px]" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Local LLM benchmarking
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap">Local LLM benchmarking</p>
     </div>
   );
 }
@@ -4421,18 +4137,18 @@ function ScreensSection17() {
   );
 }
 
-function MaskGroup3() {
+function MaskGroup() {
   return (
     <div className="absolute inset-[8.06%_2.52%_84.93%_2.52%]" data-name="Mask group">
       <div className="absolute inset-[0_0_-1.33%_0]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 247.851 39.9888">
           <g id="Mask group">
-            <mask height="40" id="mask0_2_2979" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="248" x="0" y="0">
+            <mask height="40" id="mask0_1_3004" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="248" x="0" y="0">
               <g id="Group">
                 <path d="M0 0H247.851V39.4626H0V0Z" fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2979)">
+            <g mask="url(#mask0_1_3004)">
               <path d={svgPaths.p1dfa35c0} fill="var(--fill-0, white)" fillOpacity="0.04" id="Vector_2" />
             </g>
           </g>
@@ -4442,18 +4158,18 @@ function MaskGroup3() {
   );
 }
 
-function MaskGroup4() {
+function MaskGroup1() {
   return (
-    <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.58%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 92.4348 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2696" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
+            <mask height="19" id="mask0_1_2710" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p3de23e00} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2696)">
+            <g mask="url(#mask0_1_2710)">
               <path d={svgPaths.p2fd557f0} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -4463,18 +4179,18 @@ function MaskGroup4() {
   );
 }
 
-function MaskGroup5() {
+function MaskGroup2() {
   return (
-    <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.684px_-60.246px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.685px_-60.246px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.53%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 99.535 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2675" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="100" x="0" y="0">
+            <mask height="19" id="mask0_1_2689" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="100" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.pf5fa000} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2675)">
+            <g mask="url(#mask0_1_2689)">
               <path d={svgPaths.p37d30280} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -4484,18 +4200,18 @@ function MaskGroup5() {
   );
 }
 
-function MaskGroup6() {
+function MaskGroup3() {
   return (
-    <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-1.82%_-0.87%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 61.2232 29.9916">
           <g id="Mask group">
-            <mask height="30" id="mask0_2_3049" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="61" x="0" y="0">
+            <mask height="30" id="mask0_1_3062" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="61" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p7b5a500} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_3049)">
+            <g mask="url(#mask0_1_3062)">
               <path d={svgPaths.p4ff7930} fill="var(--fill-0, #2C2C2C)" id="Vector_2" />
             </g>
           </g>
@@ -4505,10 +4221,10 @@ function MaskGroup6() {
   );
 }
 
-function Group5() {
+function Group2() {
   return (
-    <div className="absolute inset-[59.16%_81.17%_39.38%_15.68%] mask-position-[-34.351px_-248.252px,_-0.822px_-0.822px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup1}')` }}>
-      <div className="absolute inset-[-7.6%_-7.61%]">
+    <div className="absolute inset-[59.16%_81.17%_39.38%_15.68%] mask-position-[-34.352px_-248.252px,_-0.822px_-0.822px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup}')` }}>
+      <div className="absolute inset-[-7.6%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.46788 9.47136">
           <g id="Group">
             <path d={svgPaths.p5475600} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
@@ -4520,17 +4236,17 @@ function Group5() {
   );
 }
 
-function ClipPathGroup2() {
+function ClipPathGroup1() {
   return (
     <div className="absolute contents inset-[59.02%_80.86%_39.23%_15.37%]" data-name="Clip path group">
-      <Group5 />
+      <Group2 />
     </div>
   );
 }
 
-function Group6() {
+function Group3() {
   return (
-    <div className="absolute inset-[59.5%_6.74%_39.71%_91.37%] mask-position-[-231.909px_-250.143px,_-0.493px_-0.74px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup2}')` }}>
+    <div className="absolute inset-[59.5%_6.74%_39.71%_91.37%] mask-position-[-231.909px_-250.143px,_-0.493px_-0.74px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup1}')` }}>
       <div className="absolute inset-[-8.45%_-7.61%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 5.68073 5.18952">
           <g id="Group" opacity="0.4">
@@ -4544,17 +4260,17 @@ function Group6() {
   );
 }
 
-function ClipPathGroup3() {
+function ClipPathGroup2() {
   return (
     <div className="absolute contents inset-[59.37%_6.55%_39.58%_91.18%]" data-name="Clip path group">
-      <Group6 />
+      <Group3 />
     </div>
   );
 }
 
-function Group7() {
+function Group4() {
   return (
-    <div className="absolute inset-[42.34%_86.14%_56.94%_6.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.189px_-153.519px] mask-size-[247.851px_398.836px]" data-name="Group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[42.34%_86.14%_56.94%_6.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.189px_-153.519px] mask-size-[247.852px_398.836px]" data-name="Group" style={{ maskImage: `url('${imgVector}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.4042 4.03636">
         <g id="Group" opacity="0.8">
           <path d={svgPaths.p35bd4c00} fill="var(--fill-0, #C8B98A)" id="Vector" />
@@ -4564,18 +4280,18 @@ function Group7() {
   );
 }
 
-function MaskGroup7() {
+function MaskGroup4() {
   return (
-    <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.58%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 92.4348 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2640" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
+            <mask height="19" id="mask0_1_2654" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p4cd7a00} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2640)">
+            <g mask="url(#mask0_1_2654)">
               <path d={svgPaths.p287baf80} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -4585,18 +4301,18 @@ function MaskGroup7() {
   );
 }
 
-function MaskGroup8() {
+function MaskGroup5() {
   return (
-    <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.58%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 92.4348 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_3012" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
+            <mask height="19" id="mask0_1_3025" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p5f6b580} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_3012)">
+            <g mask="url(#mask0_1_3025)">
               <path d={svgPaths.p9cfdf00} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -4606,18 +4322,18 @@ function MaskGroup8() {
   );
 }
 
-function MaskGroup9() {
+function MaskGroup6() {
   return (
-    <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.667px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.667px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.34%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 156.337 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2620" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="156" x="0" y="0">
+            <mask height="19" id="mask0_1_2634" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="156" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p177c9770} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2620)">
+            <g mask="url(#mask0_1_2634)">
               <path d={svgPaths.p2de031f2} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -4627,154 +4343,154 @@ function MaskGroup9() {
   );
 }
 
-function Group4() {
+function Group1() {
   return (
     <div className="absolute contents inset-[15.39%_6.55%_21.79%_6.69%]" data-name="Group">
-      <div className="absolute inset-[15.46%_90.14%_83.88%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.46%_90.14%_83.88%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.94963">
             <path d={svgPaths.p11f7eb27} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[15.46%_92.19%_84.17%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.46%_92.19%_84.17%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625V2.68034H2.67947" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[16.12%_90.14%_83.22%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-5.919px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[16.12%_90.14%_83.22%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-5.919px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.94962">
             <path d={svgPaths.p3a40bfc0} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[16.41%_90.14%_83.22%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.093px_-7.563px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[16.41%_90.14%_83.22%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.094px_-7.563px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625H2.67947V2.68034" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[15.83%_81.17%_83.15%_16.62%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-36.816px_-4.275px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.83%_81.17%_83.15%_16.62%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-36.816px_-4.275px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-10.86%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.00252 7.00496">
             <path d={svgPaths.p29a65f00} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[15.39%_82.12%_83.59%_15.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-34.351px_-1.809px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.39%_82.12%_83.59%_15.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-34.351px_-1.809px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-10.86%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.00252 7.00496">
             <path d={svgPaths.p16ce6500} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 91.3829 17.824">
           <path d={svgPaths.p103ea780} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup4 />
-      <div className="absolute inset-[21.33%_35.89%_77.87%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-35.232px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup1 />
+      <div className="absolute inset-[21.33%_35.89%_77.87%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-35.232px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.7138 4.49875">
           <path d={svgPaths.p16765200} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.684px_-60.246px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.685px_-60.246px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 98.4831 17.8239">
           <path d={svgPaths.pcc45300} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup5 />
-      <div className="absolute inset-[26.83%_34.53%_72.17%_34.51%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-83.496px_-66.209px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup2 />
+      <div className="absolute inset-[26.83%_34.53%_72.17%_34.51%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-83.496px_-66.209px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80.8153 5.61158">
           <path d={svgPaths.p16792c00} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[37.58%_6.69%_61.71%_87.14%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-220.865px_-126.717px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[37.58%_6.69%_61.71%_87.14%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-220.864px_-126.717px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.1071 4.03636">
           <path d={svgPaths.p9b4b780} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 60.1713 28.9393">
           <path d={svgPaths.p110cdd00} fill="var(--fill-0, #242424)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup6 />
-      <div className="absolute inset-[33.15%_10.34%_65.32%_74.22%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-187.145px_-101.773px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup3 />
+      <div className="absolute inset-[33.15%_10.34%_65.32%_74.22%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-187.146px_-101.773px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 40.2952 8.65545">
           <path d={svgPaths.p3c7f3c80} fill="var(--fill-0, #E8E4DC)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[59.24%_90.14%_40.11%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[59.24%_90.14%_40.11%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.9496">
             <path d={svgPaths.p2f244680} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[59.24%_92.19%_40.4%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[59.24%_92.19%_40.4%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625V2.68034H2.67947" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[59.89%_90.14%_39.45%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-252.363px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[59.89%_90.14%_39.45%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-252.363px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.94962">
             <path d={svgPaths.p145bf380} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[60.19%_90.14%_39.45%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.093px_-254.007px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[60.19%_90.14%_39.45%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.094px_-254.007px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625H2.67947V2.68034" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
+      <ClipPathGroup1 />
       <ClipPathGroup2 />
-      <ClipPathGroup3 />
-      <Group7 />
-      <div className="absolute inset-[44.91%_9.03%_43.04%_6.69%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10.896px_-168.005px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <Group4 />
+      <div className="absolute inset-[44.91%_9.03%_43.04%_6.69%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10.896px_-168.005px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 219.962 67.8494">
           <path d={svgPaths.p3607fff0} fill="var(--fill-0, #E8E4DC)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 91.3829 17.824">
           <path d={svgPaths.p33252080} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup7 />
-      <div className="absolute inset-[65.1%_35.89%_34.1%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-281.676px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup4 />
+      <div className="absolute inset-[65.1%_35.89%_34.1%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-281.676px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.7138 4.49872">
           <path d={svgPaths.pb60f500} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 91.3829 17.824">
           <path d={svgPaths.p377cba30} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup8 />
-      <div className="absolute inset-[70.6%_35.89%_28.6%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-312.654px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup5 />
+      <div className="absolute inset-[70.6%_35.89%_28.6%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-312.654px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.7138 4.49876">
           <path d={svgPaths.p13248380} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.667px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.667px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 155.285 17.824">
           <path d={svgPaths.p2a4e530} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup9 />
-      <div className="absolute inset-[76.09%_23.97%_22.96%_23.63%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-55.095px_-343.561px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup6 />
+      <div className="absolute inset-[76.09%_23.97%_22.96%_23.63%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-55.095px_-343.561px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 136.757 5.3156">
           <path d={svgPaths.p1644c500} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
@@ -4783,15 +4499,15 @@ function Group4() {
   );
 }
 
-function ClipPathGroup1() {
+function ClipPathGroup() {
   return (
     <div className="absolute contents inset-[15.07%_2.52%_14.09%_2.52%]" data-name="Clip path group">
-      <Group4 />
+      <Group1 />
     </div>
   );
 }
 
-function Group3() {
+function Group() {
   return (
     <div className="absolute contents inset-[1.17%_2.52%]" data-name="Group">
       <div className="absolute inset-[1.17%_2.52%]" data-name="Vector">
@@ -4804,7 +4520,7 @@ function Group3() {
           <path d="M0 0H247.851V39.4626H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup3 />
+      <MaskGroup />
       <div className="absolute inset-[10.79%_88.92%_89.04%_6.55%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.8338 0.986565">
           <path d={svgPaths.p31b03520} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -4866,22 +4582,22 @@ function Group3() {
           <path d={svgPaths.p1f766a00} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup1 />
+      <ClipPathGroup />
     </div>
   );
 }
 
-function MaskGroup10() {
+function MaskGroup7() {
   return (
     <div className="absolute inset-[1.17%_26.95%_1.17%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 184.081 549.846">
         <g id="Mask group">
-          <mask height="550" id="mask0_2_2615" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="185" x="0" y="0">
+          <mask height="550" id="mask0_1_2629" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="185" x="0" y="0">
             <g id="Group">
               <path d="M0 0H184.081V549.846H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2615)">
+          <g mask="url(#mask0_1_2629)">
             <path d={svgPaths.p3af28700} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -4890,17 +4606,17 @@ function MaskGroup10() {
   );
 }
 
-function MaskGroup11() {
+function MaskGroup8() {
   return (
     <div className="absolute inset-[8.06%_27.15%_85.36%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 37.0291">
         <g id="Mask group">
-          <mask height="38" id="mask0_2_2610" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="38" id="mask0_1_2624" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V37.0291H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2610)">
+          <g mask="url(#mask0_1_2624)">
             <path d={svgPaths.p37d4b0f0} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -4909,17 +4625,17 @@ function MaskGroup11() {
   );
 }
 
-function MaskGroup12() {
+function MaskGroup9() {
   return (
     <div className="absolute inset-[14.64%_27.15%_67.1%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 102.8">
         <g id="Mask group">
-          <mask height="103" id="mask0_2_2597" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="103" id="mask0_1_2611" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V102.8H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2597)">
+          <g mask="url(#mask0_1_2611)">
             <path d={svgPaths.p13b6b080} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -4928,10 +4644,10 @@ function MaskGroup12() {
   );
 }
 
-function Group8() {
+function Group5() {
   return (
-    <div className="absolute inset-[24.53%_89.21%_74.11%_7.85%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.767px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup3}')` }}>
-      <div className="absolute inset-[-7.6%_-7.61%]">
+    <div className="absolute inset-[24.53%_89.21%_74.11%_7.85%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.767px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup2}')` }}>
+      <div className="absolute inset-[-7.6%_-7.6%_-7.61%_-7.61%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.83672 8.83952">
           <g id="Group">
             <path d={svgPaths.p3331f340} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
@@ -4951,17 +4667,17 @@ function Group8() {
   );
 }
 
-function ClipPathGroup4() {
+function ClipPathGroup3() {
   return (
     <div className="absolute contents inset-[24.39%_88.92%_73.97%_7.56%]" data-name="Clip path group">
-      <Group8 />
+      <Group5 />
     </div>
   );
 }
 
-function Group9() {
+function Group6() {
   return (
-    <div className="absolute inset-[28.97%_89.36%_69.67%_8%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.151px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup3}')` }}>
+    <div className="absolute inset-[28.97%_89.36%_69.67%_8%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.15px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup2}')` }}>
       <div className="absolute inset-[-7.6%_-8.45%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.06976 8.83952">
           <g id="Group">
@@ -4981,25 +4697,25 @@ function Group9() {
   );
 }
 
-function ClipPathGroup5() {
+function ClipPathGroup4() {
   return (
     <div className="absolute contents inset-[28.83%_88.92%_69.53%_7.56%]" data-name="Clip path group">
-      <Group9 />
+      <Group6 />
     </div>
   );
 }
 
-function MaskGroup13() {
+function MaskGroup10() {
   return (
     <div className="absolute inset-[37.04%_27.15%_56.53%_2.52%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-23.349px] mask-size-[183.555px_327.277px]" data-name="Mask group" style={{ maskImage: `url('${imgVector1}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 36.1741">
         <g id="Mask group">
-          <mask height="37" id="mask0_2_2395" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="37" id="mask0_1_2397" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V36.1741H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2395)">
+          <g mask="url(#mask0_1_2397)">
             <path d={svgPaths.pece7000} fill="var(--fill-0, #C8B98A)" id="Vector_2" />
           </g>
         </g>
@@ -5008,9 +4724,9 @@ function MaskGroup13() {
   );
 }
 
-function Group11() {
+function Group8() {
   return (
-    <div className="absolute inset-[38.55%_78.03%_60.08%_8.28%] mask-position-[-15.047px_-31.846px,_-0.846px_-2.578px]" data-name="Group" style={{ maskImage: `url('${imgVector1}'), url('${imgGroup4}')` }}>
+    <div className="absolute inset-[38.55%_78.03%_60.08%_8.28%] mask-position-[-15.046px_-31.846px,_-0.846px_-2.578px]" data-name="Group" style={{ maskImage: `url('${imgVector1}'), url('${imgGroup3}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 35.7174 7.66955">
         <g id="Group">
           <path d={svgPaths.p37a5d580} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -5020,15 +4736,15 @@ function Group11() {
   );
 }
 
-function ClipPathGroup7() {
+function ClipPathGroup6() {
   return (
     <div className="absolute contents inset-[38.1%_32.19%_59.63%_7.96%]" data-name="Clip path group">
-      <Group11 />
+      <Group8 />
     </div>
   );
 }
 
-function Group10() {
+function Group7() {
   return (
     <div className="absolute contents inset-[34.95%_27.15%_56.53%_2.52%]" data-name="Group">
       <div className="absolute inset-[34.95%_82.76%_64.29%_7.76%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-13.681px_-11.582px] mask-size-[183.555px_327.277px]" data-name="Vector" style={{ maskImage: `url('${imgVector1}')` }}>
@@ -5036,8 +4752,8 @@ function Group10() {
           <path d={svgPaths.p376b7c80} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup13 />
-      <ClipPathGroup7 />
+      <MaskGroup10 />
+      <ClipPathGroup6 />
       <div className="absolute inset-[41.45%_88.03%_57.98%_8.18%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-14.78px_-48.176px] mask-size-[183.555px_327.277px]" data-name="Vector" style={{ maskImage: `url('${imgVector1}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.88842 3.19648">
           <path d={svgPaths.pbfecd00} fill="var(--fill-0, #C8B98A)" id="Vector" />
@@ -5047,25 +4763,25 @@ function Group10() {
   );
 }
 
-function ClipPathGroup6() {
+function ClipPathGroup5() {
   return (
     <div className="absolute contents inset-[32.9%_27.15%_8.97%_2.52%]" data-name="Clip path group">
-      <Group10 />
+      <Group7 />
     </div>
   );
 }
 
-function MaskGroup14() {
+function MaskGroup11() {
   return (
     <div className="absolute inset-[91.03%_27.15%_1.17%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 43.935">
         <g id="Mask group">
-          <mask height="44" id="mask0_2_2534" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="44" id="mask0_1_2536" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V43.935H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2534)">
+          <g mask="url(#mask0_1_2536)">
             <path d={svgPaths.p115e1200} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -5074,10 +4790,10 @@ function MaskGroup14() {
   );
 }
 
-function Frame1() {
+function Frame() {
   return (
     <div className="absolute h-[563px] left-[-6.2px] overflow-clip top-[-5.91px] w-[261px]" data-name="Frame">
-      <Group3 />
+      <Group />
       <div className="absolute inset-[1.17%_2.52%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 247.851 549.846">
           <path d={svgPaths.p18fc7a00} fill="var(--fill-0, black)" fillOpacity="0.5" id="Vector" />
@@ -5088,8 +4804,8 @@ function Frame1() {
           <path d="M0 0H184.081V549.846H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup10 />
-      <MaskGroup11 />
+      <MaskGroup7 />
+      <MaskGroup8 />
       <div className="absolute inset-[8.61%_74.79%_90.13%_7.86%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 45.2779 7.08749">
           <path d={svgPaths.p11eb2e80} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -5100,7 +4816,7 @@ function Frame1() {
           <path d={svgPaths.p34a45500} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup12 />
+      <MaskGroup9 />
       <div className="absolute inset-[16.93%_81.15%_82.31%_7.63%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29.2806 4.2738">
           <path d={svgPaths.pf6675c0} fill="var(--fill-0, #5C5A57)" id="Vector" />
@@ -5125,20 +4841,20 @@ function Frame1() {
           <path d={svgPaths.p27c4f500} fill="var(--fill-0, #9A9690)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup4 />
+      <ClipPathGroup3 />
       <div className="absolute inset-[24.73%_74.79%_74.21%_14.27%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 28.5437 5.93518">
           <path d={svgPaths.p1a240180} fill="var(--fill-0, #9A9690)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup5 />
+      <ClipPathGroup4 />
       <div className="absolute inset-[29.16%_70.99%_69.49%_14.31%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 38.3749 7.57684">
           <path d={svgPaths.p39f3a500} fill="var(--fill-0, #9A9690)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup6 />
-      <MaskGroup14 />
+      <ClipPathGroup5 />
+      <MaskGroup11 />
       <div className="absolute inset-[93.2%_89.21%_5.85%_7.85%]" data-name="Vector">
         <div className="absolute inset-[-10.86%_-7.61%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.83672 6.53818">
@@ -5184,7 +4900,7 @@ function PhoneFrame5() {
       <div className="absolute h-[565px] left-[-6.2px] top-[-7.91px] w-[260px]" data-name="image 10">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage10} />
       </div>
-      <Frame1 />
+      <Frame />
     </div>
   );
 }
@@ -5209,9 +4925,7 @@ function Container348() {
 function Container349() {
   return (
     <div className="h-[63.375px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.36px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[250px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Tapping the header drops down the tier list. The user thinks in tiers (fast/balanced), not model weights.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.36px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[250px]">Tapping the header drops down the tier list. The user thinks in tiers (fast/balanced), not model weights.</p>
     </div>
   );
 }
@@ -5373,9 +5087,7 @@ function Text47() {
   return (
     <div className="h-[14px] relative shrink-0 w-[114.75px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[14px] relative shrink-0 text-[#5c5a57] text-[10px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          quick answers, less detail
-        </p>
+        <p className="font-['IBM_Plex_Sans:Regular',sans-serif] leading-[14px] not-italic relative shrink-0 text-[#5c5a57] text-[10px] whitespace-nowrap">quick answers, less detail</p>
       </div>
     </div>
   );
@@ -5436,9 +5148,7 @@ function Text50() {
   return (
     <div className="h-[14px] relative shrink-0 w-[95.888px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[14px] relative shrink-0 text-[#5c5a57] text-[10px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          deep, careful thought
-        </p>
+        <p className="font-['IBM_Plex_Sans:Regular',sans-serif] leading-[14px] not-italic relative shrink-0 text-[#5c5a57] text-[10px] whitespace-nowrap">deep, careful thought</p>
       </div>
     </div>
   );
@@ -5558,9 +5268,7 @@ function Text55() {
   return (
     <div className="h-[14px] relative shrink-0 w-[125.6px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="flex-[1_0_0] font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[14px] min-h-px min-w-px relative text-[#5c5a57] text-[10px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          good middle ground
-        </p>
+        <p className="flex-[1_0_0] font-['IBM_Plex_Sans:Regular',sans-serif] leading-[14px] min-h-px min-w-px not-italic relative text-[#5c5a57] text-[10px]">good middle ground</p>
       </div>
     </div>
   );
@@ -5616,18 +5324,18 @@ function ScreensSection21() {
   );
 }
 
-function MaskGroup15() {
+function MaskGroup12() {
   return (
     <div className="absolute inset-[8.06%_2.52%_84.93%_2.52%]" data-name="Mask group">
       <div className="absolute inset-[0_0_-1.33%_0]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 244.053 39.2075">
           <g id="Mask group">
-            <mask height="39" id="mask0_2_2512" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="245" x="0" y="0">
+            <mask height="39" id="mask0_1_2502" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="245" x="0" y="0">
               <g id="Group">
                 <path d="M0 0H244.053V38.6916H0V0Z" fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2512)">
+            <g mask="url(#mask0_1_2502)">
               <path d={svgPaths.p12034d00} fill="var(--fill-0, white)" fillOpacity="0.04" id="Vector_2" />
             </g>
           </g>
@@ -5637,18 +5345,18 @@ function MaskGroup15() {
   );
 }
 
-function MaskGroup16() {
+function MaskGroup13() {
   return (
     <div className="absolute inset-[20.62%_6.55%_74.24%_71.09%]" data-name="Mask group">
       <div className="absolute inset-[-1.82%_-0.9%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 58.4969 29.4056">
           <g id="Mask group">
-            <mask height="29" id="mask0_2_2466" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="58" x="0" y="0">
+            <mask height="29" id="mask0_1_2468" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="58" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p928700} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2466)">
+            <g mask="url(#mask0_1_2468)">
               <path d={svgPaths.p3e414800} fill="var(--fill-0, #2C2C2C)" id="Vector_2" />
             </g>
           </g>
@@ -5658,7 +5366,7 @@ function MaskGroup16() {
   );
 }
 
-function Group13() {
+function Group10() {
   return (
     <div className="absolute inset-[31.68%_86.14%_67.6%_6.81%]" data-name="Group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.1222 3.9575">
@@ -5670,18 +5378,18 @@ function Group13() {
   );
 }
 
-function MaskGroup17() {
+function MaskGroup14() {
   return (
     <div className="absolute inset-[43.86%_6.55%_51%_42.36%]" data-name="Mask group">
       <div className="absolute inset-[-1.82%_-0.39%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 132.343 29.4056">
           <g id="Mask group">
-            <mask height="29" id="mask0_2_2448" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="132" x="0" y="0">
+            <mask height="29" id="mask0_1_2450" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="132" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p31e55700} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2448)">
+            <g mask="url(#mask0_1_2450)">
               <path d={svgPaths.p38c7ae00} fill="var(--fill-0, #2C2C2C)" id="Vector_2" />
             </g>
           </g>
@@ -5691,9 +5399,9 @@ function MaskGroup17() {
   );
 }
 
-function Group14() {
+function Group11() {
   return (
-    <div className="absolute inset-[71.75%_81.17%_26.79%_15.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.809px_-0.806px] mask-size-[9.71px_9.673px]" data-name="Group" style={{ maskImage: `url('${imgGroup5}')` }}>
+    <div className="absolute inset-[71.75%_81.17%_26.79%_15.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.81px_-0.806px] mask-size-[9.71px_9.673px]" data-name="Group" style={{ maskImage: `url('${imgGroup4}')` }}>
       <div className="absolute inset-[-7.75%_-7.72%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.34194 9.31075">
           <g id="Group">
@@ -5706,15 +5414,15 @@ function Group14() {
   );
 }
 
-function ClipPathGroup8() {
+function ClipPathGroup7() {
   return (
     <div className="absolute contents inset-[71.6%_80.86%_26.65%_15.37%]" data-name="Clip path group">
-      <Group14 />
+      <Group11 />
     </div>
   );
 }
 
-function Group15() {
+function Group12() {
   return (
     <div className="absolute inset-[54.92%_86.14%_44.36%_6.81%]" data-name="Group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.1222 3.95752">
@@ -5726,7 +5434,7 @@ function Group15() {
   );
 }
 
-function Group12() {
+function Group9() {
   return (
     <div className="absolute contents inset-[1.17%_2.52%]" data-name="Group">
       <div className="absolute inset-[1.17%_2.52%]" data-name="Vector">
@@ -5739,7 +5447,7 @@ function Group12() {
           <path d="M0 0H244.053V38.6916H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup15 />
+      <MaskGroup12 />
       <div className="absolute inset-[10.79%_88.92%_89.04%_6.55%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.6524 0.96729">
           <path d={svgPaths.p2500e770} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -5826,7 +5534,7 @@ function Group12() {
           <path d={svgPaths.p7b8780} fill="var(--fill-0, #242424)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup16 />
+      <MaskGroup13 />
       <div className="absolute inset-[22.46%_10.34%_76.07%_74.92%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 37.8755 8.09815">
           <path d={svgPaths.p15719e00} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -5874,7 +5582,7 @@ function Group12() {
           </svg>
         </div>
       </div>
-      <Group13 />
+      <Group10 />
       <div className="absolute inset-[34.26%_40.64%_64.21%_6.9%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 134.838 8.48636">
           <path d={svgPaths.p20cad00} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -5890,7 +5598,7 @@ function Group12() {
           <path d={svgPaths.p37e0f070} fill="var(--fill-0, #242424)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup17 />
+      <MaskGroup14 />
       <div className="absolute inset-[45.73%_10.15%_52.73%_45.92%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 112.905 8.48636">
           <path d={svgPaths.p24594ff0} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -5924,8 +5632,8 @@ function Group12() {
           </svg>
         </div>
       </div>
-      <ClipPathGroup8 />
-      <Group15 />
+      <ClipPathGroup7 />
+      <Group12 />
       <div className="absolute inset-[57.49%_9.03%_30.46%_6.69%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 216.591 66.5237">
           <path d={svgPaths.p7e1c8f0} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -5935,20 +5643,20 @@ function Group12() {
   );
 }
 
-function Group16() {
+function Group13() {
   return (
-    <div className="absolute inset-[9.11%_14.74%_62.28%_14.74%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[181.259px_157.926px]" data-name="Group" style={{ maskImage: `url('${imgGroup6}')` }}>
+    <div className="absolute inset-[9.11%_14.74%_62.28%_14.74%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[181.26px_157.926px]" data-name="Group" style={{ maskImage: `url('${imgGroup5}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 181.259 157.926">
         <g id="Group">
           <path d={svgPaths.p17842800} fill="var(--fill-0, #111111)" id="Vector" />
           <path d={svgPaths.p26419700} fill="var(--fill-0, #242424)" id="Vector_2" />
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2344" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="20" x="11" y="9">
+            <mask height="19" id="mask0_1_2346" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="20" x="11" y="9">
               <g id="Group_2">
                 <path d={svgPaths.p26419700} fill="var(--fill-0, white)" id="Vector_3" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2344)">
+            <g mask="url(#mask0_1_2346)">
               <path d={svgPaths.p17ead700} fill="var(--fill-0, #2A2A2A)" id="Vector_4" />
             </g>
           </g>
@@ -5957,40 +5665,40 @@ function Group16() {
           <path d={svgPaths.p3778670} fill="var(--fill-0, #5C5A57)" id="Vector_7" />
           <path d={svgPaths.p31132580} fill="var(--fill-0, #1A1A1A)" id="Vector_8" />
           <g id="Mask group_2">
-            <mask height="38" id="mask1_2_2344" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="181" x="0" y="36">
+            <mask height="38" id="mask1_1_2346" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="181" x="0" y="36">
               <g id="Group_3">
                 <path d={svgPaths.p31132580} fill="var(--fill-0, white)" id="Vector_9" />
               </g>
             </mask>
-            <g mask="url(#mask1_2_2344)">
+            <g mask="url(#mask1_1_2346)">
               <path d={svgPaths.p37621720} fill="var(--fill-0, #C8B98A)" id="Vector_10" />
             </g>
           </g>
           <path d={svgPaths.p1a51ed00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.12" id="Vector_11" />
           <g id="Mask group_3">
-            <mask height="19" id="mask2_2_2344" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="20" x="11" y="46">
+            <mask height="19" id="mask2_1_2346" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="20" x="11" y="46">
               <g id="Group_4">
                 <path d={svgPaths.p1a51ed00} fill="var(--fill-0, white)" id="Vector_12" />
               </g>
             </mask>
-            <g mask="url(#mask2_2_2344)">
+            <g mask="url(#mask2_1_2346)">
               <path d={svgPaths.p3aa3d300} fill="var(--fill-0, #C8B98A)" fillOpacity="0.22" id="Vector_13" />
             </g>
           </g>
           <path d={svgPaths.p2ca2ae00} fill="var(--fill-0, #C8B98A)" id="Vector_14" />
           <path d={svgPaths.p39ad7800} fill="var(--fill-0, #E8E4DC)" id="Vector_15" />
           <path d={svgPaths.pbd8ea00} fill="var(--fill-0, #5C5A57)" id="Vector_16" />
-          <g filter="url(#filter0_d_2_2344)" id="Group_5">
+          <g filter="url(#filter0_d_1_2346)" id="Group_5">
             <path d={svgPaths.p16731c00} fill="var(--fill-0, #C8B98A)" id="Vector_17" />
           </g>
           <path d={svgPaths.p2293f000} fill="var(--fill-0, #242424)" id="Vector_18" />
           <g id="Mask group_4">
-            <mask height="19" id="mask3_2_2344" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="20" x="11" y="82">
+            <mask height="19" id="mask3_1_2346" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="20" x="11" y="82">
               <g id="Group_6">
                 <path d={svgPaths.p2293f000} fill="var(--fill-0, white)" id="Vector_19" />
               </g>
             </mask>
-            <g mask="url(#mask3_2_2344)">
+            <g mask="url(#mask3_1_2346)">
               <path d={svgPaths.paee4280} fill="var(--fill-0, #2A2A2A)" id="Vector_20" />
             </g>
           </g>
@@ -6002,12 +5710,12 @@ function Group16() {
           <path d={svgPaths.p30ea8f20} id="Vector_26" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.3" />
           <path d={svgPaths.p2ef1e200} fill="var(--fill-0, #0D0D0D)" id="Vector_27" />
           <g id="Mask group_5">
-            <mask height="23" id="mask4_2_2344" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="181" x="0" y="135">
+            <mask height="23" id="mask4_1_2346" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="181" x="0" y="135">
               <g id="Group_7">
                 <path d={svgPaths.p2ef1e200} fill="var(--fill-0, white)" id="Vector_28" />
               </g>
             </mask>
-            <g mask="url(#mask4_2_2344)">
+            <g mask="url(#mask4_1_2346)">
               <path d={svgPaths.p3f99bda0} fill="var(--fill-0, #1A1A1A)" id="Vector_29" />
             </g>
           </g>
@@ -6015,15 +5723,15 @@ function Group16() {
           <path d={svgPaths.p3db9e580} fill="var(--fill-0, #5C5A57)" id="Vector_31" />
         </g>
         <defs>
-          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.8692" id="filter0_d_2_2344" width="19.8841" x="158.5" y="45.2332">
+          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.8692" id="filter0_d_1_2346" width="19.8841" x="158.5" y="45.2332">
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
             <feOffset />
             <feGaussianBlur stdDeviation="4" />
             <feComposite in2="hardAlpha" operator="out" />
             <feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.72549 0 0 0 0 0.541176 0 0 0 0.5 0" />
-            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_2_2344" />
-            <feBlend in="SourceGraphic" in2="effect1_dropShadow_2_2344" mode="normal" result="shape" />
+            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2346" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2346" mode="normal" result="shape" />
           </filter>
         </defs>
       </svg>
@@ -6031,25 +5739,25 @@ function Group16() {
   );
 }
 
-function ClipPathGroup9() {
+function ClipPathGroup8() {
   return (
     <div className="absolute contents inset-[9.11%_14.74%_62.28%_14.74%]" data-name="Clip path group">
-      <Group16 />
+      <Group13 />
     </div>
   );
 }
 
-function MaskGroup18() {
+function MaskGroup15() {
   return (
     <div className="absolute inset-[9.11%_14.74%_62.28%_14.74%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 181.259 157.926">
         <g id="Mask group">
-          <mask height="158" id="mask0_2_2846" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="182" x="0" y="0">
+          <mask height="158" id="mask0_1_2871" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="182" x="0" y="0">
             <g id="Group">
               <path d={svgPaths.p17842800} fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2846)">
+          <g mask="url(#mask0_1_2871)">
             <path d={svgPaths.p35210400} fill="var(--fill-0, #2A2A2A)" id="Vector_2" />
           </g>
         </g>
@@ -6058,17 +5766,17 @@ function MaskGroup18() {
   );
 }
 
-function Frame2() {
+function Frame1() {
   return (
     <div className="absolute h-[552px] left-[-4.2px] overflow-clip top-[0.09px] w-[257px]" data-name="Frame">
-      <Group12 />
+      <Group9 />
       <div className="absolute inset-[1.17%_2.52%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 244.053 539.103">
           <path d={svgPaths.p15f5c80} fill="var(--fill-0, black)" fillOpacity="0.6" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup9 />
-      <MaskGroup18 />
+      <ClipPathGroup8 />
+      <MaskGroup15 />
     </div>
   );
 }
@@ -6083,7 +5791,7 @@ function PhoneFrame6() {
       <div className="absolute h-[552px] left-[-3.2px] top-[0.09px] w-[256px]" data-name="image 8">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage8} />
       </div>
-      <Frame2 />
+      <Frame1 />
     </div>
   );
 }
@@ -6126,18 +5834,18 @@ function Heading20() {
   );
 }
 
-function MaskGroup19() {
+function MaskGroup16() {
   return <div className="absolute contents inset-0" data-name="Mask group" />;
 }
 
-function Frame3() {
+function Frame2() {
   return (
     <div className="h-[40px] relative shrink-0 w-[255px]" data-name="Frame">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid overflow-clip relative rounded-[inherit] size-full">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 255 40">
           <path d="M0 0H255V40H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
-        <MaskGroup19 />
+        <MaskGroup16 />
         <div className="absolute inset-[38.92%_90.98%_58.58%_4.24%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.1751 1">
             <path d={svgPaths.p393cf880} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -6174,7 +5882,7 @@ function HeaderStateCard() {
   return (
     <div className="absolute bg-[#0f0f0f] content-stretch flex h-[60px] items-center justify-between left-[107.6px] pl-[2.8px] pr-[92.2px] py-[0.8px] rounded-[14px] top-0 w-[260px]" data-name="HeaderStateCard">
       <div aria-hidden="true" className="absolute border-[#1e1e1e] border-[0.8px] border-solid inset-0 pointer-events-none rounded-[14px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)]" />
-      <Frame3 />
+      <Frame2 />
     </div>
   );
 }
@@ -6305,21 +6013,21 @@ function ScreensSection24() {
   );
 }
 
-function MaskGroup20() {
+function MaskGroup17() {
   return <div className="absolute contents inset-0" data-name="Mask group" />;
 }
 
-function MaskGroup21() {
+function MaskGroup18() {
   return (
     <div className="absolute inset-[24.33%_32.92%_25.67%_32.92%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 87.461 20">
         <g id="Mask group">
-          <mask height="20" id="mask0_2_3062" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="88" x="0" y="0">
+          <mask height="20" id="mask0_1_2845" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="88" x="0" y="0">
             <g id="Group">
               <path d={svgPaths.p3798db00} fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_3062)">
+          <g mask="url(#mask0_1_2845)">
             <path d={svgPaths.p2e329832} fill="var(--fill-0, #C8B98A)" fillOpacity="0.18" id="Vector_2" />
           </g>
         </g>
@@ -6328,7 +6036,7 @@ function MaskGroup21() {
   );
 }
 
-function Group17() {
+function Group14() {
   return (
     <div className="absolute inset-[44.81%_62.97%_46.14%_35.59%]" data-name="Group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.68451 3.61773">
@@ -6340,9 +6048,9 @@ function Group17() {
   );
 }
 
-function Group18() {
+function Group15() {
   return (
-    <div className="absolute inset-[42.46%_59.16%_43.79%_38.41%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.623px_-0.917px] mask-size-[7.469px_7.333px]" data-name="Group" style={{ maskImage: `url('${imgGroup7}')` }}>
+    <div className="absolute inset-[42.46%_59.16%_43.79%_38.41%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.623px_-0.917px] mask-size-[7.47px_7.333px]" data-name="Group" style={{ maskImage: `url('${imgGroup6}')` }}>
       <div className="absolute inset-[-8.33%_-7.36%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.14148 6.41667">
           <g id="Group">
@@ -6356,17 +6064,17 @@ function Group18() {
   );
 }
 
-function ClipPathGroup10() {
+function ClipPathGroup9() {
   return (
     <div className="absolute contents inset-[40.17%_58.91%_41.5%_38.17%]" data-name="Clip path group">
-      <Group18 />
+      <Group15 />
     </div>
   );
 }
 
-function Group19() {
+function Group16() {
   return (
-    <div className="absolute inset-[42.5%_39.89%_44.97%_42.38%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.395px_-2.267px] mask-size-[46.311px_10px]" data-name="Group" style={{ maskImage: `url('${imgGroup8}')` }}>
+    <div className="absolute inset-[42.5%_39.89%_44.97%_42.38%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.395px_-2.267px] mask-size-[46.311px_10px]" data-name="Group" style={{ maskImage: `url('${imgGroup7}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 45.3948 5.01333">
         <g id="Group">
           <path d={svgPaths.p39d8700} fill="var(--fill-0, #C8B98A)" id="Vector" />
@@ -6376,15 +6084,15 @@ function Group19() {
   );
 }
 
-function ClipPathGroup11() {
+function ClipPathGroup10() {
   return (
     <div className="absolute contents inset-[36.83%_39.69%_38.17%_42.22%]" data-name="Clip path group">
-      <Group19 />
+      <Group16 />
     </div>
   );
 }
 
-function Group20() {
+function Group17() {
   return (
     <div className="absolute inset-[47.46%_36.76%_48.79%_62.05%]" data-name="Group">
       <div className="absolute inset-[-25%_-12.27%]">
@@ -6398,7 +6106,7 @@ function Group20() {
   );
 }
 
-function Frame4() {
+function Frame3() {
   return (
     <div className="absolute h-[40px] left-[1.6px] overflow-clip top-[9.2px] w-[256px]" data-name="Frame">
       <div className="absolute inset-[-22.5%_0_-27.5%_0]" data-name="Vector">
@@ -6406,7 +6114,7 @@ function Frame4() {
           <path d="M0 0H256V60H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup20 />
+      <MaskGroup17 />
       <div className="absolute inset-[38.92%_90.98%_58.58%_4.24%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.2228 1">
           <path d={svgPaths.p297e1ec0} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -6427,11 +6135,11 @@ function Frame4() {
           <path d={svgPaths.p3798db00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.08" id="Vector" />
         </svg>
       </div>
-      <MaskGroup21 />
-      <Group17 />
+      <MaskGroup18 />
+      <Group14 />
+      <ClipPathGroup9 />
       <ClipPathGroup10 />
-      <ClipPathGroup11 />
-      <Group20 />
+      <Group17 />
     </div>
   );
 }
@@ -6441,23 +6149,23 @@ function HeaderStateCard2() {
     <div className="absolute bg-[#0f0f0f] border-[#1e1e1e] border-[0.8px] border-solid h-[60px] left-[675.6px] rounded-[14px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] top-0 w-[260px]" data-name="HeaderStateCard">
       <Icon20 />
       <ScreensSection24 />
-      <Frame4 />
+      <Frame3 />
     </div>
   );
 }
 
-function MaskGroup22() {
+function MaskGroup19() {
   return <div className="absolute contents inset-0" data-name="Mask group" />;
 }
 
-function Frame5() {
+function Frame4() {
   return (
     <div className="h-[40px] relative shrink-0 w-[257px]" data-name="Frame">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid overflow-clip relative rounded-[inherit] size-full">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 257 40">
           <path d="M0 0H257V40H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
-        <MaskGroup22 />
+        <MaskGroup19 />
         <div className="absolute inset-[38.92%_90.98%_58.58%_4.24%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.2706 1">
             <path d={svgPaths.p2623180} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -6515,33 +6223,33 @@ function HeaderStateCard3() {
   return (
     <div className="absolute bg-[#0f0f0f] content-stretch flex h-[60px] items-center justify-between left-[959.6px] px-[1.8px] py-[0.8px] rounded-[14px] top-0 w-[260px]" data-name="HeaderStateCard">
       <div aria-hidden="true" className="absolute border-[#1e1e1e] border-[0.8px] border-solid inset-0 pointer-events-none rounded-[14px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)]" />
-      <Frame5 />
+      <Frame4 />
     </div>
   );
 }
 
-function MaskGroup23() {
+function MaskGroup20() {
   return <div className="absolute contents inset-0" data-name="Mask group" />;
 }
 
-function Group21() {
+function Group18() {
   return (
     <div className="absolute inset-[33.5%_7.03%_58.17%_91.64%]" data-name="Group">
       <div className="absolute inset-[-171.43%_-178.81%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.3554 15.5">
-          <g filter="url(#filter0_d_2_2296)" id="Group">
+          <g filter="url(#filter0_d_1_2294)" id="Group">
             <path d={svgPaths.p2290e800} fill="var(--fill-0, #C8B98A)" id="Vector" />
           </g>
           <defs>
-            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="15.5" id="filter0_d_2_2296" width="15.3554" x="0" y="0">
+            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="15.5" id="filter0_d_1_2294" width="15.3554" x="0" y="0">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
               <feOffset />
               <feGaussianBlur stdDeviation="3" />
               <feComposite in2="hardAlpha" operator="out" />
               <feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.72549 0 0 0 0 0.541176 0 0 0 0.6 0" />
-              <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_2_2296" />
-              <feBlend in="SourceGraphic" in2="effect1_dropShadow_2_2296" mode="normal" result="shape" />
+              <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2294" />
+              <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2294" mode="normal" result="shape" />
             </filter>
           </defs>
         </svg>
@@ -6550,13 +6258,13 @@ function Group21() {
   );
 }
 
-function Frame6() {
+function Frame5() {
   return (
     <div className="absolute h-[42px] left-[395px] overflow-clip top-[10px] w-[253px]" data-name="Frame">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 253 42">
         <path d="M0 0H253V42H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
       </svg>
-      <MaskGroup23 />
+      <MaskGroup20 />
       <div className="absolute inset-[38.92%_90.98%_58.58%_4.24%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.0796 1.05">
           <path d={svgPaths.p166a4300} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -6605,7 +6313,7 @@ function Frame6() {
           </svg>
         </div>
       </div>
-      <Group21 />
+      <Group18 />
     </div>
   );
 }
@@ -6617,7 +6325,7 @@ function Container373() {
       <HeaderStateCard1 />
       <HeaderStateCard2 />
       <HeaderStateCard3 />
-      <Frame6 />
+      <Frame5 />
     </div>
   );
 }
@@ -6635,7 +6343,7 @@ function Container372() {
 function Heading21() {
   return (
     <div className="absolute border-[#c8b98a] border-l-[1.6px] border-solid h-[20px] left-[547px] top-[96.8px] w-[233.2px]" data-name="Heading 3">
-      <p className="absolute font-['IBM_Plex_Mono:Medium',sans-serif] leading-[20px] left-[16px] not-italic text-[#c8b98a] text-[14px] top-[-0.2px] tracking-[1.4px] uppercase whitespace-nowrap">Key Screens — Settings</p>
+      <p className="absolute font-['IBM_Plex_Mono:Medium',sans-serif] leading-[20px] left-[16px] not-italic text-[#c8b98a] text-[14px] top-[-0.2px] tracking-[1.4px] uppercase whitespace-nowrap">Key Screens â€” Settings</p>
     </div>
   );
 }
@@ -6651,9 +6359,7 @@ function Container382() {
 function Container383() {
   return (
     <div className="h-[42.25px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.4px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[255px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        The compute zone only appears after a PC is paired.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.4px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[255px]">The compute zone only appears after a PC is paired.</p>
     </div>
   );
 }
@@ -6715,9 +6421,7 @@ function Container386() {
   return (
     <div className="bg-[#1e1e1e] h-[31.5px] relative rounded-[8px] shrink-0 w-full" data-name="Container">
       <div className="overflow-clip relative rounded-[inherit] size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[9.6px] text-[#e8e4dc] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Explain quantum grav...
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[9.6px] not-italic text-[#e8e4dc] text-[13px] top-[4.8px] whitespace-nowrap">Explain quantum grav...</p>
       </div>
       <div aria-hidden="true" className="absolute border-[#c8b98a] border-l-[1.6px] border-solid inset-0 pointer-events-none rounded-[8px]" />
     </div>
@@ -6727,9 +6431,7 @@ function Container386() {
 function Container387() {
   return (
     <div className="h-[31.5px] overflow-clip relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Python script debug
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap">Python script debug</p>
     </div>
   );
 }
@@ -6737,9 +6439,7 @@ function Container387() {
 function Container388() {
   return (
     <div className="h-[31.5px] overflow-clip relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Mediterranean recipes
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap">Mediterranean recipes</p>
     </div>
   );
 }
@@ -6765,9 +6465,7 @@ function Container389() {
 function Container390() {
   return (
     <div className="absolute h-[31.5px] left-[16px] overflow-clip top-[201.5px] w-[216.8px]" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-[8px] text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Local LLM benchmarking
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-[8px] not-italic text-[#5c5a57] text-[13px] top-[4.8px] whitespace-nowrap">Local LLM benchmarking</p>
     </div>
   );
 }
@@ -6900,9 +6598,7 @@ function Container397() {
 function Container398() {
   return (
     <div className="h-[42.25px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.04px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[238px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Web access lives under Privacy, not Compute. The label does the reframing.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.04px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[238px]">Web access lives under Privacy, not Compute. The label does the reframing.</p>
     </div>
   );
 }
@@ -6916,18 +6612,75 @@ function Container396() {
   );
 }
 
-function MaskGroup24() {
+function MaskGroup21() {
   return (
     <div className="absolute inset-[7.06%_0_85.77%_0]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 39.6172">
         <g id="Mask group">
-          <mask height="40" id="mask0_2_3039" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="249" x="0" y="0">
+          <mask height="40" id="mask0_1_3052" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="249" x="0" y="0">
             <g id="Group">
               <path d="M0 0H249V39.6172H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_3039)">
+          <g mask="url(#mask0_1_3052)">
             <path d={svgPaths.p19739500} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function MaskGroup22() {
+  return (
+    <div className="absolute inset-[20.16%_4.24%_60.26%_4.24%]" data-name="Mask group">
+      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 227.865 108.089">
+        <g id="Mask group">
+          <mask height="109" id="mask0_1_2954" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="228" x="0" y="0">
+            <g id="Group">
+              <path d={svgPaths.p2ea8d500} fill="var(--fill-0, white)" id="Vector" />
+            </g>
+          </mask>
+          <g mask="url(#mask0_1_2954)">
+            <path d={svgPaths.p19708000} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function MaskGroup23() {
+  return (
+    <div className="absolute inset-[20.25%_4.46%_71.82%_4.46%]" data-name="Mask group">
+      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 226.808 43.777">
+        <g id="Mask group">
+          <mask height="44" id="mask0_1_2280" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="227" x="0" y="0">
+            <g id="Group">
+              <path d="M0 0H226.808V43.777H0V0Z" fill="var(--fill-0, white)" id="Vector" />
+            </g>
+          </mask>
+          <g mask="url(#mask0_1_2280)">
+            <path d={svgPaths.p37a9db00} fill="var(--fill-0, #1A1A1A)" id="Vector_2" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function MaskGroup24() {
+  return (
+    <div className="absolute inset-[28.18%_4.46%_66.04%_4.46%]" data-name="Mask group">
+      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 226.808 31.8919">
+        <g id="Mask group">
+          <mask height="32" id="mask0_1_2266" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="227" x="0" y="0">
+            <g id="Group">
+              <path d="M0 0H226.808V31.8919H0V0Z" fill="var(--fill-0, white)" id="Vector" />
+            </g>
+          </mask>
+          <g mask="url(#mask0_1_2266)">
+            <path d={svgPaths.pb46a580} fill="var(--fill-0, #1A1A1A)" id="Vector_2" />
           </g>
         </g>
       </svg>
@@ -6937,16 +6690,16 @@ function MaskGroup24() {
 
 function MaskGroup25() {
   return (
-    <div className="absolute inset-[20.16%_4.24%_60.26%_4.24%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 227.865 108.089">
+    <div className="absolute inset-[46.61%_4.24%_39.58%_4.24%]" data-name="Mask group">
+      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 227.865 76.1971">
         <g id="Mask group">
-          <mask height="109" id="mask0_2_2929" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="228" x="0" y="0">
+          <mask height="77" id="mask0_1_2255" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="228" x="0" y="0">
             <g id="Group">
-              <path d={svgPaths.p2ea8d500} fill="var(--fill-0, white)" id="Vector" />
+              <path d={svgPaths.p3a9f6e00} fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2929)">
-            <path d={svgPaths.p19708000} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
+          <g mask="url(#mask0_1_2255)">
+            <path d={svgPaths.p192c8b80} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
       </svg>
@@ -6956,72 +6709,15 @@ function MaskGroup25() {
 
 function MaskGroup26() {
   return (
-    <div className="absolute inset-[20.25%_4.46%_71.82%_4.46%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 226.808 43.777">
-        <g id="Mask group">
-          <mask height="44" id="mask0_2_2282" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="227" x="0" y="0">
-            <g id="Group">
-              <path d="M0 0H226.808V43.777H0V0Z" fill="var(--fill-0, white)" id="Vector" />
-            </g>
-          </mask>
-          <g mask="url(#mask0_2_2282)">
-            <path d={svgPaths.p37a9db00} fill="var(--fill-0, #1A1A1A)" id="Vector_2" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function MaskGroup27() {
-  return (
-    <div className="absolute inset-[28.18%_4.46%_66.04%_4.46%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 226.808 31.8919">
-        <g id="Mask group">
-          <mask height="32" id="mask0_2_2268" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="227" x="0" y="0">
-            <g id="Group">
-              <path d="M0 0H226.808V31.8919H0V0Z" fill="var(--fill-0, white)" id="Vector" />
-            </g>
-          </mask>
-          <g mask="url(#mask0_2_2268)">
-            <path d={svgPaths.pb46a580} fill="var(--fill-0, #1A1A1A)" id="Vector_2" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function MaskGroup28() {
-  return (
-    <div className="absolute inset-[46.61%_4.24%_39.58%_4.24%]" data-name="Mask group">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 227.865 76.1971">
-        <g id="Mask group">
-          <mask height="77" id="mask0_2_2257" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="228" x="0" y="0">
-            <g id="Group">
-              <path d={svgPaths.p3a9f6e00} fill="var(--fill-0, white)" id="Vector" />
-            </g>
-          </mask>
-          <g mask="url(#mask0_2_2257)">
-            <path d={svgPaths.p192c8b80} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function MaskGroup29() {
-  return (
     <div className="absolute inset-[46.71%_4.46%_45.36%_4.46%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 226.808 43.777">
         <g id="Mask group">
-          <mask height="44" id="mask0_2_2252" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="227" x="0" y="0">
+          <mask height="44" id="mask0_1_2250" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="227" x="0" y="0">
             <g id="Group">
               <path d="M0 0H226.808V43.777H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2252)">
+          <g mask="url(#mask0_1_2250)">
             <path d={svgPaths.p37a9db00} fill="var(--fill-0, #1A1A1A)" id="Vector_2" />
           </g>
         </g>
@@ -7030,9 +6726,9 @@ function MaskGroup29() {
   );
 }
 
-function Group22() {
+function Group19() {
   return (
-    <div className="absolute inset-[49.96%_87.65%_48.7%_9.03%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.826px_-1.238px] mask-size-[9.907px_9.904px]" data-name="Group" style={{ maskImage: `url('${imgGroup9}')` }}>
+    <div className="absolute inset-[49.96%_87.65%_48.7%_9.03%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.825px_-1.238px] mask-size-[9.907px_9.904px]" data-name="Group" style={{ maskImage: `url('${imgGroup8}')` }}>
       <div className="absolute inset-[-8.41%_-7.57%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.50597 8.67823">
           <g id="Group">
@@ -7046,25 +6742,25 @@ function Group22() {
   );
 }
 
-function ClipPathGroup12() {
+function ClipPathGroup11() {
   return (
     <div className="absolute contents inset-[49.73%_87.32%_48.47%_8.7%]" data-name="Clip path group">
-      <Group22 />
+      <Group19 />
     </div>
   );
 }
 
-function MaskGroup30() {
+function MaskGroup27() {
   return (
     <div className="absolute inset-[48.95%_8.7%_47.69%_75.07%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 40.4212 18.5541">
         <g id="Mask group">
-          <mask height="19" id="mask0_2_2635" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="41" x="0" y="0">
+          <mask height="19" id="mask0_1_2649" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="41" x="0" y="0">
             <g id="Group">
               <path d={svgPaths.p390af300} fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2635)">
+          <g mask="url(#mask0_1_2649)">
             <path d={svgPaths.p8256d80} fill="var(--fill-0, #FF5555)" fillOpacity="0.2" id="Vector_2" />
           </g>
         </g>
@@ -7073,17 +6769,17 @@ function MaskGroup30() {
   );
 }
 
-function MaskGroup31() {
+function MaskGroup28() {
   return (
     <div className="absolute inset-[67.3%_4.24%_27.01%_4.24%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 227.865 31.4297">
         <g id="Mask group">
-          <mask height="32" id="mask0_2_2958" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="228" x="0" y="0">
+          <mask height="32" id="mask0_1_2983" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="228" x="0" y="0">
             <g id="Group">
               <path d={svgPaths.peb1b00} fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2958)">
+          <g mask="url(#mask0_1_2983)">
             <path d={svgPaths.p31b84d00} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -7092,14 +6788,14 @@ function MaskGroup31() {
   );
 }
 
-function Frame7() {
+function Frame6() {
   return (
     <div className="h-[552px] relative shrink-0 w-[249px]" data-name="Frame">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid overflow-clip relative rounded-[inherit] size-full">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 552">
           <path d="M249 0H0V552H249V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
-        <MaskGroup24 />
+        <MaskGroup21 />
         <div className="absolute inset-[9.97%_93.37%_88.77%_5.24%]" data-name="Vector">
           <div className="absolute inset-[-10.82%_-21.63%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 4.96751 8.43301">
@@ -7124,8 +6820,8 @@ function Frame7() {
             <path d={svgPaths.pac91b80} fill="var(--fill-0, #5C5A57)" id="Vector" />
           </svg>
         </div>
-        <MaskGroup25 />
-        <MaskGroup26 />
+        <MaskGroup22 />
+        <MaskGroup23 />
         <div className="absolute inset-[22.43%_58.48%_76.4%_8.93%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 81.1581 6.45497">
             <path d={svgPaths.ped0e140} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -7146,7 +6842,7 @@ function Frame7() {
             <path d={svgPaths.p32deed80} fill="var(--fill-0, black)" id="Vector" />
           </svg>
         </div>
-        <MaskGroup27 />
+        <MaskGroup24 />
         <div className="absolute inset-[30.34%_50.21%_68.18%_8.93%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 101.743 8.13737">
             <path d={svgPaths.p341b6800} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -7183,9 +6879,9 @@ function Frame7() {
             <path d={svgPaths.p21f1b980} fill="var(--fill-0, #5C5A57)" id="Vector" />
           </svg>
         </div>
-        <MaskGroup28 />
-        <MaskGroup29 />
-        <ClipPathGroup12 />
+        <MaskGroup25 />
+        <MaskGroup26 />
+        <ClipPathGroup11 />
         <div className="absolute inset-[48.89%_61.62%_49.95%_16.1%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 55.4847 6.45497">
             <path d={svgPaths.p2c851b00} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -7201,7 +6897,7 @@ function Frame7() {
             <path d={svgPaths.p1b586800} fill="var(--fill-0, #C8B98A)" id="Vector" />
           </svg>
         </div>
-        <MaskGroup30 />
+        <MaskGroup27 />
         <div className="absolute inset-[50.07%_11.63%_48.68%_78.22%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 25.2758 6.89273">
             <path d={svgPaths.p1ef26c00} fill="var(--fill-0, #FF5555)" id="Vector" />
@@ -7224,7 +6920,7 @@ function Frame7() {
             <path d={svgPaths.p5af8900} fill="var(--fill-0, #5C5A57)" id="Vector" />
           </svg>
         </div>
-        <MaskGroup31 />
+        <MaskGroup28 />
         <div className="absolute inset-[69.64%_78.23%_29.27%_8.9%]" data-name="Vector">
           <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32.0331 6.02181">
             <path d={svgPaths.p330c5b80} fill="var(--fill-0, #5C5A57)" id="Vector" />
@@ -7310,9 +7006,7 @@ function Container407() {
 function Container408() {
   return (
     <div className="h-[16.5px] relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[16.5px] left-0 text-[#5c5a57] text-[11px] top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Phi-3 Mini 3.8B
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[16.5px] left-0 not-italic text-[#5c5a57] text-[11px] top-[-0.2px] whitespace-nowrap">Phi-3 Mini 3.8B</p>
     </div>
   );
 }
@@ -7357,9 +7051,7 @@ function Container412() {
 function Container413() {
   return (
     <div className="h-[16.5px] relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[16.5px] left-0 text-[#5c5a57] text-[11px] top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Llama 3.2 7B
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[16.5px] left-0 not-italic text-[#5c5a57] text-[11px] top-[-0.2px] whitespace-nowrap">Llama 3.2 7B</p>
     </div>
   );
 }
@@ -7404,9 +7096,7 @@ function Container417() {
 function Container418() {
   return (
     <div className="h-[16.5px] relative shrink-0 w-full" data-name="Container">
-      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[16.5px] left-0 text-[#5c5a57] text-[11px] top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Llama 3.1 13B
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[16.5px] left-0 not-italic text-[#5c5a57] text-[11px] top-[-0.2px] whitespace-nowrap">Llama 3.1 13B</p>
     </div>
   );
 }
@@ -7484,7 +7174,7 @@ function PhoneFrame8() {
   return (
     <div className="absolute bg-[#0f0f0f] h-[563px] left-0 rounded-[40px] top-0 w-[260px]" data-name="PhoneFrame">
       <div className="content-stretch flex flex-col items-start overflow-clip p-[5.6px] relative rounded-[inherit] size-full">
-        <Frame7 />
+        <Frame6 />
         <ScreensSection27 />
       </div>
       <div aria-hidden="true" className="absolute border-[#1e1e1e] border-[5.6px] border-solid inset-0 pointer-events-none rounded-[40px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]" />
@@ -7512,9 +7202,7 @@ function Container423() {
 function Container424() {
   return (
     <div className="h-[42.25px] relative shrink-0 w-full" data-name="Container">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[21.125px] left-[130.38px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[228px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        Fast, balanced, thorough abstracts model names from the user entirely.
-      </p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[21.125px] left-[130.38px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[228px]">Fast, balanced, thorough abstracts model names from the user entirely.</p>
     </div>
   );
 }
@@ -7540,9 +7228,7 @@ function Text63() {
   return (
     <div className="h-[19.5px] relative shrink-0 w-[102.863px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-0 text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Allow web access
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-0 not-italic text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap">Allow web access</p>
       </div>
     </div>
   );
@@ -7574,9 +7260,7 @@ function Text64() {
   return (
     <div className="h-[19.5px] relative shrink-0 w-[122.75px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-0 text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Export conversations
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-0 not-italic text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap">Export conversations</p>
       </div>
     </div>
   );
@@ -7609,9 +7293,7 @@ function Text65() {
   return (
     <div className="h-[19.5px] relative shrink-0 w-[131.85px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-0 text-[#ef4444] text-[13px] top-[-1.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Clear all conversations
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-0 not-italic text-[#ef4444] text-[13px] top-[-1.2px] whitespace-nowrap">Clear all conversations</p>
       </div>
     </div>
   );
@@ -7685,9 +7367,7 @@ function Text67() {
   return (
     <div className="h-[15px] relative shrink-0 w-[71.6px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[15px] left-0 text-[#c8b98a] text-[10px] top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          3 models online
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[15px] left-0 not-italic text-[#c8b98a] text-[10px] top-[-0.2px] whitespace-nowrap">3 models online</p>
       </div>
     </div>
   );
@@ -7734,17 +7414,17 @@ function ScreensSection28() {
   );
 }
 
-function MaskGroup32() {
+function MaskGroup29() {
   return (
     <div className="absolute inset-[7.06%_0_85.77%_0]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 39.6172">
         <g id="Mask group">
-          <mask height="40" id="mask0_2_2410" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="249" x="0" y="0">
+          <mask height="40" id="mask0_1_2412" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="249" x="0" y="0">
             <g id="Group">
               <path d="M0 0H249V39.6172H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2410)">
+          <g mask="url(#mask0_1_2412)">
             <path d={svgPaths.p19739500} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -7753,9 +7433,9 @@ function MaskGroup32() {
   );
 }
 
-function Group23() {
+function Group20() {
   return (
-    <div className="absolute inset-[11.56%_4.24%_88.09%_74.54%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[52.838px_1.981px]" data-name="Group" style={{ maskImage: `url('${imgGroup10}')` }}>
+    <div className="absolute inset-[11.56%_4.24%_88.09%_74.54%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[52.838px_1.981px]" data-name="Group" style={{ maskImage: `url('${imgGroup9}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 52.8382 1.98086">
         <g id="Group">
           <path d={svgPaths.p2b838f80} fill="var(--fill-0, #242424)" id="Vector" />
@@ -7766,36 +7446,36 @@ function Group23() {
   );
 }
 
-function ClipPathGroup13() {
+function ClipPathGroup12() {
   return (
     <div className="absolute contents inset-[11.56%_4.24%_88.09%_74.54%]" data-name="Clip path group">
-      <Group23 />
+      <Group20 />
     </div>
   );
 }
 
-function Group24() {
+function Group21() {
   return (
-    <div className="absolute inset-[17.11%_6.42%_2.21%_6.1%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-15.191px_-15.847px] mask-size-[249px_464.182px]" data-name="Group" style={{ maskImage: `url('${imgGroup11}')` }}>
+    <div className="absolute inset-[17.11%_6.42%_2.21%_6.1%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-15.191px_-15.847px] mask-size-[249px_464.182px]" data-name="Group" style={{ maskImage: `url('${imgGroup10}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 217.825 445.364">
         <g id="Group">
           <g id="Mask group">
-            <mask height="121" id="mask0_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="0">
+            <mask height="121" id="mask0_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="0">
               <g id="Group_2">
                 <path d={svgPaths.p2e378a00} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2701)">
+            <g mask="url(#mask0_1_2715)">
               <path d={svgPaths.p8c45f00} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
           <g id="Mask group_2">
-            <mask height="27" id="mask1_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="0">
+            <mask height="27" id="mask1_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="0">
               <g id="Group_3">
                 <path d={svgPaths.p1fcfff80} fill="var(--fill-0, white)" id="Vector_3" />
               </g>
             </mask>
-            <g mask="url(#mask1_2_2701)">
+            <g mask="url(#mask1_1_2715)">
               <path d={svgPaths.p15532200} fill="var(--fill-0, #1A1A1A)" id="Vector_4" />
             </g>
           </g>
@@ -7804,7 +7484,7 @@ function Group24() {
           <path d={svgPaths.p3e4ac370} fill="var(--fill-0, #E8E4DC)" id="Vector_7" />
           <path d={svgPaths.p66b900} fill="var(--fill-0, #5C5A57)" id="Vector_8" />
           <path d={svgPaths.p3f892c00} fill="var(--fill-0, #5C5A57)" id="Vector_9" />
-          <g filter="url(#filter0_d_2_2701)" id="Group_4">
+          <g filter="url(#filter0_d_1_2715)" id="Group_4">
             <path d={svgPaths.p22c51a00} fill="var(--fill-0, #C8B98A)" id="Vector_10" />
           </g>
           <path d={svgPaths.pb6b4c00} id="Vector_11" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
@@ -7817,22 +7497,22 @@ function Group24() {
           <path d={svgPaths.p6dafc00} id="Vector_18" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <path d={svgPaths.p28840580} id="Vector_19" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <g id="Mask group_3">
-            <mask height="80" id="mask2_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="136">
+            <mask height="80" id="mask2_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="136">
               <g id="Group_5">
                 <path d={svgPaths.p20cc2680} fill="var(--fill-0, white)" id="Vector_20" />
               </g>
             </mask>
-            <g mask="url(#mask2_2_2701)">
+            <g mask="url(#mask2_1_2715)">
               <path d={svgPaths.pec21770} fill="var(--fill-0, #1E1E1E)" id="Vector_21" />
             </g>
           </g>
           <g id="Mask group_4">
-            <mask height="28" id="mask3_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="136">
+            <mask height="28" id="mask3_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="136">
               <g id="Group_6">
                 <path d={svgPaths.p1a85e180} fill="var(--fill-0, white)" id="Vector_22" />
               </g>
             </mask>
-            <g mask="url(#mask3_2_2701)">
+            <g mask="url(#mask3_1_2715)">
               <path d={svgPaths.p1707bcf0} fill="var(--fill-0, #1A1A1A)" id="Vector_23" />
             </g>
           </g>
@@ -7841,29 +7521,29 @@ function Group24() {
           <path d={svgPaths.p14502b00} fill="var(--fill-0, #E8E4DC)" id="Vector_26" />
           <path d={svgPaths.p3c4a6d00} fill="var(--fill-0, #5C5A57)" id="Vector_27" />
           <path d={svgPaths.p1001bb00} fill="var(--fill-0, #5C5A57)" id="Vector_28" />
-          <g filter="url(#filter1_d_2_2701)" id="Group_7">
+          <g filter="url(#filter1_d_1_2715)" id="Group_7">
             <path d={svgPaths.p360dfe00} fill="var(--fill-0, #C8B98A)" id="Vector_29" />
           </g>
           <path d={svgPaths.p3c3ccd80} id="Vector_30" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <path d={svgPaths.pf126340} id="Vector_31" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <path d={svgPaths.p155d5280} id="Vector_32" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <g id="Mask group_5">
-            <mask height="80" id="mask4_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="231">
+            <mask height="80" id="mask4_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="231">
               <g id="Group_8">
                 <path d={svgPaths.pcc0d280} fill="var(--fill-0, white)" id="Vector_33" />
               </g>
             </mask>
-            <g mask="url(#mask4_2_2701)">
+            <g mask="url(#mask4_1_2715)">
               <path d={svgPaths.p1a15d600} fill="var(--fill-0, #1E1E1E)" id="Vector_34" />
             </g>
           </g>
           <g id="Mask group_6">
-            <mask height="28" id="mask5_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="231">
+            <mask height="28" id="mask5_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="231">
               <g id="Group_9">
                 <path d={svgPaths.p13394a00} fill="var(--fill-0, white)" id="Vector_35" />
               </g>
             </mask>
-            <g mask="url(#mask5_2_2701)">
+            <g mask="url(#mask5_1_2715)">
               <path d={svgPaths.p25b3a0f0} fill="var(--fill-0, #1A1A1A)" id="Vector_36" />
             </g>
           </g>
@@ -7872,7 +7552,7 @@ function Group24() {
           <path d={svgPaths.p1020c00} fill="var(--fill-0, #E8E4DC)" id="Vector_39" />
           <path d={svgPaths.p5615b90} fill="var(--fill-0, #5C5A57)" id="Vector_40" />
           <path d={svgPaths.p129cd380} fill="var(--fill-0, #5C5A57)" id="Vector_41" />
-          <g filter="url(#filter2_d_2_2701)" id="Group_10">
+          <g filter="url(#filter2_d_1_2715)" id="Group_10">
             <path d={svgPaths.p3c6e8480} fill="var(--fill-0, #C8B98A)" id="Vector_42" />
           </g>
           <path d={svgPaths.pf1b1000} id="Vector_43" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
@@ -7882,12 +7562,12 @@ function Group24() {
           <path d={svgPaths.p3db34370} fill="var(--fill-0, #5C5A57)" id="Vector_47" />
           <path d={svgPaths.p15cfae00} fill="var(--fill-0, #1A1A1A)" id="Vector_48" />
           <g id="Mask group_7">
-            <mask height="76" id="mask6_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="370">
+            <mask height="76" id="mask6_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="218" x="0" y="370">
               <g id="Group_11">
                 <path d={svgPaths.p15cfae00} fill="var(--fill-0, white)" id="Vector_49" />
               </g>
             </mask>
-            <g mask="url(#mask6_2_2701)">
+            <g mask="url(#mask6_1_2715)">
               <path d={svgPaths.p28593680} fill="var(--fill-0, #1E1E1E)" id="Vector_50" />
             </g>
           </g>
@@ -7895,12 +7575,12 @@ function Group24() {
           <path d={svgPaths.p2d490280} fill="var(--fill-0, #5C5A57)" id="Vector_52" />
           <path d={svgPaths.p3d108740} fill="var(--fill-0, #242424)" id="Vector_53" />
           <g id="Mask group_8">
-            <mask height="15" id="mask7_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="171" y="380">
+            <mask height="15" id="mask7_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="171" y="380">
               <g id="Group_12">
                 <path d={svgPaths.p3d108740} fill="var(--fill-0, white)" id="Vector_54" />
               </g>
             </mask>
-            <g mask="url(#mask7_2_2701)">
+            <g mask="url(#mask7_1_2715)">
               <path d={svgPaths.p5d9c200} fill="var(--fill-0, #2A2A2A)" id="Vector_55" />
             </g>
           </g>
@@ -7908,47 +7588,47 @@ function Group24() {
           <path d={svgPaths.p32b64a00} fill="var(--fill-0, #5C5A57)" id="Vector_57" />
           <path d={svgPaths.p2c7d0b80} fill="var(--fill-0, #9A9690)" id="Vector_58" />
           <g id="Mask group_9">
-            <mask height="20" id="mask8_2_2701" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="49" x="158" y="416">
+            <mask height="20" id="mask8_1_2715" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="49" x="158" y="416">
               <g id="Group_13">
                 <path d={svgPaths.p16513900} fill="var(--fill-0, white)" id="Vector_59" />
               </g>
             </mask>
-            <g mask="url(#mask8_2_2701)">
+            <g mask="url(#mask8_1_2715)">
               <path d={svgPaths.p9c3cb00} fill="var(--fill-0, #C8B98A)" fillOpacity="0.22" id="Vector_60" />
             </g>
           </g>
           <path d={svgPaths.p8761100} fill="var(--fill-0, #C8B98A)" id="Vector_61" />
         </g>
         <defs>
-          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.3014" id="filter0_d_2_2701" width="19.3024" x="167.687" y="42.4129">
+          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.3014" id="filter0_d_1_2715" width="19.3024" x="167.687" y="42.4129">
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
             <feOffset />
             <feGaussianBlur stdDeviation="4" />
             <feComposite in2="hardAlpha" operator="out" />
             <feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.72549 0 0 0 0 0.541176 0 0 0 0.5 0" />
-            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_2_2701" />
-            <feBlend in="SourceGraphic" in2="effect1_dropShadow_2_2701" mode="normal" result="shape" />
+            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2715" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2715" mode="normal" result="shape" />
           </filter>
-          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.3014" id="filter1_d_2_2701" width="19.3024" x="167.687" y="178.696">
+          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.3014" id="filter1_d_1_2715" width="19.3024" x="167.687" y="178.696">
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
             <feOffset />
             <feGaussianBlur stdDeviation="4" />
             <feComposite in2="hardAlpha" operator="out" />
             <feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.72549 0 0 0 0 0.541176 0 0 0 0.5 0" />
-            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_2_2701" />
-            <feBlend in="SourceGraphic" in2="effect1_dropShadow_2_2701" mode="normal" result="shape" />
+            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2715" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2715" mode="normal" result="shape" />
           </filter>
-          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.3014" id="filter2_d_2_2701" width="19.3024" x="167.687" y="273.711">
+          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="19.3014" id="filter2_d_1_2715" width="19.3024" x="167.687" y="273.711">
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
             <feOffset />
             <feGaussianBlur stdDeviation="4" />
             <feComposite in2="hardAlpha" operator="out" />
             <feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.72549 0 0 0 0 0.541176 0 0 0 0.5 0" />
-            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_2_2701" />
-            <feBlend in="SourceGraphic" in2="effect1_dropShadow_2_2701" mode="normal" result="shape" />
+            <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2715" />
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2715" mode="normal" result="shape" />
           </filter>
         </defs>
       </svg>
@@ -7956,22 +7636,22 @@ function Group24() {
   );
 }
 
-function ClipPathGroup14() {
+function ClipPathGroup13() {
   return (
     <div className="absolute contents inset-[14.23%_0_1.67%_0]" data-name="Clip path group">
-      <Group24 />
+      <Group21 />
     </div>
   );
 }
 
-function Frame8() {
+function Frame7() {
   return (
     <div className="h-[552px] relative shrink-0 w-[249px]" data-name="Frame">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid overflow-clip relative rounded-[inherit] size-full">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 552">
           <path d="M249 0H0V552H249V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
-        <MaskGroup32 />
+        <MaskGroup29 />
         <div className="absolute inset-[9.97%_93.37%_88.77%_5.24%]" data-name="Vector">
           <div className="absolute inset-[-10.82%_-21.63%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 4.96751 8.43301">
@@ -7996,8 +7676,8 @@ function Frame8() {
             <path d={svgPaths.p22e7db00} fill="var(--fill-0, #5C5A57)" id="Vector" />
           </svg>
         </div>
+        <ClipPathGroup12 />
         <ClipPathGroup13 />
-        <ClipPathGroup14 />
       </div>
     </div>
   );
@@ -8008,7 +7688,7 @@ function PhoneFrame9() {
     <div className="absolute bg-[#0f0f0f] h-[563px] left-0 rounded-[40px] top-0 w-[260px]" data-name="PhoneFrame">
       <div className="content-stretch flex flex-col items-start overflow-clip p-[5.6px] relative rounded-[inherit] size-full">
         <ScreensSection28 />
-        <Frame8 />
+        <Frame7 />
       </div>
       <div aria-hidden="true" className="absolute border-[#1e1e1e] border-[5.6px] border-solid inset-0 pointer-events-none rounded-[40px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]" />
     </div>
@@ -8035,7 +7715,7 @@ function Container436() {
 function Container437() {
   return (
     <div className="h-[42.25px] relative shrink-0 w-full" data-name="Container">
-      <div className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[0] left-[130.23px] text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[248px] whitespace-pre-wrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <div className="-translate-x-1/2 absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[0] left-[130.23px] not-italic text-[#5c5a57] text-[13px] text-center top-[-0.4px] w-[248px] whitespace-pre-wrap">
         <p className="leading-[21.125px] mb-0">{`Confirms  the PC`}</p>
         <p className="leading-[21.125px]">and phone handshake before pairing</p>
       </div>
@@ -8064,9 +7744,7 @@ function Text68() {
   return (
     <div className="h-[19.5px] relative shrink-0 w-[113.013px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-0 text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Local Network Only
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-0 not-italic text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap">Local Network Only</p>
       </div>
     </div>
   );
@@ -8098,9 +7776,7 @@ function Text69() {
   return (
     <div className="h-[19.5px] relative shrink-0 w-[100.888px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-0 text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Background Sync
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-0 not-italic text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap">Background Sync</p>
       </div>
     </div>
   );
@@ -8132,9 +7808,7 @@ function Text70() {
   return (
     <div className="h-[19.5px] relative shrink-0 w-[135.825px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[19.5px] left-0 text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Auto-download Models
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[19.5px] left-0 not-italic text-[#e8e4dc] text-[13px] top-[-1.2px] whitespace-nowrap">Auto-download Models</p>
       </div>
     </div>
   );
@@ -8219,9 +7893,7 @@ function Text72() {
   return (
     <div className="h-[15px] relative shrink-0 w-[39.237px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[15px] left-0 text-[#5c5a57] text-[10px] top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Disabled
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[15px] left-0 not-italic text-[#5c5a57] text-[10px] top-[-0.2px] whitespace-nowrap">Disabled</p>
       </div>
     </div>
   );
@@ -8268,11 +7940,11 @@ function ScreensSection29() {
   );
 }
 
-function Frame9() {
+function Frame8() {
   return (
     <div className="h-[552px] relative shrink-0 w-[249px]" data-name="Frame">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 552">
-        <g clipPath="url(#clip0_2_2188)" id="Frame">
+        <g clipPath="url(#clip0_1_2186)" id="Frame">
           <path d="M249 0H0V552H249V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
           <path d={svgPaths.p1d3c3c80} id="Vector_2" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <path d="M23.1717 44.8995H17.7777" id="Vector_3" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
@@ -8280,60 +7952,60 @@ function Frame9() {
           <path d={svgPaths.pb7bbe00} fill="var(--fill-0, #5C5A57)" id="Vector_5" />
           <path d={svgPaths.p20219c70} fill="var(--fill-0, #242424)" id="Vector_6" />
           <g id="Mask group">
-            <mask height="43" id="mask0_2_2188" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="39" y="229">
+            <mask height="43" id="mask0_1_2186" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="39" y="229">
               <g id="Group">
                 <path d={svgPaths.p20219c70} fill="var(--fill-0, white)" id="Vector_7" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2188)">
+            <g mask="url(#mask0_1_2186)">
               <path d={svgPaths.p13cbe800} fill="var(--fill-0, #2A2A2A)" id="Vector_8" />
             </g>
           </g>
           <path d={svgPaths.p1a42c280} fill="var(--fill-0, #E8E4DC)" id="Vector_9" />
           <path d={svgPaths.p29d83a00} fill="var(--fill-0, #242424)" id="Vector_10" />
           <g id="Mask group_2">
-            <mask height="43" id="mask1_2_2188" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="84" y="229">
+            <mask height="43" id="mask1_1_2186" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="84" y="229">
               <g id="Group_2">
                 <path d={svgPaths.p29d83a00} fill="var(--fill-0, white)" id="Vector_11" />
               </g>
             </mask>
-            <g mask="url(#mask1_2_2188)">
+            <g mask="url(#mask1_1_2186)">
               <path d={svgPaths.p11d67400} fill="var(--fill-0, #2A2A2A)" id="Vector_12" />
             </g>
           </g>
           <path d={svgPaths.p363e3300} fill="var(--fill-0, #E8E4DC)" id="Vector_13" />
           <path d={svgPaths.p11d66000} fill="var(--fill-0, #242424)" id="Vector_14" />
           <g id="Mask group_3">
-            <mask height="43" id="mask2_2_2188" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="129" y="229">
+            <mask height="43" id="mask2_1_2186" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="129" y="229">
               <g id="Group_3">
                 <path d={svgPaths.p11d66000} fill="var(--fill-0, white)" id="Vector_15" />
               </g>
             </mask>
-            <g mask="url(#mask2_2_2188)">
+            <g mask="url(#mask2_1_2186)">
               <path d={svgPaths.pc4f6c80} fill="var(--fill-0, #2A2A2A)" id="Vector_16" />
             </g>
           </g>
           <path d={svgPaths.p17ed0600} fill="var(--fill-0, #E8E4DC)" id="Vector_17" />
           <path d={svgPaths.p1dd09400} fill="var(--fill-0, #242424)" id="Vector_18" />
           <g id="Mask group_4">
-            <mask height="43" id="mask3_2_2188" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="174" y="229">
+            <mask height="43" id="mask3_1_2186" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="174" y="229">
               <g id="Group_4">
                 <path d={svgPaths.p1dd09400} fill="var(--fill-0, white)" id="Vector_19" />
               </g>
             </mask>
-            <g mask="url(#mask3_2_2188)">
+            <g mask="url(#mask3_1_2186)">
               <path d={svgPaths.pc6c2000} fill="var(--fill-0, #2A2A2A)" id="Vector_20" />
             </g>
           </g>
           <path d={svgPaths.p12642900} fill="var(--fill-0, #E8E4DC)" id="Vector_21" />
           <path d={svgPaths.p30ea4770} fill="var(--fill-0, #242424)" id="Vector_22" />
           <g id="Mask group_5">
-            <mask height="32" id="mask4_2_2188" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="219" x="15" y="303">
+            <mask height="32" id="mask4_1_2186" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="219" x="15" y="303">
               <g id="Group_5">
                 <path d={svgPaths.p30ea4770} fill="var(--fill-0, white)" id="Vector_23" />
               </g>
             </mask>
-            <g mask="url(#mask4_2_2188)">
+            <g mask="url(#mask4_1_2186)">
               <path d={svgPaths.p1d664f40} fill="var(--fill-0, #C8B98A)" fillOpacity="0.22" id="Vector_24" />
             </g>
           </g>
@@ -8342,7 +8014,7 @@ function Frame9() {
           <path d={svgPaths.p3cb8f300} fill="var(--fill-0, #E8E4DC)" id="Vector_27" />
         </g>
         <defs>
-          <clipPath id="clip0_2_2188">
+          <clipPath id="clip0_1_2186">
             <rect fill="white" height="552" width="249" />
           </clipPath>
         </defs>
@@ -8356,7 +8028,7 @@ function PhoneFrame10() {
     <div className="absolute bg-[#0f0f0f] h-[563px] left-0 rounded-[40px] top-0 w-[260px]" data-name="PhoneFrame">
       <div className="content-stretch flex flex-col items-start overflow-clip p-[5.6px] relative rounded-[inherit] size-full">
         <ScreensSection29 />
-        <Frame9 />
+        <Frame8 />
       </div>
       <div aria-hidden="true" className="absolute border-[#1e1e1e] border-[5.6px] border-solid inset-0 pointer-events-none rounded-[40px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]" />
     </div>
@@ -8414,7 +8086,7 @@ function Container232() {
 
 function ScreensSection() {
   return (
-    <div className="absolute h-[3464.45px] left-0 top-[6352.06px] w-[1519.2px]" data-name="ScreensSection">
+    <div className="absolute h-[3464.45px] left-0 top-[6164.06px] w-[1519.2px]" data-name="ScreensSection">
       <Container231 />
       <Container232 />
     </div>
@@ -8424,7 +8096,7 @@ function ScreensSection() {
 function Text73() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">09 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">09 â€”</p>
     </div>
   );
 }
@@ -8441,9 +8113,7 @@ function Heading22() {
 function Paragraph22() {
   return (
     <div className="absolute h-[87.75px] left-[24px] top-[152.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[29.25px] left-0 text-[#d1d5dc] text-[18px] top-[-0.6px] w-[643px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        This section shows the PC pairing interaction flow — the moment a user connects their phone to their PC for the first time. It is the most interaction-design-dense moment in the product.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[643px]">This section shows the PC pairing interaction flow â€” the moment a user connects their phone to their PC for the first time. It is the most interaction-design-dense moment in the product.</p>
     </div>
   );
 }
@@ -8460,9 +8130,7 @@ function Container447() {
 function Paragraph23() {
   return (
     <div className="absolute border-[rgba(200,185,138,0.3)] border-l-[1.6px] border-solid h-[52px] left-[207.6px] top-[3840.34px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light_Italic',sans-serif] font-light italic leading-[26px] left-[16px] text-[#888] text-[16px] top-[-0.4px] w-[649px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        This sequence is the only moment in the product that requires user attention to infrastructure. Every other interaction is designed to make the underlying architecture invisible.
-      </p>
+      <p className="absolute font-['IBM_Plex_Sans:Light_Italic',sans-serif] italic leading-[26px] left-[16px] text-[#888] text-[16px] top-[-0.4px] w-[649px]">This sequence is the only moment in the product that requires user attention to infrastructure. Every other interaction is designed to make the underlying architecture invisible.</p>
     </div>
   );
 }
@@ -8507,7 +8175,7 @@ function Paragraph24() {
   return (
     <div className="h-[104px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[26px] left-0 text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`A single row in the side menu reads 'extend with pc →'. It only appears when no PC is paired. The invite disappears once it's no longer relevant.`}</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]">{`A single row in the side menu reads 'extend with pc â†’'. It only appears when no PC is paired. The invite disappears once it's no longer relevant.`}</p>
       </div>
     </div>
   );
@@ -8573,7 +8241,7 @@ function Text75() {
   return (
     <div className="h-[24px] relative shrink-0 w-[14px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-0 not-italic text-[#c8b98a] text-[16px] top-[-2.2px] whitespace-nowrap">→</p>
+        <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-0 not-italic text-[#c8b98a] text-[16px] top-[-2.2px] whitespace-nowrap">â†’</p>
       </div>
     </div>
   );
@@ -8612,18 +8280,18 @@ function Container458() {
   );
 }
 
-function MaskGroup33() {
+function MaskGroup30() {
   return (
     <div className="absolute inset-[8.06%_2.52%_84.93%_2.52%]" data-name="Mask group">
       <div className="absolute inset-[0_0_-1.33%_0]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 247.851 39.9888">
           <g id="Mask group">
-            <mask height="40" id="mask0_2_2979" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="248" x="0" y="0">
+            <mask height="40" id="mask0_1_3004" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="248" x="0" y="0">
               <g id="Group">
                 <path d="M0 0H247.851V39.4626H0V0Z" fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2979)">
+            <g mask="url(#mask0_1_3004)">
               <path d={svgPaths.p1dfa35c0} fill="var(--fill-0, white)" fillOpacity="0.04" id="Vector_2" />
             </g>
           </g>
@@ -8633,18 +8301,18 @@ function MaskGroup33() {
   );
 }
 
-function MaskGroup34() {
+function MaskGroup31() {
   return (
-    <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.58%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 92.4348 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2696" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
+            <mask height="19" id="mask0_1_2710" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p3de23e00} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2696)">
+            <g mask="url(#mask0_1_2710)">
               <path d={svgPaths.p2fd557f0} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -8654,18 +8322,18 @@ function MaskGroup34() {
   );
 }
 
-function MaskGroup35() {
+function MaskGroup32() {
   return (
-    <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.684px_-60.246px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.685px_-60.246px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.53%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 99.535 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2675" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="100" x="0" y="0">
+            <mask height="19" id="mask0_1_2689" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="100" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.pf5fa000} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2675)">
+            <g mask="url(#mask0_1_2689)">
               <path d={svgPaths.p37d30280} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -8675,18 +8343,18 @@ function MaskGroup35() {
   );
 }
 
-function MaskGroup36() {
+function MaskGroup33() {
   return (
-    <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-1.82%_-0.87%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 61.2232 29.9916">
           <g id="Mask group">
-            <mask height="30" id="mask0_2_3049" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="61" x="0" y="0">
+            <mask height="30" id="mask0_1_3062" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="61" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p7b5a500} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_3049)">
+            <g mask="url(#mask0_1_3062)">
               <path d={svgPaths.p4ff7930} fill="var(--fill-0, #2C2C2C)" id="Vector_2" />
             </g>
           </g>
@@ -8696,10 +8364,10 @@ function MaskGroup36() {
   );
 }
 
-function Group27() {
+function Group24() {
   return (
-    <div className="absolute inset-[59.16%_81.17%_39.38%_15.68%] mask-position-[-34.351px_-248.252px,_-0.822px_-0.822px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup1}')` }}>
-      <div className="absolute inset-[-7.6%_-7.61%]">
+    <div className="absolute inset-[59.16%_81.17%_39.38%_15.68%] mask-position-[-34.352px_-248.252px,_-0.822px_-0.822px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup}')` }}>
+      <div className="absolute inset-[-7.6%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.46788 9.47136">
           <g id="Group">
             <path d={svgPaths.p5475600} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
@@ -8711,17 +8379,17 @@ function Group27() {
   );
 }
 
-function ClipPathGroup16() {
+function ClipPathGroup15() {
   return (
     <div className="absolute contents inset-[59.02%_80.86%_39.23%_15.37%]" data-name="Clip path group">
-      <Group27 />
+      <Group24 />
     </div>
   );
 }
 
-function Group28() {
+function Group25() {
   return (
-    <div className="absolute inset-[59.5%_6.74%_39.71%_91.37%] mask-position-[-231.909px_-250.144px,_-0.493px_-0.74px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup2}')` }}>
+    <div className="absolute inset-[59.5%_6.74%_39.71%_91.37%] mask-position-[-231.909px_-250.144px,_-0.493px_-0.74px]" data-name="Group" style={{ maskImage: `url('${imgVector}'), url('${imgGroup1}')` }}>
       <div className="absolute inset-[-8.45%_-7.61%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 5.68073 5.18952">
           <g id="Group" opacity="0.4">
@@ -8735,17 +8403,17 @@ function Group28() {
   );
 }
 
-function ClipPathGroup17() {
+function ClipPathGroup16() {
   return (
     <div className="absolute contents inset-[59.37%_6.55%_39.58%_91.18%]" data-name="Clip path group">
-      <Group28 />
+      <Group25 />
     </div>
   );
 }
 
-function Group29() {
+function Group26() {
   return (
-    <div className="absolute inset-[42.34%_86.14%_56.94%_6.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.189px_-153.519px] mask-size-[247.851px_398.836px]" data-name="Group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[42.34%_86.14%_56.94%_6.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.189px_-153.519px] mask-size-[247.852px_398.836px]" data-name="Group" style={{ maskImage: `url('${imgVector}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.4042 4.03636">
         <g id="Group" opacity="0.8">
           <path d={svgPaths.p35bd4c00} fill="var(--fill-0, #C8B98A)" id="Vector" />
@@ -8755,18 +8423,18 @@ function Group29() {
   );
 }
 
-function MaskGroup37() {
+function MaskGroup34() {
   return (
-    <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.58%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 92.4348 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2640" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
+            <mask height="19" id="mask0_1_2654" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p4cd7a00} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2640)">
+            <g mask="url(#mask0_1_2654)">
               <path d={svgPaths.p287baf80} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -8776,18 +8444,18 @@ function MaskGroup37() {
   );
 }
 
-function MaskGroup38() {
+function MaskGroup35() {
   return (
-    <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.58%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 92.4348 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_3012" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
+            <mask height="19" id="mask0_1_3025" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="92" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p5f6b580} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_3012)">
+            <g mask="url(#mask0_1_3025)">
               <path d={svgPaths.p9cfdf00} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -8797,18 +8465,18 @@ function MaskGroup38() {
   );
 }
 
-function MaskGroup39() {
+function MaskGroup36() {
   return (
-    <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.668px] mask-size-[247.851px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
+    <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.668px] mask-size-[247.852px_398.836px]" data-name="Mask group" style={{ maskImage: `url('${imgVector}')` }}>
       <div className="absolute inset-[-2.95%_-0.34%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 156.337 18.8763">
           <g id="Mask group">
-            <mask height="19" id="mask0_2_2620" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="156" x="0" y="0">
+            <mask height="19" id="mask0_1_2634" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="156" x="0" y="0">
               <g id="Group">
                 <path d={svgPaths.p177c9770} fill="var(--fill-0, white)" id="Vector" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2620)">
+            <g mask="url(#mask0_1_2634)">
               <path d={svgPaths.p2de031f2} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
             </g>
           </g>
@@ -8818,154 +8486,154 @@ function MaskGroup39() {
   );
 }
 
-function Group26() {
+function Group23() {
   return (
     <div className="absolute contents inset-[15.39%_6.55%_21.79%_6.69%]" data-name="Group">
-      <div className="absolute inset-[15.46%_90.14%_83.88%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.46%_90.14%_83.88%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.94963">
             <path d={svgPaths.p11f7eb27} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[15.46%_92.19%_84.17%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.46%_92.19%_84.17%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-2.22px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625V2.68034H2.67947" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[16.12%_90.14%_83.22%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-5.919px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[16.12%_90.14%_83.22%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-5.919px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.94962">
             <path d={svgPaths.p3a40bfc0} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[16.41%_90.14%_83.22%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.093px_-7.563px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[16.41%_90.14%_83.22%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.094px_-7.563px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625H2.67947V2.68034" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[15.83%_81.17%_83.15%_16.62%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-36.816px_-4.275px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.83%_81.17%_83.15%_16.62%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-36.816px_-4.275px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-10.86%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.00252 7.00496">
             <path d={svgPaths.p29a65f00} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[15.39%_82.12%_83.59%_15.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-34.351px_-1.809px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[15.39%_82.12%_83.59%_15.68%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-34.351px_-1.809px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-10.86%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.00252 7.00496">
             <path d={svgPaths.p16ce6500} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[20.27%_32.49%_76.57%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-29.268px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 91.3829 17.824">
           <path d={svgPaths.p103ea780} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup34 />
-      <div className="absolute inset-[21.33%_35.89%_77.87%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-35.232px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup31 />
+      <div className="absolute inset-[21.33%_35.89%_77.87%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-35.232px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.7138 4.49875">
           <path d={svgPaths.p16765200} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.684px_-60.246px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[25.77%_31.13%_71.06%_31.13%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-74.685px_-60.246px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 98.4831 17.8239">
           <path d={svgPaths.pcc45300} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup35 />
-      <div className="absolute inset-[26.83%_34.53%_72.17%_34.51%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-83.496px_-66.21px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup32 />
+      <div className="absolute inset-[26.83%_34.53%_72.17%_34.51%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-83.496px_-66.21px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80.8153 5.61158">
           <path d={svgPaths.p16792c00} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[37.58%_6.69%_61.71%_87.14%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-220.864px_-126.717px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[37.58%_6.69%_61.71%_87.14%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-220.864px_-126.717px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.1071 4.03636">
           <path d={svgPaths.p9b4b780} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[31.27%_6.55%_63.59%_70.4%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-177.161px_-91.224px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 60.1713 28.9393">
           <path d={svgPaths.p110cdd00} fill="var(--fill-0, #242424)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup36 />
-      <div className="absolute inset-[33.15%_10.34%_65.32%_74.22%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-187.145px_-101.773px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup33 />
+      <div className="absolute inset-[33.15%_10.34%_65.32%_74.22%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-187.146px_-101.773px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 40.2952 8.65545">
           <path d={svgPaths.p3c7f3c80} fill="var(--fill-0, #E8E4DC)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[59.24%_90.14%_40.11%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[59.24%_90.14%_40.11%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.9496">
             <path d={svgPaths.p2f244680} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[59.24%_92.19%_40.4%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[59.24%_92.19%_40.4%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-248.663px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625V2.68034H2.67947" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[59.89%_90.14%_39.45%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-252.362px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[59.89%_90.14%_39.45%_7.02%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-11.752px_-252.362px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-16.89%_-8.45%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.6461 4.94962">
             <path d={svgPaths.p145bf380} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
-      <div className="absolute inset-[60.19%_90.14%_39.45%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.093px_-254.007px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[60.19%_90.14%_39.45%_9.07%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-17.094px_-254.007px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <div className="absolute inset-[-30.41%_-30.42%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 3.30447 3.30534">
             <path d="M0.625 0.625H2.67947V2.68034" id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" />
           </svg>
         </div>
       </div>
+      <ClipPathGroup15 />
       <ClipPathGroup16 />
-      <ClipPathGroup17 />
-      <Group29 />
-      <div className="absolute inset-[44.91%_9.03%_43.04%_6.69%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10.896px_-168.005px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <Group26 />
+      <div className="absolute inset-[44.91%_9.03%_43.04%_6.69%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10.896px_-168.005px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 219.962 67.8494">
           <path d={svgPaths.p3607fff0} fill="var(--fill-0, #E8E4DC)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[64.04%_32.49%_32.79%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-275.711px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 91.3829 17.824">
           <path d={svgPaths.p33252080} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup37 />
-      <div className="absolute inset-[65.1%_35.89%_34.1%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-281.676px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup34 />
+      <div className="absolute inset-[65.1%_35.89%_34.1%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-281.676px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.7138 4.49872">
           <path d={svgPaths.pb60f500} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[69.54%_32.49%_27.29%_32.49%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-78.234px_-306.69px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 91.3829 17.824">
           <path d={svgPaths.p377cba30} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup38 />
-      <div className="absolute inset-[70.6%_35.89%_28.6%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-312.654px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup35 />
+      <div className="absolute inset-[70.6%_35.89%_28.6%_35.87%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-87.046px_-312.654px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.7138 4.49876">
           <path d={svgPaths.p13248380} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.668px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <div className="absolute inset-[75.05%_20.25%_21.79%_20.25%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46.283px_-337.668px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 155.285 17.824">
           <path d={svgPaths.p2a4e530} fill="var(--fill-0, #1A1A1A)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup39 />
-      <div className="absolute inset-[76.09%_23.97%_22.96%_23.63%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-55.095px_-343.561px] mask-size-[247.851px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
+      <MaskGroup36 />
+      <div className="absolute inset-[76.09%_23.97%_22.96%_23.63%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-55.095px_-343.561px] mask-size-[247.852px_398.836px]" data-name="Vector" style={{ maskImage: `url('${imgVector}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 136.757 5.3156">
           <path d={svgPaths.p1644c500} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
@@ -8974,15 +8642,15 @@ function Group26() {
   );
 }
 
-function ClipPathGroup15() {
+function ClipPathGroup14() {
   return (
     <div className="absolute contents inset-[15.07%_2.52%_14.09%_2.52%]" data-name="Clip path group">
-      <Group26 />
+      <Group23 />
     </div>
   );
 }
 
-function Group25() {
+function Group22() {
   return (
     <div className="absolute contents inset-[1.17%_2.52%]" data-name="Group">
       <div className="absolute inset-[1.17%_2.52%]" data-name="Vector">
@@ -8995,7 +8663,7 @@ function Group25() {
           <path d="M0 0H247.851V39.4626H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup33 />
+      <MaskGroup30 />
       <div className="absolute inset-[10.79%_88.92%_89.04%_6.55%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.8338 0.986565">
           <path d={svgPaths.p31b03520} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -9057,22 +8725,22 @@ function Group25() {
           <path d={svgPaths.p1f766a00} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup15 />
+      <ClipPathGroup14 />
     </div>
   );
 }
 
-function MaskGroup40() {
+function MaskGroup37() {
   return (
     <div className="absolute inset-[1.17%_26.95%_1.17%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 184.081 549.846">
         <g id="Mask group">
-          <mask height="550" id="mask0_2_2615" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="185" x="0" y="0">
+          <mask height="550" id="mask0_1_2629" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="185" x="0" y="0">
             <g id="Group">
               <path d="M0 0H184.081V549.846H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2615)">
+          <g mask="url(#mask0_1_2629)">
             <path d={svgPaths.p3af28700} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -9081,17 +8749,17 @@ function MaskGroup40() {
   );
 }
 
-function MaskGroup41() {
+function MaskGroup38() {
   return (
     <div className="absolute inset-[8.06%_27.15%_85.36%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 37.0291">
         <g id="Mask group">
-          <mask height="38" id="mask0_2_2610" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="38" id="mask0_1_2624" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V37.0291H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2610)">
+          <g mask="url(#mask0_1_2624)">
             <path d={svgPaths.p37d4b0f0} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -9100,17 +8768,17 @@ function MaskGroup41() {
   );
 }
 
-function MaskGroup42() {
+function MaskGroup39() {
   return (
     <div className="absolute inset-[14.64%_27.15%_67.1%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 102.8">
         <g id="Mask group">
-          <mask height="103" id="mask0_2_2597" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="103" id="mask0_1_2611" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V102.8H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2597)">
+          <g mask="url(#mask0_1_2611)">
             <path d={svgPaths.p13b6b080} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -9119,10 +8787,10 @@ function MaskGroup42() {
   );
 }
 
-function Group30() {
+function Group27() {
   return (
-    <div className="absolute inset-[24.53%_89.21%_74.11%_7.85%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.767px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup3}')` }}>
-      <div className="absolute inset-[-7.6%_-7.61%]">
+    <div className="absolute inset-[24.53%_89.21%_74.11%_7.85%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.767px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup2}')` }}>
+      <div className="absolute inset-[-7.6%_-7.6%_-7.6%_-7.61%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.83672 8.83952">
           <g id="Group">
             <path d={svgPaths.p3331f340} id="Vector" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
@@ -9142,17 +8810,17 @@ function Group30() {
   );
 }
 
-function ClipPathGroup18() {
+function ClipPathGroup17() {
   return (
     <div className="absolute contents inset-[24.39%_88.92%_73.97%_7.56%]" data-name="Clip path group">
-      <Group30 />
+      <Group27 />
     </div>
   );
 }
 
-function Group31() {
+function Group28() {
   return (
-    <div className="absolute inset-[28.97%_89.36%_69.67%_8%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.151px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup3}')` }}>
+    <div className="absolute inset-[28.97%_89.36%_69.67%_8%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.15px_-0.768px] mask-size-[9.204px_9.208px]" data-name="Group" style={{ maskImage: `url('${imgGroup2}')` }}>
       <div className="absolute inset-[-7.6%_-8.45%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.06976 8.83952">
           <g id="Group">
@@ -9172,25 +8840,25 @@ function Group31() {
   );
 }
 
-function ClipPathGroup19() {
+function ClipPathGroup18() {
   return (
     <div className="absolute contents inset-[28.83%_88.92%_69.53%_7.56%]" data-name="Clip path group">
-      <Group31 />
+      <Group28 />
     </div>
   );
 }
 
-function MaskGroup43() {
+function MaskGroup40() {
   return (
     <div className="absolute inset-[37.04%_27.15%_56.53%_2.52%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-23.349px] mask-size-[183.555px_327.277px]" data-name="Mask group" style={{ maskImage: `url('${imgVector1}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 36.1741">
         <g id="Mask group">
-          <mask height="37" id="mask0_2_2395" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="37" id="mask0_1_2397" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V36.1741H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2395)">
+          <g mask="url(#mask0_1_2397)">
             <path d={svgPaths.pece7000} fill="var(--fill-0, #C8B98A)" id="Vector_2" />
           </g>
         </g>
@@ -9199,9 +8867,9 @@ function MaskGroup43() {
   );
 }
 
-function Group33() {
+function Group30() {
   return (
-    <div className="absolute inset-[38.55%_78.03%_60.08%_8.28%] mask-position-[-15.047px_-31.845px,_-0.846px_-2.577px]" data-name="Group" style={{ maskImage: `url('${imgVector1}'), url('${imgGroup4}')` }}>
+    <div className="absolute inset-[38.55%_78.03%_60.08%_8.28%] mask-position-[-15.046px_-31.845px,_-0.846px_-2.577px]" data-name="Group" style={{ maskImage: `url('${imgVector1}'), url('${imgGroup3}')` }}>
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 35.7174 7.66955">
         <g id="Group">
           <path d={svgPaths.p37a5d580} fill="var(--fill-0, #9A9690)" id="Vector" />
@@ -9211,15 +8879,15 @@ function Group33() {
   );
 }
 
-function ClipPathGroup21() {
+function ClipPathGroup20() {
   return (
     <div className="absolute contents inset-[38.1%_32.19%_59.63%_7.96%]" data-name="Clip path group">
-      <Group33 />
+      <Group30 />
     </div>
   );
 }
 
-function Group32() {
+function Group29() {
   return (
     <div className="absolute contents inset-[34.95%_27.15%_56.53%_2.52%]" data-name="Group">
       <div className="absolute inset-[34.95%_82.76%_64.29%_7.76%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-13.681px_-11.582px] mask-size-[183.555px_327.277px]" data-name="Vector" style={{ maskImage: `url('${imgVector1}')` }}>
@@ -9227,8 +8895,8 @@ function Group32() {
           <path d={svgPaths.p376b7c80} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup43 />
-      <ClipPathGroup21 />
+      <MaskGroup40 />
+      <ClipPathGroup20 />
       <div className="absolute inset-[41.45%_88.03%_57.98%_8.18%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-14.78px_-48.176px] mask-size-[183.555px_327.277px]" data-name="Vector" style={{ maskImage: `url('${imgVector1}')` }}>
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.88842 3.19648">
           <path d={svgPaths.pbfecd00} fill="var(--fill-0, #C8B98A)" id="Vector" />
@@ -9238,25 +8906,25 @@ function Group32() {
   );
 }
 
-function ClipPathGroup20() {
+function ClipPathGroup19() {
   return (
     <div className="absolute contents inset-[32.9%_27.15%_8.97%_2.52%]" data-name="Clip path group">
-      <Group32 />
+      <Group29 />
     </div>
   );
 }
 
-function MaskGroup44() {
+function MaskGroup41() {
   return (
     <div className="absolute inset-[91.03%_27.15%_1.17%_2.52%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 183.555 43.935">
         <g id="Mask group">
-          <mask height="44" id="mask0_2_2534" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
+          <mask height="44" id="mask0_1_2536" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="184" x="0" y="0">
             <g id="Group">
               <path d="M0 0H183.555V43.935H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2534)">
+          <g mask="url(#mask0_1_2536)">
             <path d={svgPaths.p115e1200} fill="var(--fill-0, #1E1E1E)" id="Vector_2" />
           </g>
         </g>
@@ -9265,10 +8933,10 @@ function MaskGroup44() {
   );
 }
 
-function Frame10() {
+function Frame9() {
   return (
     <div className="absolute h-[563px] left-[-6.2px] overflow-clip top-[-5.45px] w-[261px]" data-name="Frame">
-      <Group25 />
+      <Group22 />
       <div className="absolute inset-[1.17%_2.52%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 247.851 549.846">
           <path d={svgPaths.p18fc7a00} fill="var(--fill-0, black)" fillOpacity="0.5" id="Vector" />
@@ -9279,8 +8947,8 @@ function Frame10() {
           <path d="M0 0H184.081V549.846H0V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup40 />
-      <MaskGroup41 />
+      <MaskGroup37 />
+      <MaskGroup38 />
       <div className="absolute inset-[8.61%_74.79%_90.13%_7.86%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 45.2779 7.08749">
           <path d={svgPaths.p11eb2e80} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -9291,7 +8959,7 @@ function Frame10() {
           <path d={svgPaths.p34a45500} fill="var(--fill-0, #5C5A57)" id="Vector" />
         </svg>
       </div>
-      <MaskGroup42 />
+      <MaskGroup39 />
       <div className="absolute inset-[16.93%_81.15%_82.31%_7.63%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29.2806 4.2738">
           <path d={svgPaths.pf6675c0} fill="var(--fill-0, #5C5A57)" id="Vector" />
@@ -9316,20 +8984,20 @@ function Frame10() {
           <path d={svgPaths.p27c4f500} fill="var(--fill-0, #9A9690)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup18 />
+      <ClipPathGroup17 />
       <div className="absolute inset-[24.73%_74.79%_74.21%_14.27%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 28.5437 5.93518">
           <path d={svgPaths.p1a240180} fill="var(--fill-0, #9A9690)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup19 />
+      <ClipPathGroup18 />
       <div className="absolute inset-[29.16%_70.99%_69.49%_14.31%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 38.3749 7.57684">
           <path d={svgPaths.p39f3a500} fill="var(--fill-0, #9A9690)" id="Vector" />
         </svg>
       </div>
-      <ClipPathGroup20 />
-      <MaskGroup44 />
+      <ClipPathGroup19 />
+      <MaskGroup41 />
       <div className="absolute inset-[93.2%_89.21%_5.85%_7.85%]" data-name="Vector">
         <div className="absolute inset-[-10.86%_-7.61%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.83672 6.53818">
@@ -9371,7 +9039,7 @@ function Container457() {
   return (
     <div className="absolute bg-[#0a0a0a] border-[#1e1e1e] border-[5.6px] border-solid h-[563px] left-[64px] overflow-clip rounded-[40px] shadow-[0px_0px_0.2px_5px_#1a1a1a] top-0 w-[260px]" data-name="Container">
       <Container458 />
-      <Frame10 />
+      <Frame9 />
     </div>
   );
 }
@@ -9752,17 +9420,17 @@ function Container475() {
   );
 }
 
-function MaskGroup45() {
+function MaskGroup42() {
   return (
     <div className="absolute inset-[38.82%_75.46%_58.31%_18.17%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.8515 15.8469">
         <g id="Mask group">
-          <mask height="16" id="mask0_2_2154" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
+          <mask height="16" id="mask0_1_2156" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
             <g id="Group">
               <path d="M0 0H15.8515V15.8469H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2154)">
+          <g mask="url(#mask0_1_2156)">
             <path d={svgPaths.p3bb18a40} fill="var(--fill-0, #C8B98A)" id="Vector_2" />
           </g>
         </g>
@@ -9771,17 +9439,17 @@ function MaskGroup45() {
   );
 }
 
-function MaskGroup46() {
+function MaskGroup43() {
   return (
     <div className="absolute inset-[38.82%_18.17%_58.31%_75.46%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.8515 15.8469">
         <g id="Mask group">
-          <mask height="16" id="mask0_2_2277" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
+          <mask height="16" id="mask0_1_2275" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
             <g id="Group">
               <path d="M0 0H15.8515V15.8469H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2277)">
+          <g mask="url(#mask0_1_2275)">
             <path d={svgPaths.p253a4d70} fill="var(--fill-0, #C8B98A)" id="Vector_2" />
           </g>
         </g>
@@ -9790,17 +9458,17 @@ function MaskGroup46() {
   );
 }
 
-function MaskGroup47() {
+function MaskGroup44() {
   return (
     <div className="absolute inset-[64.65%_75.46%_32.48%_18.17%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.8515 15.8469">
         <g id="Mask group">
-          <mask height="16" id="mask0_2_2149" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
+          <mask height="16" id="mask0_1_2151" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
             <g id="Group">
               <path d="M0 0H15.8515V15.8469H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2149)">
+          <g mask="url(#mask0_1_2151)">
             <path d={svgPaths.p149de580} fill="var(--fill-0, #C8B98A)" id="Vector_2" />
           </g>
         </g>
@@ -9809,17 +9477,17 @@ function MaskGroup47() {
   );
 }
 
-function MaskGroup48() {
+function MaskGroup45() {
   return (
     <div className="absolute inset-[64.65%_18.17%_32.48%_75.46%]" data-name="Mask group">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.8515 15.8469">
         <g id="Mask group">
-          <mask height="16" id="mask0_2_2144" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
+          <mask height="16" id="mask0_1_2146" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="16" x="0" y="0">
             <g id="Group">
               <path d="M0 0H15.8515V15.8469H0V0Z" fill="var(--fill-0, white)" id="Vector" />
             </g>
           </mask>
-          <g mask="url(#mask0_2_2144)">
+          <g mask="url(#mask0_1_2146)">
             <path d={svgPaths.p3e6c2700} fill="var(--fill-0, #C8B98A)" id="Vector_2" />
           </g>
         </g>
@@ -9828,24 +9496,24 @@ function MaskGroup48() {
   );
 }
 
-function Group35() {
+function Group32() {
   return (
     <div className="absolute inset-[45.33%_18.3%_54.43%_18.04%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0.33px_-35.986px] mask-size-[158.515px_158.469px]" data-name="Group" style={{ maskImage: `url('${imgVector2}')` }}>
       <div className="absolute inset-[-605.8%_-5.05%]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 174.515 17.3206">
-          <g filter="url(#filter0_d_2_2575)" id="Group" opacity="0.3">
+          <g filter="url(#filter0_d_1_2589)" id="Group" opacity="0.3">
             <path d={svgPaths.p8cd1700} fill="var(--fill-0, #C8B98A)" id="Vector" />
           </g>
           <defs>
-            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="17.3206" id="filter0_d_2_2575" width="174.515" x="0" y="0">
+            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="17.3206" id="filter0_d_1_2589" width="174.515" x="0" y="0">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
               <feOffset />
               <feGaussianBlur stdDeviation="4" />
               <feComposite in2="hardAlpha" operator="out" />
               <feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.72549 0 0 0 0 0.541176 0 0 0 0.6 0" />
-              <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_2_2575" />
-              <feBlend in="SourceGraphic" in2="effect1_dropShadow_2_2575" mode="normal" result="shape" />
+              <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2589" />
+              <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2589" mode="normal" result="shape" />
             </filter>
           </defs>
         </svg>
@@ -9854,7 +9522,7 @@ function Group35() {
   );
 }
 
-function Group34() {
+function Group31() {
   return (
     <div className="absolute contents inset-[43.78%_18.3%_39%_18.04%]" data-name="Group">
       <div className="absolute inset-[45.33%_34.59%_40.6%_34.22%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-39.959px_-35.986px] mask-size-[158.515px_158.469px]" data-name="Vector" style={{ maskImage: `url('${imgVector2}')` }}>
@@ -10035,20 +9703,20 @@ function Group34() {
       <div className="absolute inset-[43.78%_31.03%_39%_30.77%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-31.373px_-27.402px] mask-size-[158.515px_158.469px]" data-name="Vector" style={{ maskImage: `url('${imgVector2}')` }}>
         <img alt="" className="absolute block max-w-none size-full" height="95.081" src={imgVector3} width="95.109" />
       </div>
-      <Group35 />
+      <Group32 />
     </div>
   );
 }
 
-function ClipPathGroup22() {
+function ClipPathGroup21() {
   return (
     <div className="absolute contents inset-[38.82%_18.17%_32.48%_18.17%]" data-name="Clip path group">
-      <Group34 />
+      <Group31 />
     </div>
   );
 }
 
-function Frame11() {
+function Frame10() {
   return (
     <div className="absolute h-[552px] left-[-0.2px] overflow-clip top-[-0.45px] w-[249px]" data-name="Frame">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 552">
@@ -10085,20 +9753,20 @@ function Frame11() {
       </div>
       <div className="absolute inset-[38.82%_18.17%_32.48%_18.17%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 158.515 158.469">
-          <path d={svgPaths.p374b080} fill="url(#paint0_radial_2_2159)" id="Vector" />
+          <path d={svgPaths.p374b080} fill="url(#paint0_radial_1_2161)" id="Vector" />
           <defs>
-            <radialGradient cx="0" cy="0" gradientTransform="translate(79.2573 79.2345) rotate(-90) scale(112.055 112.087)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_2159" r="1">
+            <radialGradient cx="0" cy="0" gradientTransform="translate(79.2573 79.2345) rotate(-90) scale(112.055 112.087)" gradientUnits="userSpaceOnUse" id="paint0_radial_1_2161" r="1">
               <stop offset="0.4" stopOpacity="0" />
               <stop offset="1" stopOpacity="0.4" />
             </radialGradient>
           </defs>
         </svg>
       </div>
+      <MaskGroup42 />
+      <MaskGroup43 />
+      <MaskGroup44 />
       <MaskGroup45 />
-      <MaskGroup46 />
-      <MaskGroup47 />
-      <MaskGroup48 />
-      <ClipPathGroup22 />
+      <ClipPathGroup21 />
       <div className="absolute inset-[7.39%_36.92%_91.02%_36.92%]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 65.131 8.77257">
           <path d={svgPaths.p39aa8900} fill="var(--fill-0, #E8E4DC)" id="Vector" />
@@ -10114,7 +9782,7 @@ function Container472() {
       <Container473 />
       <Container474 />
       <Container475 />
-      <Frame11 />
+      <Frame10 />
     </div>
   );
 }
@@ -10171,9 +9839,7 @@ function Paragraph25() {
   return (
     <div className="h-[156px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[26px] left-0 text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          The PC displays a QR code encoding its local network address. The phone scans it to discover the PC and initiate a direct connection. Public keys are exchanged over that connection — no server involved at any point.
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]">The PC displays a QR code encoding its local network address. The phone scans it to discover the PC and initiate a direct connection. Public keys are exchanged over that connection â€” no server involved at any point.</p>
       </div>
     </div>
   );
@@ -10258,9 +9924,7 @@ function Paragraph26() {
   return (
     <div className="h-[130px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[26px] left-0 text-[#99a1af] text-[16px] top-[-0.4px] w-[287px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Both devices display the same 4-digit code — a hash of the exchanged keys. If the codes match, no man-in-the-middle attack occurred. The user confirms visually.
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[287px]">Both devices display the same 4-digit code â€” a hash of the exchanged keys. If the codes match, no man-in-the-middle attack occurred. The user confirms visually.</p>
       </div>
     </div>
   );
@@ -10357,9 +10021,7 @@ function Text77() {
   return (
     <div className="h-[20px] relative shrink-0 w-[94.863px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:SemiBold',sans-serif] font-semibold leading-[20px] left-0 text-[14px] text-black top-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Confirm Match
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:SemiBold',sans-serif] leading-[20px] left-0 not-italic text-[14px] text-black top-[-0.2px] whitespace-nowrap">Confirm Match</p>
       </div>
     </div>
   );
@@ -10374,11 +10036,11 @@ function Container557() {
   );
 }
 
-function Frame12() {
+function Frame11() {
   return (
     <div className="absolute h-[552px] left-0 top-[-0.58px] w-[249px]" data-name="Frame">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 249 552">
-        <g clipPath="url(#clip0_2_2087)" id="Frame">
+        <g clipPath="url(#clip0_1_2089)" id="Frame">
           <path d="M249 0H0V552H249V0Z" fill="var(--fill-0, #0F0F0F)" id="Vector" />
           <path d={svgPaths.p1d3c3c80} id="Vector_2" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
           <path d="M23.1717 44.8995H17.7777" id="Vector_3" stroke="var(--stroke-0, #5C5A57)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.16667" />
@@ -10386,60 +10048,60 @@ function Frame12() {
           <path d={svgPaths.pb7bbe00} fill="var(--fill-0, #5C5A57)" id="Vector_5" />
           <path d={svgPaths.p20219c70} fill="var(--fill-0, #242424)" id="Vector_6" />
           <g id="Mask group">
-            <mask height="43" id="mask0_2_2087" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="39" y="229">
+            <mask height="43" id="mask0_1_2089" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="39" y="229">
               <g id="Group">
                 <path d={svgPaths.p20219c70} fill="var(--fill-0, white)" id="Vector_7" />
               </g>
             </mask>
-            <g mask="url(#mask0_2_2087)">
+            <g mask="url(#mask0_1_2089)">
               <path d={svgPaths.p13cbe800} fill="var(--fill-0, #2A2A2A)" id="Vector_8" />
             </g>
           </g>
           <path d={svgPaths.p1a42c280} fill="var(--fill-0, #E8E4DC)" id="Vector_9" />
           <path d={svgPaths.p29d83a00} fill="var(--fill-0, #242424)" id="Vector_10" />
           <g id="Mask group_2">
-            <mask height="43" id="mask1_2_2087" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="84" y="229">
+            <mask height="43" id="mask1_1_2089" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="84" y="229">
               <g id="Group_2">
                 <path d={svgPaths.p29d83a00} fill="var(--fill-0, white)" id="Vector_11" />
               </g>
             </mask>
-            <g mask="url(#mask1_2_2087)">
+            <g mask="url(#mask1_1_2089)">
               <path d={svgPaths.p11d67400} fill="var(--fill-0, #2A2A2A)" id="Vector_12" />
             </g>
           </g>
           <path d={svgPaths.p363e3300} fill="var(--fill-0, #E8E4DC)" id="Vector_13" />
           <path d={svgPaths.p11d66000} fill="var(--fill-0, #242424)" id="Vector_14" />
           <g id="Mask group_3">
-            <mask height="43" id="mask2_2_2087" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="129" y="229">
+            <mask height="43" id="mask2_1_2089" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="129" y="229">
               <g id="Group_3">
                 <path d={svgPaths.p11d66000} fill="var(--fill-0, white)" id="Vector_15" />
               </g>
             </mask>
-            <g mask="url(#mask2_2_2087)">
+            <g mask="url(#mask2_1_2089)">
               <path d={svgPaths.pc4f6c80} fill="var(--fill-0, #2A2A2A)" id="Vector_16" />
             </g>
           </g>
           <path d={svgPaths.p17ed0600} fill="var(--fill-0, #E8E4DC)" id="Vector_17" />
           <path d={svgPaths.p1dd09400} fill="var(--fill-0, #242424)" id="Vector_18" />
           <g id="Mask group_4">
-            <mask height="43" id="mask3_2_2087" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="174" y="229">
+            <mask height="43" id="mask3_1_2089" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="36" x="174" y="229">
               <g id="Group_4">
                 <path d={svgPaths.p1dd09400} fill="var(--fill-0, white)" id="Vector_19" />
               </g>
             </mask>
-            <g mask="url(#mask3_2_2087)">
+            <g mask="url(#mask3_1_2089)">
               <path d={svgPaths.pc6c2000} fill="var(--fill-0, #2A2A2A)" id="Vector_20" />
             </g>
           </g>
           <path d={svgPaths.p12642900} fill="var(--fill-0, #E8E4DC)" id="Vector_21" />
           <path d={svgPaths.p30ea4770} fill="var(--fill-0, #242424)" id="Vector_22" />
           <g id="Mask group_5">
-            <mask height="32" id="mask4_2_2087" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="219" x="15" y="303">
+            <mask height="32" id="mask4_1_2089" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="219" x="15" y="303">
               <g id="Group_5">
                 <path d={svgPaths.p30ea4770} fill="var(--fill-0, white)" id="Vector_23" />
               </g>
             </mask>
-            <g mask="url(#mask4_2_2087)">
+            <g mask="url(#mask4_1_2089)">
               <path d={svgPaths.p1d664f40} fill="var(--fill-0, #C8B98A)" fillOpacity="0.22" id="Vector_24" />
             </g>
           </g>
@@ -10448,7 +10110,7 @@ function Frame12() {
           <path d={svgPaths.p3cb8f300} fill="var(--fill-0, #E8E4DC)" id="Vector_27" />
         </g>
         <defs>
-          <clipPath id="clip0_2_2087">
+          <clipPath id="clip0_1_2089">
             <rect fill="white" height="552" width="249" />
           </clipPath>
         </defs>
@@ -10464,7 +10126,7 @@ function Container549() {
       <Container551 />
       <Container552 />
       <Container557 />
-      <Frame12 />
+      <Frame11 />
     </div>
   );
 }
@@ -10545,9 +10207,7 @@ function Text79() {
   return (
     <div className="h-[30px] relative shrink-0 w-[109.6px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[15px] left-0 text-[#888] text-[10px] top-[-0.2px] w-[99px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          Apple Silicon · Unified Memory
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[15px] left-0 not-italic text-[#888] text-[10px] top-[-0.2px] w-[99px]">Apple Silicon Â· Unified Memory</p>
       </div>
     </div>
   );
@@ -10683,9 +10343,7 @@ function Paragraph27() {
   return (
     <div className="h-[130px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[26px] left-0 text-[#99a1af] text-[16px] top-[-0.4px] w-[276px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-          The side menu compute zone expands from the single invite row into the full section — toggle, device name, online status. The UI reflects the new system state immediately.
-        </p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[276px]">The side menu compute zone expands from the single invite row into the full section â€” toggle, device name, online status. The UI reflects the new system state immediately.</p>
       </div>
     </div>
   );
@@ -10770,7 +10428,7 @@ function Paragraph28() {
   return (
     <div className="h-[130px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[26px] left-0 text-[#99a1af] text-[16px] top-[-0.4px] w-[294px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`The header centre changes from mode selector to the amber PC pill. The byline on AI responses changes from 'LOCAL' to the PC name. The user knows exactly what changed and why.`}</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[294px]">{`The header centre changes from mode selector to the amber PC pill. The byline on AI responses changes from 'LOCAL' to the PC name. The user knows exactly what changed and why.`}</p>
       </div>
     </div>
   );
@@ -10947,7 +10605,7 @@ function Container448() {
 
 function OneFlowSection() {
   return (
-    <div className="absolute h-[3892.338px] left-0 top-[9944.51px] w-[1519.2px]" data-name="OneFlowSection">
+    <div className="absolute h-[3892.338px] left-0 top-[9756.51px] w-[1519.2px]" data-name="OneFlowSection">
       <Container447 />
       <Paragraph23 />
       <Container448 />
@@ -10958,7 +10616,7 @@ function OneFlowSection() {
 function Text80() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">10 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">10 â€”</p>
     </div>
   );
 }
@@ -10982,17 +10640,15 @@ function Heading29() {
 
 function Paragraph29() {
   return (
-    <div className="h-[208px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[448px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        The privacy constraints were generative rather than limiting. No account meant the product had to establish trust through behaviour rather than brand. No cloud meant every interaction had to feel complete and self-contained. No data revelation by default meant every outbound action — even optional ones like web access — had to be surfaced as a deliberate choice. Each constraint eliminated whole categories of bad design decisions before I had to think about them.
-      </p>
+    <div className="relative shrink-0 w-full" data-name="Paragraph">
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[448px]">The constraints helped more than they limited. No accounts, no cloud, no default data sharing. It forced every interaction to feel self-contained and intentional, and removed a lot of unnecessary decisions early on.</p>
     </div>
   );
 }
 
 function Container602() {
   return (
-    <div className="absolute bg-[#121212] content-stretch flex flex-col gap-[16px] h-[309.6px] items-start left-0 pb-[0.8px] pt-[32.8px] px-[32.8px] rounded-[14px] top-0 w-[528px]" data-name="Container">
+    <div className="bg-[#121212] content-stretch flex flex-col gap-[16px] h-full items-start pb-[32.8px] pt-[32.8px] px-[32.8px] relative rounded-[14px] w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[#333] border-[0.8px] border-solid inset-0 pointer-events-none rounded-[14px]" />
       <Heading29 />
       <Paragraph29 />
@@ -11010,15 +10666,15 @@ function Heading30() {
 
 function Paragraph30() {
   return (
-    <div className="h-[156px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[462px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`I defined the hybrid model before defining the user precisely enough. The prototype implicitly assumes some technical literacy — a user who understands what a model tier means. A real product needs to work equally well for someone who just wants private AI and has never heard of Ollama. I'd start there next time.`}</p>
+    <div className="relative shrink-0 w-full" data-name="Paragraph">
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[462px]">{`I defined the system before defining the user clearly enough. The current flows assume some technical understanding. It should work just as well for someone who only cares about privacy, without needing to understand how it works underneath.`}</p>
     </div>
   );
 }
 
 function Container603() {
   return (
-    <div className="absolute bg-[#121212] content-stretch flex flex-col gap-[16px] h-[309.6px] items-start left-[576px] pb-[0.8px] pt-[32.8px] px-[32.8px] rounded-[14px] top-0 w-[528px]" data-name="Container">
+    <div className="bg-[#121212] content-stretch flex flex-col gap-[16px] h-full items-start pb-[32.8px] pt-[32.8px] px-[32.8px] relative rounded-[14px] w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[#333] border-[0.8px] border-solid inset-0 pointer-events-none rounded-[14px]" />
       <Heading30 />
       <Paragraph30 />
@@ -11036,15 +10692,15 @@ function Heading31() {
 
 function Paragraph31() {
   return (
-    <div className="h-[156px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[458px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`How much design work the absence of a loading state does. On-device inference starts responding in under 300ms when the model is warm. There's no spinner, no progress bar, no latency to fill with reassurance. The UI has to communicate trust through immediacy rather than through the familiar rhythm of waiting. That constraint shaped more decisions than I expected going in.`}</p>
+    <div className="relative shrink-0 w-full" data-name="Paragraph">
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[458px]">{`On-device responses are fast enough that thereâ€™s no real waiting state. Without spinners or loading feedback, the interface has to feel trustworthy through immediacy alone. That changed how a lot of interactions were designed.`}</p>
     </div>
   );
 }
 
 function Container604() {
   return (
-    <div className="absolute bg-[#121212] content-stretch flex flex-col gap-[16px] h-[309.6px] items-start left-0 pb-[0.8px] pt-[32.8px] px-[32.8px] rounded-[14px] top-[357.6px] w-[528px]" data-name="Container">
+    <div className="bg-[#121212] content-stretch flex flex-col gap-[16px] h-full items-start pb-[32.8px] pt-[32.8px] px-[32.8px] relative rounded-[14px] w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[#333] border-[0.8px] border-solid inset-0 pointer-events-none rounded-[14px]" />
       <Heading31 />
       <Paragraph31 />
@@ -11054,7 +10710,7 @@ function Container604() {
 
 function Heading32() {
   return (
-    <div className="absolute h-[20px] left-[32px] top-[32px] w-[462.4px]" data-name="Heading 3">
+    <div className="h-[20px] relative shrink-0 w-full" data-name="Heading 3">
       <p className="absolute font-['IBM_Plex_Mono:Medium',sans-serif] leading-[20px] left-0 not-italic text-[#c8b98a] text-[14px] top-[-0.2px] tracking-[1.4px] uppercase whitespace-nowrap">Still Unresolved</p>
     </div>
   );
@@ -11062,21 +10718,23 @@ function Heading32() {
 
 function Paragraph32() {
   return (
-    <div className="absolute h-[208px] left-[32px] top-[68px] w-[462.4px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[26px] left-0 text-[#d1d5dc] text-[16px] top-[-0.4px] w-[461px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`The remote connection mode needs a relay server to broker the initial handshake between phone and PC when they're on different networks. The relay never sees inference content — only "these two devices want to connect." But explaining that distinction to a user who just heard "no servers, absolute privacy" is genuinely hard. The UI for this moment doesn't exist yet. It's the most important interaction design problem still open in this product.`}</p>
+    <div className="relative shrink-0 w-full" data-name="Paragraph">
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[461px]">{`Remote connection still needs a relay to establish the link across networks. It doesnâ€™t touch any data, but explaining that clearly without breaking the â€œno serversâ€ expectation is still unresolved.`}</p>
     </div>
   );
 }
 
 function Container606() {
-  return <div className="absolute bg-[#c8b98a] h-[308px] left-0 top-0 w-[2px]" data-name="Container" />;
+  return <div className="absolute bg-[#c8b98a] h-full left-0 top-0 w-[2px]" data-name="Container" />;
 }
 
 function Container605() {
   return (
-    <div className="absolute bg-[#1a1610] border-[0.8px] border-[rgba(200,185,138,0.2)] border-solid h-[309.6px] left-[576px] overflow-clip rounded-[14px] top-[357.6px] w-[528px]" data-name="Container">
-      <Heading32 />
-      <Paragraph32 />
+    <div className="bg-[#1a1610] border-[0.8px] border-[rgba(200,185,138,0.2)] border-solid h-full relative overflow-clip rounded-[14px] w-full" data-name="Container">
+      <div className="content-stretch flex flex-col gap-[16px] items-start pb-[32.8px] pt-[32px] px-[32px] relative size-full">
+        <Heading32 />
+        <Paragraph32 />
+      </div>
       <Container606 />
     </div>
   );
@@ -11084,7 +10742,7 @@ function Container605() {
 
 function Container601() {
   return (
-    <div className="h-[667.2px] relative shrink-0 w-full" data-name="Container">
+    <div className="grid grid-cols-2 gap-[48px] relative shrink-0 w-full" data-name="Container">
       <Container602 />
       <Container603 />
       <Container604 />
@@ -11095,7 +10753,7 @@ function Container601() {
 
 function ReflectionSection() {
   return (
-    <div className="absolute content-stretch flex flex-col gap-[48px] h-[820.788px] items-start left-[183.6px] pt-[64.8px] px-[24px] top-[13964.85px] w-[1152px]" data-name="ReflectionSection">
+    <div className="absolute content-stretch flex flex-col gap-[48px] h-auto items-start left-[183.6px] pt-[64.8px] px-[24px] top-[13776.85px] w-[1152px]" data-name="ReflectionSection">
       <div aria-hidden="true" className="absolute border-[#222] border-solid border-t-[0.8px] inset-0 pointer-events-none" />
       <Heading28 />
       <Container601 />
@@ -11106,7 +10764,7 @@ function ReflectionSection() {
 function Text81() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">11 —</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">11 â€”</p>
     </div>
   );
 }
@@ -11131,11 +10789,9 @@ function Text82() {
 function Paragraph33() {
   return (
     <div className="absolute h-[29.25px] left-[32.8px] top-0 w-[531.862px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[0] left-0 text-[#d1d5dc] text-[0px] top-[-0.6px] whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[0] left-0 not-italic text-[#d1d5dc] text-[0px] top-[-0.6px] whitespace-nowrap">
         <span className="leading-[29.25px] text-[18px]">{`Prototyping the initial `}</span>
-        <span className="font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[29.25px] text-[18px] text-white" style={{ fontVariationSettings: "'wdth' 100" }}>
-          PC client app
-        </span>
+        <span className="font-['IBM_Plex_Sans:Regular',sans-serif] leading-[29.25px] text-[18px] text-white">PC client app</span>
         <span className="leading-[29.25px] text-[18px]">{` to anchor the desktop experience.`}</span>
       </p>
     </div>
@@ -11162,11 +10818,9 @@ function Text83() {
 function Paragraph34() {
   return (
     <div className="absolute h-[58.5px] left-[32.8px] top-0 w-[639.2px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[0] left-0 text-[#d1d5dc] text-[0px] top-[-0.6px] w-[623px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[0] left-0 not-italic text-[#d1d5dc] text-[0px] top-[-0.6px] w-[623px]">
         <span className="leading-[29.25px] text-[18px]">{`Designing robust `}</span>
-        <span className="font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[29.25px] text-[18px] text-white" style={{ fontVariationSettings: "'wdth' 100" }}>
-          error states
-        </span>
+        <span className="font-['IBM_Plex_Sans:Regular',sans-serif] leading-[29.25px] text-[18px] text-white">error states</span>
         <span className="leading-[29.25px] text-[18px]">{` and recovery flows for mid-session PC disconnections.`}</span>
       </p>
     </div>
@@ -11193,11 +10847,9 @@ function Text84() {
 function Paragraph35() {
   return (
     <div className="absolute h-[58.5px] left-[32.8px] top-0 w-[639.2px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] font-light leading-[0] left-0 text-[#d1d5dc] text-[0px] top-[-1.1px] w-[634px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[0] left-0 not-italic text-[#d1d5dc] text-[0px] top-[-1.1px] w-[634px]">
         <span className="leading-[29.25px] text-[18px]">{`Tackling the honest problem of `}</span>
-        <span className="font-['IBM_Plex_Sans:Regular',sans-serif] font-normal leading-[29.25px] text-[18px] text-white" style={{ fontVariationSettings: "'wdth' 100" }}>
-          explaining a signal server
-        </span>
+        <span className="font-['IBM_Plex_Sans:Regular',sans-serif] leading-[29.25px] text-[18px] text-white">explaining a signal server</span>
         <span className="leading-[29.25px] text-[18px]">{` to users while maintaining the core promise that no personal data goes through a cloud server.`}</span>
       </p>
     </div>
@@ -11238,7 +10890,7 @@ function List() {
 
 function WhatsNextSection() {
   return (
-    <div className="absolute border-[#222] border-solid border-t-[0.8px] h-[462px] left-[184px] top-[14914px] w-[1152px]" data-name="WhatsNextSection">
+    <div className="absolute border-[#222] border-solid border-t-[0.8px] h-[462px] left-[184px] top-[14570px] w-[1152px]" data-name="WhatsNextSection">
       <Heading33 />
       <List />
     </div>
@@ -11247,7 +10899,7 @@ function WhatsNextSection() {
 
 function WhatsNextSection1() {
   return (
-    <div className="absolute h-[880px] left-0 pointer-events-none top-[15434px] w-[1519px]" data-name="WhatsNextSection">
+    <div className="absolute h-[880px] left-0 pointer-events-none top-[15090px] w-[1519px]" data-name="WhatsNextSection">
       <div className="absolute inset-0 overflow-hidden">
         <img alt="" className="absolute h-[135.46%] left-[0.05%] max-w-none top-[-32.86%] w-full" src={imgWhatsNextSection} />
       </div>
@@ -11258,7 +10910,7 @@ function WhatsNextSection1() {
 
 function App() {
   return (
-    <div className="absolute bg-[#0f0f0f] h-[16314px] left-0 overflow-clip top-0 w-[1519px]" data-name="App">
+    <div className="absolute bg-[#0f0f0f] h-[15970px] left-0 overflow-clip top-0 w-[1519px]" data-name="App">
       <HeroSection />
       <Container6 />
       <ProblemSection />
@@ -11272,7 +10924,7 @@ function App() {
       <ReflectionSection />
       <WhatsNextSection />
       <WhatsNextSection1 />
-      <div className="absolute h-[841px] left-0 top-[15376px] w-[1519px]" data-name="iPhone 14 Pro, PSD_ 1" />
+      <div className="absolute h-[841px] left-0 top-[15032px] w-[1519px]" data-name="iPhone 14 Pro, PSD_ 1" />
       <div className="absolute h-0 left-[184px] top-[925px] w-[1152px]">
         <div className="absolute inset-[-1px_0_0_0]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1152 1">
@@ -11284,17 +10936,20 @@ function App() {
   );
 }
 
-export default function LocalAICaseStudy() {
+function LocalAiCaseStudyPageCopy() {
   return (
-    <div className="snap-none w-full bg-[#0f0f0f] min-h-screen relative overflow-x-hidden">
+    <div className="bg-white relative size-full" data-name="local/ai Case Study Page (Copy)">
+      <App />
+    </div>
+  );
+}
+export default function LocalAiManagerPage() {
+  return (
+    <div className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative">
       <GrainOverlay />
-
-      <main className="relative z-10 flex flex-col w-full items-center">
-        <div className="w-[1519px] h-[16314px] shrink-0 relative">
-          <App />
-        </div>
-      </main>
-
+      <div className="w-full relative">
+        <LocalAiCaseStudyPageCopy />
+      </div>
       <CaseStudyFooter currentSlug="localai-manager" />
     </div>
   );
