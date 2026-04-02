@@ -39,7 +39,7 @@ export const projects: Project[] = [
     title: "Nirmaan Financial",
     category: "SaaS \u2022 Dashboard Design",
     description: "A financial runway simulator for early-stage founders. Turning dry spreadsheets into an engaging, interactive dashboard that tells a story.",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1080&auto=format&fit=crop",
+    imageUrl: "/nirmaan.png",
     year: "2026",
     tags: ["Data Visualization", "SaaS", "Dashboard UI"],
     status: "published"
