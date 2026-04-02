@@ -36,12 +36,12 @@ export const projects: Project[] = [
   },
   {
     slug: "nirmaan-financial",
-    title: "Nirmaan Financial",
+    title: "Nirmaan",
     category: "SaaS \u2022 Dashboard Design",
-    description: "A financial runway simulator for early-stage founders. Turning dry spreadsheets into an engaging, interactive dashboard that tells a story.",
+    description: "A decision-support tool for creative founders that makes pricing consequences visible in real time. It helps them understand the impact of decisions as they make them.",
     imageUrl: "/nirmaan.png",
     year: "2026",
-    tags: ["Data Visualization", "SaaS", "Dashboard UI"],
+    tags: ["Product Design", "UI UX"],
     status: "published"
   },
   {
