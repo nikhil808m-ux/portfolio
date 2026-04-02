@@ -15,7 +15,7 @@ export const ThoughtExperimentSection: React.FC = () => {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-8 tracking-tight leading-[1.1]">
-            The Thought That Clarified It
+            The Thought <br /> That Clarified It
           </h2>
 
           <div className="prose prose-lg text-slate-500 font-light leading-relaxed">
