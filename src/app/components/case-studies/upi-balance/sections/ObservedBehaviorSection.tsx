@@ -41,16 +41,12 @@ export const ObservedBehaviorSection: React.FC = () => {
 
         <TextBlock
           eyebrow="03 — Observed Behaviour"
-          title={<>Users knew something was off. They <br /> just couldn't name it.</>}
+          title={<>Users knew something was off. <br /> They just couldn't name it.</>}
           subtitle=""
         >
           <p className="mb-4 text-slate-500 font-light text-[17px] leading-relaxed">
-            I spoke to people who use UPI multiple times a day.<br /><br />
-            Most don’t check their balance after a payment.<br /><br />
-            Not because they don’t care. It just takes effort.<br /><br />
-            You have to leave the screen, navigate elsewhere, and authenticate again.<br /><br />
-            For a small payment, most people don’t bother.<br /><br />
-            The balance is there. Just not where you need it.
+            I spoke to people who use UPI multiple times a day. Most don’t check their balance after a payment, not because they don’t care, but because it takes effort. You have to leave the screen, navigate elsewhere, and authenticate again.<br /><br />
+            For a small payment, most people don’t bother. The balance is there. Just not where you need it.
           </p>
         </TextBlock>
 
