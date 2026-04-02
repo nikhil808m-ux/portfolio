@@ -36,7 +36,7 @@ export const ThoughtExperimentSection: React.FC = () => {
             className="mb-10"
           >
             <p className="text-xl md:text-2xl font-light text-slate-600 leading-relaxed mb-8">
-              You don’t calculate it step by step. It just clicks.
+              You don’t calculate it step by step. <br /> It just clicks.
             </p>
           </div>
 
