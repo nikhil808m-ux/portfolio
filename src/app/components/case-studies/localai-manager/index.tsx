@@ -1,19 +1,19 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { CaseStudyFooter } from "../../CaseStudyFooter";
 import { GrainOverlay } from "../upi-balance/GrainOverlay";
 
-import svgPaths from "./svg-0cm4e12p1a";
-const img0021 = "/case-study/localai-manager/b6f2dd4b5e84f60e05686ff034f11c912be0fe01.png";
-const imgImage1 = "/case-study/localai-manager/82edf973d06c5d3a4a15f92c9198dda7dc5a2873.png";
-const imgImage5 = "/case-study/localai-manager/031b5acc39a0aea149b1b4843b6fdb550b3ebfbb.png";
-const imgImage6 = "/case-study/localai-manager/a5fc7ed4e679a3cd44ef1be3a0953ee58bda3890.png";
-const imgImage7 = "/case-study/localai-manager/d675a8151426b00fe35a99bfef6273bb72a2cac9.png";
-const imgImage9 = "/case-study/localai-manager/f5fdbef405bb3f4f52a85299def722091ca41566.png";
-const imgImage10 = "/case-study/localai-manager/c8b1f35a1516343b119afa637d9e1e704de03872.png";
-const imgImage8 = "/case-study/localai-manager/f0de1ba9b9d5f6c9e7092057e5e0d7bb8e77fdf0.png";
-const imgVector3 = "/case-study/localai-manager/26156732bf68c9368923adacd607e30b5f92cfc4.png";
-const imgWhatsNextSection = "/case-study/localai-manager/d4924deaa9a4a5bf1910ed3c8564a427d5256820.png";
-import { imgVector, imgGroup, imgGroup1, imgGroup2, imgVector1, imgGroup3, imgGroup4, imgGroup5, imgGroup6, imgGroup7, imgGroup8, imgGroup9, imgGroup10, imgVector2 } from "./svg-w097q";
+import svgPaths from "./svg-7wnnrzopjm";
+import img0021 from "/case-study/localai-manager/b6f2dd4b5e84f60e05686ff034f11c912be0fe01.png";
+import imgImage1 from "/case-study/localai-manager/82edf973d06c5d3a4a15f92c9198dda7dc5a2873.png";
+import imgImage5 from "/case-study/localai-manager/031b5acc39a0aea149b1b4843b6fdb550b3ebfbb.png";
+import imgImage6 from "/case-study/localai-manager/a5fc7ed4e679a3cd44ef1be3a0953ee58bda3890.png";
+import imgImage7 from "/case-study/localai-manager/d675a8151426b00fe35a99bfef6273bb72a2cac9.png";
+import imgImage9 from "/case-study/localai-manager/f5fdbef405bb3f4f52a85299def722091ca41566.png";
+import imgImage10 from "/case-study/localai-manager/c8b1f35a1516343b119afa637d9e1e704de03872.png";
+import imgImage8 from "/case-study/localai-manager/f0de1ba9b9d5f6c9e7092057e5e0d7bb8e77fdf0.png";
+import imgVector3 from "/case-study/localai-manager/26156732bf68c9368923adacd607e30b5f92cfc4.png";
+import imgWhatsNextSection from "/case-study/localai-manager/d4924deaa9a4a5bf1910ed3c8564a427d5256820.png";
+import { imgVector, imgGroup, imgGroup1, imgGroup2, imgVector1, imgGroup3, imgGroup4, imgGroup5, imgGroup6, imgGroup7, imgGroup8, imgGroup9, imgGroup10, imgVector2 } from "./svg-xgsqa";
 
 function Container2() {
   return (
@@ -154,7 +154,7 @@ function Container6() {
 function Text2() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">02 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">02 —</p>
     </div>
   );
 }
@@ -204,7 +204,7 @@ function Container11() {
 function Paragraph3() {
   return (
     <div className="h-[146.25px] relative shrink-0 w-full" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[497px]">{`Ollama and LM Studio are genuinely good â€” the problem isn't that they exist, it's that they assume too much. They assume you have a spare PC, that you're comfortable in a terminal, and that you don't mind being tethered to a desk. Most people who want private AI don't fit that description.`}</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[497px]">{`Ollama and LM Studio are genuinely good — the problem isn't that they exist, it's that they assume too much. They assume you have a spare PC, that you're comfortable in a terminal, and that you don't mind being tethered to a desk. Most people who want private AI don't fit that description.`}</p>
     </div>
   );
 }
@@ -240,7 +240,7 @@ function ProblemSection() {
 function Text3() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">03 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">03 —</p>
     </div>
   );
 }
@@ -291,7 +291,7 @@ function HypothesisSection() {
 function Text4() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">04 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">04 —</p>
     </div>
   );
 }
@@ -472,7 +472,7 @@ function AudienceSection() {
 function Text5() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">05 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">05 —</p>
     </div>
   );
 }
@@ -683,7 +683,7 @@ function Paragraph12() {
   return (
     <div className="relative shrink-0 w-[633.362px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#9a9690] text-[16px] w-[628px]">Web access is optional and turned off by default. When enabled, itâ€™s a clear, user-controlled action. The placement and labeling make that explicit.</p>
+        <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#9a9690] text-[16px] w-[628px]">Web access is optional and turned off by default. When enabled, it’s a clear, user-controlled action. The placement and labeling make that explicit.</p>
       </div>
     </div>
   );
@@ -716,7 +716,7 @@ function Container24() {
 function Paragraph13() {
   return (
     <div className="absolute h-[16.5px] left-[24px] top-[844.99px] w-[1104px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[551.8px] not-italic text-[#5c5a57] text-[11px] text-center top-[-0.2px] whitespace-nowrap">these three commitments made the design problems obvious â€” and the solutions follow from them.</p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[551.8px] not-italic text-[#5c5a57] text-[11px] text-center top-[-0.2px] whitespace-nowrap">these three commitments made the design problems obvious — and the solutions follow from them.</p>
     </div>
   );
 }
@@ -734,7 +734,7 @@ function DecisionsSection() {
 function Text9() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">06 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">06 —</p>
     </div>
   );
 }
@@ -751,7 +751,7 @@ function Heading12() {
 function Paragraph14() {
   return (
     <div className="absolute h-[146.25px] left-[24px] top-[152.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]">The phone runs models locally on its NPU â€” no network, no account, no server. That is the baseline and the complete product for most users. For those who want more, a PC can be paired over local Wi-Fi to run larger models. For users away from home the connection tunnels peer-to-peer through a minimal relay that brokers the handshake and steps aside â€” it never sees inference content.</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]">The phone runs models locally on its NPU — no network, no account, no server. That is the baseline and the complete product for most users. For those who want more, a PC can be paired over local Wi-Fi to run larger models. For users away from home the connection tunnels peer-to-peer through a minimal relay that brokers the handshake and steps aside — it never sees inference content.</p>
     </div>
   );
 }
@@ -788,7 +788,7 @@ function Text10() {
   return (
     <div className="flex-[1_0_0] h-[15.988px] min-h-px min-w-px relative" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[#c8b98a] text-[12px] tracking-[1.2px] uppercase whitespace-nowrap">local network Â· direct</p>
+        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[#c8b98a] text-[12px] tracking-[1.2px] uppercase whitespace-nowrap">local network · direct</p>
       </div>
     </div>
   );
@@ -820,7 +820,7 @@ function Text11() {
   return (
     <div className="h-[15.988px] relative shrink-0 w-[260.4px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-start relative size-full">
-        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[12px] text-[rgba(200,185,138,0.6)] tracking-[1.2px] uppercase whitespace-nowrap">remote Â· peer-to-peer via relay</p>
+        <p className="font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] not-italic relative shrink-0 text-[12px] text-[rgba(200,185,138,0.6)] tracking-[1.2px] uppercase whitespace-nowrap">remote · peer-to-peer via relay</p>
       </div>
     </div>
   );
@@ -830,7 +830,7 @@ function Text12() {
   return (
     <div className="h-[16.5px] relative shrink-0 w-[304.288px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[16.5px] left-0 not-italic text-[#6a7282] text-[11px] top-[-0.2px] whitespace-nowrap">relay brokers connection only â€” never sees inference content.</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[16.5px] left-0 not-italic text-[#6a7282] text-[11px] top-[-0.2px] whitespace-nowrap">relay brokers connection only — never sees inference content.</p>
       </div>
     </div>
   );
@@ -1006,7 +1006,7 @@ function ArchitectureSection() {
 function Text13() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">07 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">07 —</p>
     </div>
   );
 }
@@ -1023,7 +1023,7 @@ function Heading13() {
 function Paragraph15() {
   return (
     <div className="absolute h-[117px] left-[24px] top-[128.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]">Before color, type, or interaction, every screen existed as proportional blocks inside a phone frame. These lo-fi wireframes show the spatial structure of each screen â€” what goes where and how much room it takes â€” before any visual decisions were made.</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[672px]">Before color, type, or interaction, every screen existed as proportional blocks inside a phone frame. These lo-fi wireframes show the spatial structure of each screen — what goes where and how much room it takes — before any visual decisions were made.</p>
     </div>
   );
 }
@@ -1041,7 +1041,7 @@ function Text14() {
   return (
     <div className="flex-[1_0_0] min-h-px min-w-px relative w-[118.8px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[59.5px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat â€” empty state</p>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[59.5px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat — empty state</p>
       </div>
     </div>
   );
@@ -1136,7 +1136,7 @@ function Text15() {
   return (
     <div className="flex-[1_0_0] min-h-px min-w-px relative w-[85.8px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[43px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat â€” active</p>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16.5px] left-[43px] not-italic text-[#c8b98a] text-[11px] text-center top-[-0.2px] whitespace-nowrap">Chat — active</p>
       </div>
     </div>
   );
@@ -2469,7 +2469,7 @@ function Container230() {
   return (
     <div className="h-[24px] relative shrink-0 w-[1152px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[15px] left-[576.5px] not-italic text-[#555444] text-[10px] text-center top-[5px] tracking-[1px] uppercase whitespace-nowrap">lo-fi Â· proportional wireframes Â· structural layout only</p>
+        <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[15px] left-[576.5px] not-italic text-[#555444] text-[10px] text-center top-[5px] tracking-[1px] uppercase whitespace-nowrap">lo-fi · proportional wireframes · structural layout only</p>
       </div>
     </div>
   );
@@ -2504,7 +2504,7 @@ function IdeationSection() {
 function Text22() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">08 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">08 —</p>
     </div>
   );
 }
@@ -2546,7 +2546,7 @@ function Heading15() {
 function Container238() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding â€” phase 1</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding — phase 1</p>
     </div>
   );
 }
@@ -2623,7 +2623,7 @@ function Container247() {
     <div className="absolute h-[30px] left-[16px] top-0 w-[192.8px]" data-name="Container">
       <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[0] left-0 not-italic text-[#9a9690] text-[10px] top-[-0.2px] w-[156px]">
         <span className="leading-[15px]">runs offline</span>
-        <span className="leading-[15px] text-[#5c5a57]">{` Â· no internet required`}</span>
+        <span className="leading-[15px] text-[#5c5a57]">{` · no internet required`}</span>
       </p>
     </div>
   );
@@ -2647,7 +2647,7 @@ function Container250() {
     <div className="absolute h-[30px] left-[16px] top-0 w-[192.8px]" data-name="Container">
       <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[0] left-0 not-italic text-[#9a9690] text-[10px] top-[-0.2px] w-[192px]">
         <span className="leading-[15px]">stays on device</span>
-        <span className="leading-[15px] text-[#5c5a57]">{` Â· nothing leaves your hardware`}</span>
+        <span className="leading-[15px] text-[#5c5a57]">{` · nothing leaves your hardware`}</span>
       </p>
     </div>
   );
@@ -2671,7 +2671,7 @@ function Container253() {
     <div className="absolute h-[30px] left-[16px] top-0 w-[192.8px]" data-name="Container">
       <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[0] left-0 not-italic text-[#9a9690] text-[10px] top-[-0.2px] w-[180px]">
         <span className="leading-[15px]">extends to your pc</span>
-        <span className="leading-[15px] text-[#5c5a57]">{` Â· pair once for larger models`}</span>
+        <span className="leading-[15px] text-[#5c5a57]">{` · pair once for larger models`}</span>
       </p>
     </div>
   );
@@ -2787,7 +2787,7 @@ function Container236() {
 function Container260() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding â€” phase 2</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding — phase 2</p>
     </div>
   );
 }
@@ -3219,7 +3219,7 @@ function Container258() {
 function Container287() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding â€” phase 3</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Onboarding — phase 3</p>
     </div>
   );
 }
@@ -3386,7 +3386,7 @@ function Container301() {
 function Text36() {
   return (
     <div className="absolute h-[28px] left-[16px] top-0 w-[159.2px]" data-name="Text">
-      <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[14px] left-0 not-italic text-[#9a9690] text-[10px] top-[-1px] w-[126px]">still fully private â€” local network only</p>
+      <p className="absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[14px] left-0 not-italic text-[#9a9690] text-[10px] top-[-1px] w-[126px]">still fully private — local network only</p>
     </div>
   );
 }
@@ -3416,7 +3416,7 @@ function Container295() {
 function Paragraph21() {
   return (
     <div className="absolute h-[24px] left-[24.4px] top-[404.1px] w-[200px]" data-name="Paragraph">
-      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[12px] left-[100.4px] not-italic text-[#5c5a57] text-[8px] text-center top-[-0.2px] w-[188px]">requires local network access Â· no data leaves your network</p>
+      <p className="-translate-x-1/2 absolute font-['IBM_Plex_Mono:Regular',sans-serif] leading-[12px] left-[100.4px] not-italic text-[#5c5a57] text-[8px] text-center top-[-0.2px] w-[188px]">requires local network access · no data leaves your network</p>
     </div>
   );
 }
@@ -3551,7 +3551,7 @@ function Heading19() {
 function Container306() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat â€” phone mode</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat — phone mode</p>
     </div>
   );
 }
@@ -3740,7 +3740,7 @@ function Container304() {
 function Container316() {
   return (
     <div className="content-stretch flex h-[15.988px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat â€” PC session active</p>
+      <p className="flex-[1_0_0] font-['IBM_Plex_Mono:Regular',sans-serif] leading-[16px] min-h-px min-w-px not-italic relative text-[#c8b98a] text-[12px] text-center">Chat — PC session active</p>
     </div>
   );
 }
@@ -6344,7 +6344,7 @@ function Container372() {
 function Heading21() {
   return (
     <div className="absolute border-[#c8b98a] border-l-[1.6px] border-solid h-[20px] left-[547px] top-[96.8px] w-[233.2px]" data-name="Heading 3">
-      <p className="absolute font-['IBM_Plex_Mono:Medium',sans-serif] leading-[20px] left-[16px] not-italic text-[#c8b98a] text-[14px] top-[-0.2px] tracking-[1.4px] uppercase whitespace-nowrap">Key Screens â€” Settings</p>
+      <p className="absolute font-['IBM_Plex_Mono:Medium',sans-serif] leading-[20px] left-[16px] not-italic text-[#c8b98a] text-[14px] top-[-0.2px] tracking-[1.4px] uppercase whitespace-nowrap">Key Screens — Settings</p>
     </div>
   );
 }
@@ -8097,7 +8097,7 @@ function ScreensSection() {
 function Text73() {
   return (
     <div className="absolute content-stretch flex h-[31.988px] items-start left-0 top-[8.8px] w-[54px]" data-name="Text">
-      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">09 â€”</p>
+      <p className="font-['IBM_Plex_Mono:Medium',sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(200,185,138,0.5)] tracking-[-0.9px] whitespace-nowrap">09 —</p>
     </div>
   );
 }
@@ -8114,7 +8114,7 @@ function Heading22() {
 function Paragraph22() {
   return (
     <div className="absolute h-[87.75px] left-[24px] top-[152.79px] w-[672px]" data-name="Paragraph">
-      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[643px]">This section shows the PC pairing interaction flow â€” the moment a user connects their phone to their PC for the first time. It is the most interaction-design-dense moment in the product.</p>
+      <p className="absolute font-['IBM_Plex_Sans:Light',sans-serif] leading-[29.25px] left-0 not-italic text-[#d1d5dc] text-[18px] top-[-0.6px] w-[643px]">This section shows the PC pairing interaction flow — the moment a user connects their phone to their PC for the first time. It is the most interaction-design-dense moment in the product.</p>
     </div>
   );
 }
@@ -8176,7 +8176,7 @@ function Paragraph24() {
   return (
     <div className="h-[104px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]">{`A single row in the side menu reads 'extend with pc â†’'. It only appears when no PC is paired. The invite disappears once it's no longer relevant.`}</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]">{`A single row in the side menu reads 'extend with pc →'. It only appears when no PC is paired. The invite disappears once it's no longer relevant.`}</p>
       </div>
     </div>
   );
@@ -8242,7 +8242,7 @@ function Text75() {
   return (
     <div className="h-[24px] relative shrink-0 w-[14px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-0 not-italic text-[#c8b98a] text-[16px] top-[-2.2px] whitespace-nowrap">â†’</p>
+        <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-0 not-italic text-[#c8b98a] text-[16px] top-[-2.2px] whitespace-nowrap">→</p>
       </div>
     </div>
   );
@@ -9840,7 +9840,7 @@ function Paragraph25() {
   return (
     <div className="h-[156px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]">The PC displays a QR code encoding its local network address. The phone scans it to discover the PC and initiate a direct connection. Public keys are exchanged over that connection â€” no server involved at any point.</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[288px]">The PC displays a QR code encoding its local network address. The phone scans it to discover the PC and initiate a direct connection. Public keys are exchanged over that connection — no server involved at any point.</p>
       </div>
     </div>
   );
@@ -9925,7 +9925,7 @@ function Paragraph26() {
   return (
     <div className="h-[130px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[287px]">Both devices display the same 4-digit code â€” a hash of the exchanged keys. If the codes match, no man-in-the-middle attack occurred. The user confirms visually.</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[287px]">Both devices display the same 4-digit code — a hash of the exchanged keys. If the codes match, no man-in-the-middle attack occurred. The user confirms visually.</p>
       </div>
     </div>
   );
@@ -10208,7 +10208,7 @@ function Text79() {
   return (
     <div className="h-[30px] relative shrink-0 w-[109.6px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[15px] left-0 not-italic text-[#888] text-[10px] top-[-0.2px] w-[99px]">Apple Silicon Â· Unified Memory</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[15px] left-0 not-italic text-[#888] text-[10px] top-[-0.2px] w-[99px]">Apple Silicon · Unified Memory</p>
       </div>
     </div>
   );
@@ -10344,7 +10344,7 @@ function Paragraph27() {
   return (
     <div className="h-[130px] relative shrink-0 w-[294.4px]" data-name="Paragraph">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[276px]">The side menu compute zone expands from the single invite row into the full section â€” toggle, device name, online status. The UI reflects the new system state immediately.</p>
+        <p className="absolute font-['IBM_Plex_Sans:Regular',sans-serif] leading-[26px] left-0 not-italic text-[#99a1af] text-[16px] top-[-0.4px] w-[276px]">The side menu compute zone expands from the single invite row into the full section — toggle, device name, online status. The UI reflects the new system state immediately.</p>
       </div>
     </div>
   );
@@ -10694,7 +10694,7 @@ function Heading31() {
 function Paragraph31() {
   return (
     <div className="relative shrink-0 w-full" data-name="Paragraph">
-      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[458px]">{`On-device responses are fast enough that there's no real waiting state. Without spinners or loading feedback, the interface has to feel trustworthy through immediacy alone. That changed how a lot of interactions were designed.`}</p>
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[458px]">{`On-device responses are fast enough that there’s no real waiting state. Without spinners or loading feedback, the interface has to feel trustworthy through immediacy alone. That changed how a lot of interactions were designed.`}</p>
     </div>
   );
 }
@@ -10720,7 +10720,7 @@ function Heading32() {
 function Paragraph32() {
   return (
     <div className="relative shrink-0 w-full" data-name="Paragraph">
-      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[461px]">{`Remote connection still needs a relay to establish the link across networks. It doesn't touch any data, but explaining that clearly without breaking the "no servers" expectation is still unresolved.`}</p>
+      <p className="font-['IBM_Plex_Sans:Light',sans-serif] leading-[26px] not-italic text-[#d1d5dc] text-[16px] w-[461px]">{`Remote connection still needs a relay to establish the link across networks. It doesn’t touch any data, but explaining that clearly without breaking the “no servers” expectation is still unresolved.`}</p>
     </div>
   );
 }
@@ -10967,7 +10967,7 @@ export default function LocalAiManagerPage() {
     <div className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative flex flex-col items-center">
       <GrainOverlay />
       <div className="w-full max-w-[1519px] relative">
-        <div
+        <div 
           style={{
             width: '1519px',
             height: '15970px',
