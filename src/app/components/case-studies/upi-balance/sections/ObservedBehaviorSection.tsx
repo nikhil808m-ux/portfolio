@@ -41,7 +41,7 @@ export const ObservedBehaviorSection: React.FC = () => {
 
         <TextBlock
           eyebrow="03 — Observed Behaviour"
-          title="Users knew something was off. They just couldn't name it."
+          title={<>Users knew something was off. They <br /> just couldn't name it.</>}
           subtitle=""
         >
           <p className="mb-4 text-slate-500 font-light text-[17px] leading-relaxed">
