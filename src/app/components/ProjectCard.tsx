@@ -10,13 +10,14 @@ interface ProjectProps {
   description: string;
   index: number;
   imageUrl: string;
+  imageObjectPosition?: string;
   year?: string;
   tags?: string[];
   slug: string;
   status: "published" | "coming-soon";
 }
 
-export function ProjectCard({ title, category, description, index, imageUrl, year = "2023", tags = ["UI/UX", "Research"], slug, status }: ProjectProps) {
+export function ProjectCard({ title, category, description, index, imageUrl, imageObjectPosition = "center", year = "2026", tags = ["UI/UX", "Research"], slug, status }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { setCursorType } = useCursor();
   const [isHovered, setIsHovered] = useState(false);
@@ -118,6 +119,7 @@ export function ProjectCard({ title, category, description, index, imageUrl, yea
             src={imageUrl}
             alt={title}
             className="w-full h-full object-cover will-change-transform"
+            style={{ objectPosition: imageObjectPosition }}
             animate={{ scale: isHovered ? 1.05 : 1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             loading="eager"
