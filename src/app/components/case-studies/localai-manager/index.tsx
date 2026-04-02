@@ -1,4 +1,5 @@
-﻿import { CaseStudyFooter } from "../../CaseStudyFooter";
+﻿import { useEffect, useState } from "react";
+import { CaseStudyFooter } from "../../CaseStudyFooter";
 import { GrainOverlay } from "../upi-balance/GrainOverlay";
 
 import svgPaths from "./svg-0cm4e12p1a";
@@ -10944,11 +10945,40 @@ function LocalAiCaseStudyPageCopy() {
   );
 }
 export default function LocalAiManagerPage() {
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    function handleResize() {
+      const windowWidth = window.innerWidth;
+      const targetWidth = 1519;
+      if (windowWidth < targetWidth) {
+        setScale(windowWidth / targetWidth);
+      } else {
+        setScale(1);
+      }
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative">
+    <div className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative flex flex-col items-center">
       <GrainOverlay />
-      <div className="w-full relative">
-        <LocalAiCaseStudyPageCopy />
+      <div className="w-full max-w-[1519px] relative">
+        <div
+          style={{
+            width: '1519px',
+            height: '15970px',
+            transform: `scale(${scale})`,
+            transformOrigin: 'top left',
+            marginBottom: `-${15970 * (1 - scale)}px`
+          }}
+          className="shrink-0 relative"
+        >
+          <LocalAiCaseStudyPageCopy />
+        </div>
       </div>
       <CaseStudyFooter currentSlug="localai-manager" />
     </div>
