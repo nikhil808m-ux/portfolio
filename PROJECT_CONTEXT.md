@@ -53,6 +53,9 @@ This document provides a comprehensive overview of the design system, technical 
 6. **UPI Case Study Refinement**: Performed a structured copy overhaul across the Hero, Thought Experiment, Observed Behavior, and Cash vs UPI sections to improve storytelling and scanability.
 7. **AI Reference Manifests**: Generated detailed `.md` reference files for all case studies containing typography, layout, and image metadata to support future AI-assisted edits.
 8. **Portfolio Copy Refinement:** Refined Hero copy to focus on designing clear interfaces, shortened Selected Works introduction, and updated UPI case study headers for a stronger behavioral design focus.
+9. **Local AI Prototype Integration (April 2026):** Embedded the interactive Local AI chat prototype securely into its case study with appropriate iframe/design scaling overrides.
+10. **Global Safari Scroll Optimization (April 2026):** Fixed severe Safari scroll lag on large hardware layers by removing `translateZ` and `will-change` from `localai-manager/index.tsx`, avoiding VRAM limits.
+11. **Vercel Routing Fix (April 2026):** Added `vercel.json` to properly rewrite all SPA routes to `index.html`, eliminating 404s on page reloads across all case studies.
 
 ---
-*Generated: March 30, 2026. Keep this updated after major architectural shifts.*
+*Generated: April 4, 2026. Keep this updated after major architectural shifts.*
