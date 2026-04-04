@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CaseStudyFooter } from "../../CaseStudyFooter";
 import { GrainOverlay } from "../upi-balance/GrainOverlay";
+import Prototype4App from "./prototype4/src/app/App";
 
 import svgPaths from "./svg-7wnnrzopjm";
 import img0021 from "/case-study/localai-manager/b6f2dd4b5e84f60e05686ff034f11c912be0fe01.png";
@@ -10604,9 +10605,21 @@ function Container448() {
   );
 }
 
+function PrototypeSectionWrapper() {
+  return (
+    <div 
+      className="absolute left-0 w-[1519.2px] h-[1080px] top-[9756.51px] bg-transparent" 
+      data-name="PrototypeSection"
+      style={{ "--color-accent": "#C8B98A" } as any}
+    >
+      <Prototype4App />
+    </div>
+  );
+}
+
 function OneFlowSection() {
   return (
-    <div className="absolute h-[3892.338px] left-0 top-[9756.51px] w-[1519.2px]" data-name="OneFlowSection">
+    <div className="absolute h-[3892.338px] left-0 top-[10836.51px] w-[1519.2px]" data-name="OneFlowSection">
       <Container447 />
       <Paragraph23 />
       <Container448 />
@@ -10754,7 +10767,7 @@ function Container601() {
 
 function ReflectionSection() {
   return (
-    <div className="absolute content-stretch flex flex-col gap-[48px] h-auto items-start left-[183.6px] pt-[64.8px] px-[24px] top-[13776.85px] w-[1152px]" data-name="ReflectionSection">
+    <div className="absolute content-stretch flex flex-col gap-[48px] h-auto items-start left-[183.6px] pt-[64.8px] px-[24px] top-[14856.85px] w-[1152px]" data-name="ReflectionSection">
       <div aria-hidden="true" className="absolute border-[#222] border-solid border-t-[0.8px] inset-0 pointer-events-none" />
       <Heading28 />
       <Container601 />
@@ -10891,7 +10904,7 @@ function List() {
 
 function WhatsNextSection() {
   return (
-    <div className="absolute border-[#222] border-solid border-t-[0.8px] h-[462px] left-[184px] top-[14570px] w-[1152px]" data-name="WhatsNextSection">
+    <div className="absolute border-[#222] border-solid border-t-[0.8px] h-[462px] left-[184px] top-[15650px] w-[1152px]" data-name="WhatsNextSection">
       <Heading33 />
       <List />
     </div>
@@ -10900,7 +10913,7 @@ function WhatsNextSection() {
 
 function WhatsNextSection1() {
   return (
-    <div className="absolute h-[880px] left-0 pointer-events-none top-[15090px] w-[1519px]" data-name="WhatsNextSection">
+    <div className="absolute h-[880px] left-0 pointer-events-none top-[16170px] w-[1519px]" data-name="WhatsNextSection">
       <div className="absolute inset-0 overflow-hidden">
         <img alt="" className="absolute h-[135.46%] left-[0.05%] max-w-none top-[-32.86%] w-full" src={imgWhatsNextSection} />
       </div>
@@ -10911,7 +10924,7 @@ function WhatsNextSection1() {
 
 function App() {
   return (
-    <div className="absolute bg-[#0f0f0f] h-[15970px] left-0 overflow-clip top-0 w-[1519px]" data-name="App">
+    <div className="absolute bg-[#0f0f0f] h-[17050px] left-0 overflow-clip top-0 w-[1519px]" data-name="App">
       <HeroSection />
       <Container6 />
       <ProblemSection />
@@ -10921,11 +10934,12 @@ function App() {
       <ArchitectureSection />
       <IdeationSection />
       <ScreensSection />
+      <PrototypeSectionWrapper />
       <OneFlowSection />
       <ReflectionSection />
       <WhatsNextSection />
       <WhatsNextSection1 />
-      <div className="absolute h-[841px] left-0 top-[15032px] w-[1519px]" data-name="iPhone 14 Pro, PSD_ 1" />
+      <div className="absolute h-[841px] left-0 top-[16112px] w-[1519px]" data-name="iPhone 14 Pro, PSD_ 1" />
       <div className="absolute h-0 left-[184px] top-[925px] w-[1152px]">
         <div className="absolute inset-[-1px_0_0_0]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1152 1">
@@ -10970,10 +10984,10 @@ export default function LocalAiManagerPage() {
         <div 
           style={{
             width: '1519px',
-            height: '15970px',
+            height: '17050px',
             transform: `scale(${scale})`,
             transformOrigin: 'top left',
-            marginBottom: `-${15970 * (1 - scale)}px`
+            marginBottom: `-${17050 * (1 - scale)}px`
           }}
           className="shrink-0 relative"
         >

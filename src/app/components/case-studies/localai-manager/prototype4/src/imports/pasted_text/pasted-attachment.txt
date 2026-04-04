@@ -1,0 +1,638 @@
+Build a fully interactive mobile AI chat application called "LocalAI" 
+designed for iPhone 16 Pro (393×852pt). This is a portfolio-grade 
+prototype — every state, every micro-interaction, and every transition 
+must be fully realized.
+
+─── VISUAL IDENTITY ───────────────────────────────────────
+
+Typography:
+- IBM Plex Mono — all UI labels, headers, badges, 
+  status indicators, placeholders, metadata
+- IBM Plex Sans (weight 300) — all conversation text, 
+  body copy, descriptions
+
+Color System (strict — no deviations):
+- Background primary:   #0F0F0F
+- Background surface:   #1A1A1A
+- Background elevated:  #242424
+- Text primary:         #E8E4DC
+- Text secondary:       #9A9690
+- Text subtle:          #5C5A57
+- Accent:               #C8B98A
+- Accent dim bg:        rgba(200,185,138,0.12)
+- Accent border:        rgba(200,185,138,0.22)
+- Borders:              #1E1E1E
+- Deep bg:              #0A0A0A
+
+No other colors. The single exception is #FF5555 for 
+destructive actions (delete) only.
+
+Device shell: iPhone 16 Pro with Dynamic Island.
+Apply a very subtle noise/grain texture overlay across 
+all screens at ~3% opacity.
+
+─── SCREENS & STATES ──────────────────────────────────────
+
+── SCREEN 1: WELCOME ──────────────────────────────────────
+
+Layout:
+- Top: wordmark "local/ai" in IBM Plex Mono, 
+  11px, letter-spacing 0.22em, uppercase, 
+  color text-subtle
+- Center: animated glyph — three concentric circles,
+  outermost 72px, middle 48px, inner dot 8px.
+  Outer rings use border only (no fill), color #242424.
+  Inner dot filled accent #C8B98A with glow 
+  box-shadow 0 0 12px rgba(200,185,138,0.6).
+  Outer ring pulses scale 1→1.03 with opacity 
+  0.4→0.8, 4s ease-in-out infinite.
+  Inner dot pulses opacity 1→0.7 with glow 
+  intensity changing, 2s infinite.
+- Headline: "your ai. your device." IBM Plex Mono 
+  18px, weight 400, color text-primary, 
+  letter-spacing -0.02em
+- Subtext: "Familiar AI chat, running entirely on 
+  your hardware. No accounts, no cloud, 
+  no exceptions." IBM Plex Sans 13px weight 300, 
+  color text-secondary, centered, max-width 260px
+- Three feature cards (surface bg, border #1E1E1E, 
+  border-radius 10px, padding 12px 14px):
+    Card 1 icon: monitor/screen SVG
+    "Fully offline" bold mono 12px text-primary
+    "works without internet connection" 
+    mono 11px text-subtle
+    
+    Card 2 icon: star/sparkle SVG  
+    "Extend to your PC" bold
+    "pair once via QR for more compute"
+    
+    Card 3 icon: padlock SVG
+    "End-to-end encrypted"
+    "keys never leave your devices"
+- CTA button full width: "start chatting_" 
+  IBM Plex Mono 12px uppercase letter-spacing 0.08em
+  color accent #C8B98A, bg elevated #242424, 
+  border 1px #2E2E2E, border-radius 14px, 
+  padding 14px
+  Hover: border shifts to accent-border, 
+  bg lightens to #2A2A2A
+  Tap: scale 0.97, haptic feedback medium
+
+Entry animation (staggered on first load):
+- Wordmark fades in: delay 0ms, 400ms ease
+- Glyph scales from 0.8→1 + fade: delay 150ms, 
+  600ms ease
+- Headline fades up 12px: delay 300ms, 500ms ease
+- Subtext fades up: delay 400ms, 400ms ease
+- Feature cards stagger in from bottom: 
+  delay 500/600/700ms
+- CTA button fades in: delay 800ms
+
+Tap "start chatting_" → slide transition right 
+into Chat Screen with spring animation 
+(stiffness 300, damping 30)
+
+── SCREEN 2: CHAT (empty state) ───────────────────────────
+
+Shown when new chat started with no messages.
+
+Center of message area:
+- Glyph (smaller version, 40px outer ring) 
+  with same pulse animation
+- Text "what's on your mind?" IBM Plex Mono 
+  13px text-subtle, centered
+- Three suggestion chips below (bg surface, 
+  border #222, border-radius 8px, 
+  padding 8px 14px, mono 11px text-subtle):
+  "explain something complex"
+  "help me write"  
+  "think through a problem"
+  Tap chip → populates input field with that text
+  Hover: border shifts to #2A2A2A, text lightens
+
+── SCREEN 3: CHAT (active conversation) ───────────────────
+
+Header (height 60px, border-bottom #1E1E1E):
+- Left: hamburger menu button — three lines, 
+  lengths 18px / 12px / 15px (asymmetric), 
+  color text-secondary, stroke 1.5px
+  Tap → opens slide menu with spring animation
+  Active state: lines animate to X on tap
+  
+- Center: conversation mode selector
+  Display: current mode name in IBM Plex Mono 
+  13px weight 500 text-primary + chevron icon
+  Sublabel: "conversation mode" mono 9px 
+  letter-spacing 0.12em uppercase text-subtle
+  Tap → opens mode dropdown with blur overlay
+  
+- Right: empty space (balanced layout)
+
+Local status bar (below header, 
+padding 6px 20px, border-bottom rgba 3%):
+- Animated amber dot (5px, pulse 2.5s infinite 
+  opacity 1→0.3)
+- "on-device" IBM Plex Mono 9.5px uppercase 
+  letter-spacing 0.08em color accent
+- "·" separator text-subtle
+- PC icon SVG (monitor outline 11px)
+- "via [device name]" mono 9.5px text-subtle 
+  uppercase
+- Right-aligned: current mode pill 
+  (bg elevated, border #2A2A2A, 
+  border-radius 4px, mono 10px text-subtle)
+  
+When PC is offline: PC section shows 
+"local only" in text-subtle, no dot indicator.
+When PC reconnecting: show "reconnecting..." 
+with slow pulse animation on the text.
+
+Message area (flex-column, gap 18px, 
+padding 18px 16px, scrollable, no scrollbar):
+
+Date separator: thin #1E1E1E lines either side 
+of date text. Mono 9px uppercase letter-spacing 
+0.12em text-subtle.
+
+User message bubble:
+- Aligned right, max-width 82%
+- Label "you" above: mono 8.5px uppercase 
+  letter-spacing 0.12em text-subtle
+- Bubble bg #242424, border 1px #2C2C2C,
+  border-radius 14px, 
+  border-bottom-right-radius 4px (tail)
+  padding 10px 13px
+  Text: IBM Plex Sans 14px weight 300 text-primary
+  line-height 1.6
+- Timestamp below: mono 8.5px text-subtle
+- Long press on bubble → show action sheet 
+  (bottom sheet slides up)
+- Double tap → enter inline edit mode:
+  bubble becomes editable textarea with 
+  accent border, shows confirm/cancel 
+  buttons (check and X icons) below.
+  Confirm tap → regenerates AI response, 
+  removes all subsequent messages first.
+
+AI message bubble:
+- Aligned left, max-width 82%  
+- Label "local" above: mono 8.5px uppercase 
+  accent color at 0.8 opacity
+- Bubble bg #1A1A1A, border 1px #1E1E1E,
+  border-radius 14px,
+  border-bottom-left-radius 4px (tail)
+  padding 10px 13px
+  Text: IBM Plex Sans 14px weight 300 text-primary
+- Performance metadata row below bubble:
+  timestamp + "·" + response time (e.g. "1.2s") + 
+  "·" + tokens per second (e.g. "34 tok/s")
+  All mono 8.5px text-subtle
+  Values slightly brighter: text-secondary
+- Long press → action sheet
+
+Message entry animation:
+- Each new message slides up from 8px below 
+  with fade, 250ms ease-out
+
+Typing / computing state:
+- Same bubble style as AI messages
+- Three amber dots (#C8B98A) bouncing 
+  staggered (0 / 180ms / 360ms delay)
+  amplitude 4px, 1.2s infinite
+- "computing" label to right of dots, 
+  mono 9px uppercase text-subtle
+- Stop button appears in input area 
+  (replaces send): square icon, 
+  bg elevated, border accent-border,
+  color accent
+  Tap → aborts generation with 
+  subtle haptic + message marked 
+  "[stopped]" in text-subtle italic
+
+Style selector row (above input, 
+border-top #1E1E1E, padding 9px 16px):
+- Three pills: "fast" "balanced" "thorough"
+- Inactive: bg transparent, border #262626, 
+  color text-subtle, mono 9.5px uppercase 
+  letter-spacing 0.1em, border-radius 5px, 
+  padding 5px 12px
+- Active: bg elevated #242424, 
+  color accent, border accent-border
+- Tap to switch: instant state change + 
+  subtle scale 0.95 tap animation + 
+  light haptic
+- Active pill synced with header mode selector 
+  (changing either updates both)
+
+Input area (padding 8px 16px 34px):
+- Pill-shaped container (border-radius 26px)
+  bg surface #1A1A1A, border 1px #252525
+  padding 8px 8px 8px 18px
+  min-height 50px
+- Textarea inside: IBM Plex Sans 15px weight 300
+  text-primary, placeholder "ask anything_" 
+  in mono 12px text-subtle letter-spacing 0.03em
+  Auto-expands up to 120px max height
+  No resize handle
+- Focus state: border shifts to #333, 
+  outer glow rgba(200,185,138,0.04) 3px spread
+  Input area lifts up 2px with spring 
+  animation when focused
+- Send button (36px circle, bg text-primary 
+  #E8E4DC, color bg-primary): 
+  appears with scale 0→1 spring animation 
+  only when input has text
+  Disappears with same animation when cleared
+  Tap: scale 0.9 → 1 spring + medium haptic
+  Hover: bg shifts to accent #C8B98A
+- When AI is generating: send button becomes 
+  stop button (square icon, 
+  bg elevated, accent border)
+
+Scroll behavior:
+- Auto-scrolls to bottom on new message 
+  with smooth animation
+- If user scrolls up mid-generation: 
+  auto-scroll pauses, 
+  "↓ new message" pill appears 
+  (centered, above input, bg elevated, 
+  mono 10px accent color, border accent-border, 
+  border-radius 20px, padding 6px 14px)
+  Tap pill → smooth scroll to bottom, 
+  pill disappears
+
+── SCREEN 4: MODE DROPDOWN ────────────────────────────────
+
+Triggered by tapping header mode selector.
+Background blurs (backdrop-filter blur 3px) 
+with dark overlay rgba(0,0,0,0.6).
+Dropdown appears below header with 
+scale 0.95→1 + fade, 200ms ease, 
+origin top-center.
+
+Dropdown card (width 280px, centered):
+- bg #111111, border 1px #2A2A2A, 
+  border-radius 16px
+- Header row: "conversation mode" 
+  mono 9px uppercase text-subtle, 
+  padding 10px 16px, border-bottom #1E1E1E
+
+Three mode options:
+Each row: icon box (28px, bg elevated, 
+border #2A2A2A, border-radius 7px, 
+mono 9px font-weight 600 letter "F"/"B"/"T") 
++ name + description + indicator dot
+
+- Inactive: border-left 2px transparent, 
+  name color text-secondary, 
+  desc text-subtle, icon color text-subtle
+- Active/selected: border-left 2px accent, 
+  bg surface, name text-primary, 
+  icon bg accent-dim, icon color accent, 
+  amber dot (6px) right side with glow
+- Hover: bg surface transition 120ms
+
+Footer: amber dot (4px bg #2A2A2A) + 
+"models run offline on your device" 
+mono 9px text-subtle
+bg #0D0D0D, border-top #1A1A1A
+
+Tap outside or tap selected option → 
+closes with reverse animation
+Selecting new option → style pills sync, 
+header label updates, notification toast 
+slides in from top: 
+"switched to [mode]" 
+(mono 12px, bg surface/80 blur, 
+border #2A2A2A, rounded-full, 
+padding 8px 16px) — auto-dismisses 3s
+
+── SCREEN 5: SLIDE MENU ───────────────────────────────────
+
+Opens from left edge (width 280px).
+Spring animation: stiffness 300, damping 28.
+Backdrop: rgba(0,0,0,0.5) + blur 2px, 
+tap to close.
+Main content shifts right with same spring 
+(not pushed, content stays and blurs slightly).
+
+Menu structure:
+Top section (padding 0 20px 20px, 
+border-bottom #1E1E1E):
+- Wordmark "local/ai" mono 12px weight 600 
+  letter-spacing 0.16em uppercase text-primary
+- Tagline "on-device · private · yours" 
+  mono 9px text-subtle
+
+Section label style: 
+mono 9px uppercase letter-spacing 0.14em 
+text-subtle, padding 8px 20px 4px
+
+"actions" section:
+- new chat (+ icon)
+- models (circle-question icon)  
+- settings (clock icon)
+Each: flex row, gap 12px, padding 10px 20px, 
+hover bg surface, transition 120ms
+Icon: 14px SVG text-subtle
+Text: mono 12px text-secondary 
+letter-spacing 0.03em
+
+"recent" section:
+- List of past conversations
+- Each item: padding 9px 20px, 
+  hover bg surface
+- Title: IBM Plex Sans 13px weight 300 
+  text-secondary, truncated with ellipsis
+- Meta: mono 9px text-subtle 
+  (date · mode used)
+- Long press → shows inline options: 
+  rename / export / delete
+  Delete: slides item out left with 
+  fade + haptic medium
+  
+Bottom section (border-top #1E1E1E):
+- PC pairing status row:
+  When paired: monitor icon + device name 
+  mono 12px text-secondary + amber dot 
+  (5px with glow) right side
+  When not paired: "pair a pc" text 
+  in text-subtle + chevron right
+  Tap paired device → show device detail sheet
+  Tap "pair a pc" → navigate to QR screen
+
+── SCREEN 6: QR PAIRING ───────────────────────────────────
+
+Entry: slides up as full-screen sheet 
+(not a modal — full screen takeover)
+with spring animation from bottom.
+Header: "← back" left, 
+"pair your pc" center in mono 14px weight 500
+
+This screen should feel ceremonial — 
+it is the trust-establishment moment.
+
+Layout:
+- Top label: "open localai on your pc and 
+  scan this code" mono 11px uppercase 
+  letter-spacing 0.1em text-subtle, centered
+  
+- QR code area: 
+  240×240px container, bg surface, 
+  border 1px #2A2A2A, border-radius 16px, 
+  padding 20px, centered
+  QR code itself: dark squares on 
+  slightly lighter bg (#1A1A1A squares 
+  on #111 field) — generate a realistic 
+  looking but decorative QR pattern
+  Corner finder patterns in accent color 
+  (#C8B98A) instead of black — this is 
+  the key visual identity moment
+  Subtle scanning animation: 
+  horizontal line (1px, accent color, 
+  20% opacity) moves top→bottom of QR 
+  area continuously, 2s linear infinite
+
+- Below QR: 
+  "expires in 04:47" countdown timer 
+  mono 11px text-subtle, live countdown
+  When under 60s: turns accent color
+  When expired: QR fades to 30% opacity, 
+  "regenerate" button appears
+
+- Verification step (appears after scan 
+  is simulated/confirmed):
+  Screen transitions to confirmation state:
+  Large 4-digit code displayed:
+  "2 8 4 7" each digit in a card 
+  (52×64px, bg elevated, border #2A2A2A, 
+  border-radius 10px, mono 28px weight 500 
+  text-primary, centered)
+  Instruction: "confirm this code matches 
+  your pc screen" mono 11px text-subtle
+  Two buttons below:
+  "confirm" — full width, bg elevated, 
+  accent color text, accent border
+  "this doesn't match" — text only, 
+  text-subtle, smaller
+
+- Confirmed state:
+  Glyph animation: rings expand outward 
+  and fade, amber core glows bright, 
+  scale 1→1.5 then settle
+  "macbook paired" in mono 16px text-primary
+  "your conversations are now synced 
+  on your home network" 
+  mono 11px text-subtle, centered
+  Subtle amber pulse emanating from center
+  "done" button → closes sheet, 
+  returns to chat with PC status now 
+  showing in local status bar
+
+── SCREEN 7: MESSAGE ACTION SHEET ─────────────────────────
+
+Triggered by long press on any message.
+Long press threshold: 400ms.
+On trigger: bubble scales to 0.97, 
+haptic medium, then sheet slides up.
+
+Sheet: bottom sheet, 
+bg surface #1A1A1A, 
+top border-radius 20px, 
+drag handle (32px wide, 4px tall, 
+bg #333, border-radius 2px, 
+centered at top, margin 12px)
+
+Message preview at top:
+bg elevated, border #2A2A2A, 
+border-radius 12px, padding 12px 14px
+Text: first 80 chars, IBM Plex Sans 
+13px weight 300 text-secondary, italic
+
+Actions (for AI message):
+- Copy text (copy icon + "copy text" 
+  mono 14px text-primary)
+- Regenerate (refresh icon + "regenerate")
+- Pin message (pin icon + "pin message" 
+  or "unpin message")
+Divider: 1px #2A2A2A
+- Delete (trash icon + "delete message" 
+  in #FF5555, hover bg #2A1515)
+
+Actions (for user message):
+- Copy text
+- Edit (pencil icon — tapping closes 
+  sheet and activates inline edit on bubble)
+- Pin message
+Divider
+- Delete
+
+Each action row: flex, gap 16px, 
+padding 12px 16px, border-radius 12px, 
+hover bg #1F1F1F
+Icon container: 40px circle bg elevated, 
+centered icon 20px
+Text: mono 15px
+
+Sheet closes on: tap outside, 
+drag down, action selected.
+Closing: spring down animation.
+
+── SCREEN 8: SETTINGS ─────────────────────────────────────
+
+Full screen slide-in from right.
+Header: "← settings" 
+
+Sections (each with mono section label style):
+
+"compute"
+- Conversation mode (taps to mode screen)
+- Internet fetch toggle: 
+  "allow web access" label mono 13px + 
+  sublabel "fetch current info when needed" 
+  mono 10px text-subtle + custom toggle 
+  (bg accent when on, bg elevated when off, 
+  28×16px, circle slides with spring)
+
+"privacy"  
+- Clear all conversations 
+  (destructive, #FF5555 text)
+- Export conversation history 
+  (exports JSON, shows toast "exported")
+
+"device"
+- Paired PC row: shows device name + 
+  "paired" in text-subtle + chevron
+  Tap → device detail: 
+  shows device name, paired date, 
+  last connected, "unpair device" 
+  destructive button
+- "pair new device" → QR screen
+
+"about"
+- Version: "0.1.0-local" mono text-subtle
+- "computation stays on your devices" 
+  mono 10px text-subtle, italic
+
+── MICRO-INTERACTIONS CHECKLIST ───────────────────────────
+
+Every interactive element must have:
+□ Tap state: scale 0.96-0.97 + haptic
+□ Hover state: subtle bg shift
+□ Focus state: visible but refined 
+  (no browser default outlines — 
+  custom accent glow instead)
+□ Disabled state: opacity 0.35, 
+  no pointer events
+
+Specific micro-interactions:
+□ Send button: appears/disappears with 
+  spring scale animation as input fills/clears
+□ Hamburger lines: asymmetric lengths 
+  animate to X on menu open
+□ Amber dot in status bar: 
+  always breathing, never static
+□ New messages: always slide up from below
+□ Style pill switch: instant with 
+  scale tap + light haptic
+□ Bottom sheet: drag-to-dismiss with 
+  rubber-band resistance
+□ Swipe right from left edge (< 40px) 
+  → opens slide menu
+□ Model switch notification toast: 
+  slides in from top, auto-dismiss 3s, 
+  spring animation both ways
+□ Conversation clear: 
+  undo toast (4s window), 
+  messages fade out with stagger
+□ Long press on history item: 
+  inline reveal of rename/delete options
+□ QR scan line: always animating, 
+  never paused
+□ Pairing confirmation: 
+  full ceremonial animation sequence
+□ Scroll-to-bottom pill: 
+  fades in when scrolled up, 
+  smooth scroll on tap, fades out
+
+── NAVIGATION & STATE PERSISTENCE ─────────────────────────
+
+State that persists across sessions:
+- Conversation history (stored locally)
+- Selected conversation mode
+- PC pairing status and device name
+- Internet fetch toggle state
+
+State that resets per session:
+- Input field content
+- Scroll position (starts at bottom)
+- Any open sheets/dropdowns
+
+Navigation transitions:
+- Screen push (welcome → chat): 
+  slide right, spring
+- Sheet open (settings, QR, models): 
+  slide up, spring  
+- Menu open: slide right, spring
+- Modal (action sheet): slide up, spring
+- All closes: reverse of open
+
+── EDGE STATE SCREENS ──────────────────────────────────────
+
+PC offline state (in local status bar):
+- PC icon dims to text-subtle
+- "local only" replaces device name
+- Mode pill unchanged
+
+PC reconnecting state:
+- "reconnecting..." text pulses 
+  opacity 1→0.4 continuously
+- Amber dot animation slows to 4s cycle
+
+Generation stopped state:
+- Last AI bubble shows content generated 
+  so far (even if partial sentence)
+- Below content: "· stopped" in 
+  mono 9px text-subtle italic
+
+Empty history state (in slide menu):
+- "no conversations yet" 
+  mono 11px text-subtle, centered, 
+  padding 20px
+
+Internet fetch active state 
+(when toggle is on and fetch triggered):
+- Status bar briefly shows "fetching..." 
+  in text-subtle before "computing"
+- Animated subtle globe icon 
+  replaces amber dot momentarily
+
+First launch (never opened before):
+- Welcome screen plays full stagger animation
+- No chat history in slide menu
+
+── DESIGN NOTES ────────────────────────────────────────────
+
+The interface must feel familiar to 
+ChatGPT/Claude users — same spatial 
+logic, same input-at-bottom convention — 
+but distinctly different through:
+1. Monospace typography on all UI chrome
+2. Amber accent instead of brand color
+3. "local" / "on-device" language 
+   replacing cloud terminology
+4. Performance metrics visible on responses
+5. The absence of avatar, account UI, 
+   or any cloud iconography
+
+The product communicates privacy not 
+through copy but through what is absent:
+no avatar, no account badge, 
+no sync indicator pointing outward, 
+no server imagery.
+
+Every screen should render correctly 
+inside iPhone 16 Pro shell with 
+Dynamic Island at top.
+Safe area insets must be respected:
+top 59px, bottom 34px.

@@ -28,6 +28,18 @@
   --color-success: hsl(var(--success));
   --color-warning: hsl(var(--warning));
 
+  /* Local AI Prototype Colors */
+  --color-bg-primary: #0F0F0F;
+  --color-bg-surface: #1A1A1A;
+  --color-bg-elevated: #242424;
+  --color-text-primary: #E8E4DC;
+  --color-text-secondary: #9A9690;
+  --color-text-subtle: #5C5A57;
+  --color-accent-dim: rgba(200,185,138,0.12);
+  --color-accent-border: rgba(200,185,138,0.22);
+  --color-borders: #1E1E1E;
+  --color-bg-deep: #0A0A0A;
+
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
