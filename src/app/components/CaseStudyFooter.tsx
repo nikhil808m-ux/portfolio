@@ -76,7 +76,21 @@ export function CaseStudyFooter({ currentSlug }: CaseStudyFooterProps) {
                             </span>
                         </Link>
                     ) : (
-                        <div />
+                        <Link
+                            to="/about"
+                            className="group inline-flex flex-col gap-2 text-right"
+                        >
+                            <span className="flex items-center justify-end gap-2 text-[10px] font-mono uppercase tracking-widest text-stone-400 group-hover:text-stone-900 transition-colors">
+                                Next
+                                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                            </span>
+                            <span className="text-lg font-display font-medium text-stone-900 group-hover:text-stone-600 transition-colors tracking-tight leading-snug">
+                                About Me
+                            </span>
+                            <span className="text-xs font-mono text-stone-500 group-hover:text-stone-900 transition-colors">
+                                Designer & Developer
+                            </span>
+                        </Link>
                     )}
                 </div>
 
