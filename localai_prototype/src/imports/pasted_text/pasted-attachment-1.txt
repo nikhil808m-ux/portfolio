@@ -1,0 +1,321 @@
+Build the Models screen and connect it to the existing 
+mode dropdown. Do not change any existing components 
+except ModeDropdown and SlideMenu.
+
+─── STORE ADDITIONS ────────────────────────────────────────
+
+Add to store.tsx:
+
+type ModelStatus = 
+  | 'ready'           // downloaded, can run
+  | 'downloading'     // in progress
+  | 'insufficient_memory'  // downloaded but can't load
+
+type InstalledModel = {
+  id: string;
+  name: string;        // "Llama 3.2"
+  variant: string;     // "3B" / "7B" / "13B"
+  sizeGB: number;      // 2.3
+  tier: 'fast' | 'balanced' | 'thorough';
+  status: ModelStatus;
+  downloadProgress?: number;  // 0-100 when downloading
+  isActive: boolean;   // currently powering its tier
+};
+
+Seed data — deliberately has two fast models 
+to demo the edge case:
+[
+  { id: 'phi3-mini', name: 'Phi-3 Mini', variant: '3.8B',
+    sizeGB: 2.3, tier: 'fast', status: 'ready', 
+    isActive: true },
+  { id: 'llama32-3b', name: 'Llama 3.2', variant: '3B',
+    sizeGB: 1.8, tier: 'fast', status: 'ready', 
+    isActive: false },
+  { id: 'llama32-7b', name: 'Llama 3.2', variant: '7B',
+    sizeGB: 4.1, tier: 'balanced', status: 'ready', 
+    isActive: true },
+  { id: 'llama31-13b', name: 'Llama 3.1', variant: '13B',
+    sizeGB: 7.8, tier: 'thorough', 
+    status: 'insufficient_memory', isActive: false },
+]
+
+Note: thorough tier has a model but it can't run —
+this demos the insufficient memory edge case.
+The thorough mode in dropdown should appear 
+unavailable as a result.
+
+Add to AppState:
+- models: InstalledModel[]
+- setModelActive: (modelId: string) => void
+  Logic: finds model's tier, sets isActive: false 
+  on all models in that tier, then isActive: true 
+  on the selected model
+- modelsOpen: boolean (add to overlays)
+
+─── CHANGE 1: MODE DROPDOWN — ADD FOOTER ───────────────────
+
+In ModeDropdown, after the three mode rows and before 
+the existing "models run offline" footer, add:
+
+A separator line: h-[1px] bg-[#1E1E1E] mx-0
+
+A "manage models" navigation row:
+<div 
+  className="flex items-center justify-between 
+    p-[11px_16px] cursor-pointer hover:bg-bg-surface 
+    transition-colors"
+  onClick={() => {
+    setOverlay('modeDropdownOpen', false);
+    // small delay so dropdown closes before screen opens
+    setTimeout(() => setOverlay('modelsOpen', true), 150);
+  }}
+>
+  <span className="font-mono text-[11px] 
+    text-text-secondary tracking-[0.04em]">
+    manage models
+  </span>
+  <svg width="12" height="12" viewBox="0 0 12 12" 
+    fill="none">
+    <path d="M4.5 2.5L8 6L4.5 9.5" 
+      stroke="#5C5A57" strokeWidth="1.3" 
+      strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+</div>
+
+Keep existing "models run offline on your device" 
+footer below this — it now sits at the very bottom 
+of the dropdown below the manage row.
+
+The visual hierarchy is:
+  [mode options]      ← selection layer
+  ────────────────
+  manage models →     ← navigation layer  
+  ● offline footer    ← reassurance layer
+
+─── CHANGE 2: MODE DROPDOWN — UNAVAILABLE TIER STATE ───────
+
+For the thorough mode option (has model but 
+status: insufficient_memory):
+
+Change the row to show unavailability:
+- Entire row: opacity-40, cursor not-allowed
+- Instead of description text "deep, careful thought":
+  show "insufficient memory" in #FF5555 at 11px
+- No amber dot indicator
+- onClick: do nothing (prevent mode change)
+- No border-left accent when "selected" if unavailable
+
+For a tier with NO model at all (future state):
+- Same opacity-40 treatment
+- Description: "no model installed"
+- onClick: close dropdown + open models screen 
+  scrolled to that tier
+
+─── CHANGE 3: MODELS SCREEN ────────────────────────────────
+
+Full screen component: ModelsScreen
+Slide in from right, same spring as SettingsScreen.
+Add to OverlayManager AnimatePresence block.
+
+Header:
+- Left: ArrowLeft button + "models" 
+  font-mono 14px font-medium text-text-primary
+- Right: storage summary — "14.2 GB used"
+  font-mono 10px text-text-subtle
+  (calculate from sum of sizeGB of ready models)
+
+Content: scrollable, px-4, three tier sections + 
+discover section at bottom.
+
+── TIER SECTIONS ────────────────────────────────────────────
+
+Three sections: fast, balanced, thorough.
+Each section:
+
+Section label row (flex justify-between, mb-2, mt-6):
+- Left: tier name font-mono 11px uppercase 
+  letter-spacing 0.14em text-text-subtle
+- Right: if tier has an active model: 
+  "active" font-mono 9px text-accent
+
+Then: list of models in this tier.
+
+── MODEL ROW (installed) ────────────────────────────────────
+
+Each model in the tier renders as a row:
+height auto, padding 12px 14px
+bg: bg-bg-surface if isActive, transparent if not
+border: 1px solid borders if isActive, 
+  1px solid transparent if not
+border-radius: 10px
+margin-bottom: 6px
+transition: all 150ms
+
+Layout:
+Left side (flex-col):
+  Row 1: model name + variant
+    name: font-mono 13px text-text-primary 
+      (or text-secondary if not active)
+    variant: font-mono 13px text-text-subtle ml-2
+  Row 2: size in GB
+    font-mono 10px text-text-subtle
+
+Right side:
+  If isActive: 
+    amber dot 5px with glow
+    + "active" font-mono 9px text-accent ml-2
+  If not active and status ready:
+    "set active" font-mono 10px text-text-subtle
+    — appears on hover/tap only via opacity
+    Use: group className, group-hover:opacity-100 
+    opacity-0 transition
+  If status insufficient_memory:
+    "needs memory" font-mono 9px #FF5555
+
+Tap behavior:
+  If ready and not active:
+    Call setModelActive(model.id)
+    Brief scale animation 0.97→1 on the row
+    Toast: "[tier] · [name] [variant]" 
+    e.g. "fast · phi-3 mini 3.8B"
+    Slides in from top, 3s auto-dismiss
+    Same style as mode switch toast
+  
+  If insufficient_memory:
+    No action, row is non-interactive
+    Subtle shake animation (x: 0, -3, 3, -2, 2, 0)
+    over 300ms to signal "can't do this"
+
+── EMPTY TIER STATE ─────────────────────────────────────────
+
+When a tier has no models at all:
+Dashed border card, bg transparent:
+border: 1px dashed #2A2A2A
+border-radius: 10px
+padding: 16px
+text center: "no model for this tier"
+font-mono 11px text-text-subtle
+Below: "find a model ↓" font-mono 10px text-accent
+Tapping scrolls to the Discover section below
+
+── DISCOVER SECTION ─────────────────────────────────────────
+
+Below the three tier sections, after a spacer:
+
+Section label: "discover" 
+font-mono 11px uppercase tracking-[0.14em] 
+text-text-subtle, mt-8 mb-3
+
+Subtitle: "models download directly to your device"
+font-mono 10px text-text-subtle mb-4
+
+Four model cards in a vertical list:
+
+Each card: bg-bg-surface, border border-borders,
+border-radius 12px, padding 14px 16px
+
+Card layout:
+Row 1: name + variant (mono 13px text-primary) 
+  + size badge right (mono 10px bg-elevated 
+  border-[#2A2A2A] rounded px-2 py-0.5 text-subtle)
+Row 2: description (sans 12px font-light text-subtle)
+  e.g. "Fast, efficient. Good for everyday tasks."
+Row 3: tier badge (mono 9px uppercase, 
+  color accent if fast, text-secondary if balanced,
+  text-subtle if thorough) + download button
+
+Download button (right-aligned):
+Idle: "download" font-mono 10px text-accent 
+  border border-accent-border rounded-[6px] 
+  px-3 py-1.5
+  
+Tapping triggers downloading state:
+Replace button with a progress indicator:
+- Thin progress bar below the card name row
+  height 2px, bg-elevated, 
+  accent-colored fill animating 0→100% 
+  over 3s (simulated)
+- Download text becomes "2.3 GB  ·  downloading..."
+  mono 10px text-subtle
+- On completion (after 3s):
+  Progress bar fades out
+  Model appears in its tier section above 
+  with isActive: true (if it's the only model 
+  in that tier) or isActive: false (if another 
+  already active)
+  Toast: "llama 3.2 7B downloaded"
+  Card shows "installed" instead of download button
+
+Discover model seeds:
+[
+  { name: 'Mistral', variant: '7B', sizeGB: 4.1,
+    tier: 'balanced',
+    desc: 'Strong reasoning and instruction following.' },
+  { name: 'Gemma 2', variant: '2B', sizeGB: 1.6,
+    tier: 'fast',
+    desc: 'Lightweight and fast. Good for quick tasks.' },
+  { name: 'Llama 3.1', variant: '70B', sizeGB: 39.0,
+    tier: 'thorough',
+    desc: 'Most capable. Requires PC compute.' },
+  { name: 'Phi-3', variant: '14B', sizeGB: 7.6,
+    tier: 'thorough',
+    desc: 'Compact but surprisingly deep reasoning.' },
+]
+
+Note on Llama 3.1 70B card:
+Since it requires PC, show a small note below 
+the description: "requires paired PC" 
+font-mono 9px text-subtle with Monitor icon 10px
+This is the only place PC requirement surfaces — 
+not in the main UI, only when relevant.
+
+── REMOVE MODEL ─────────────────────────────────────────────
+
+Long press on any installed model row (400ms threshold):
+Triggers a minimal confirmation bottom sheet.
+
+Sheet content:
+- Model name + variant + size (centered, mono 13px)
+- "remove from device" button: full width, 
+  bg transparent, border 1px #FF5555/30, 
+  text #FF5555, mono 12px uppercase, rounded-[14px]
+  whileTap scale 0.97
+- "cancel" text button below
+
+On confirm:
+- If model was active: tier becomes empty
+  (show empty tier state)
+- Model removes from models list with 
+  height-collapse + fade animation: 
+  height → 0, opacity → 0, 300ms ease-in
+- Toast: "llama 3.2 3B removed"
+- If it was the only model for a tier:
+  Mode dropdown now shows that tier as 
+  "no model installed"
+
+─── CHANGE 4: SLIDE MENU MODELS LINK ───────────────────────
+
+In SlideMenu, the "models" MenuAction onClick:
+Change from () => {} to:
+() => { 
+  setOverlay('menuOpen', false); 
+  setTimeout(() => setOverlay('modelsOpen', true), 200);
+}
+
+─── CONSISTENCY PASS ────────────────────────────────────────
+
+After implementing, verify:
+1. modelsOpen added to OverlayState in store.tsx
+2. ModelsScreen added to OverlayManager AnimatePresence
+3. All new interactive rows have whileTap={{ scale: 0.97 }}
+4. All toasts follow same pattern as mode switch toast
+5. No hardcoded colors outside established palette
+6. Storage calculation is reactive — updates when 
+   models are added or removed
+
+─── DO NOT CHANGE ───────────────────────────────────────────
+
+Everything from previous iterations.
+ChatScreen, WelcomeScreen, QR flow, 
+message bubbles, input area, settings screen,
+all spring values, all color tokens.

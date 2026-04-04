@@ -1,6 +1,5 @@
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import { CaseStudyFooter } from "../../CaseStudyFooter";
-import { GrainOverlay } from "../upi-balance/GrainOverlay";
 
 const Prototype4App = lazy(() => import("./prototype4/src/app/App"));
 
@@ -10995,7 +10994,6 @@ export default function LocalAiManagerPage() {
       className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative flex flex-col items-center"
       style={{ WebkitOverflowScrolling: 'touch' } as any}
     >
-      <GrainOverlay />
       <div className="w-full max-w-[1519px] relative">
         <div 
           style={{

@@ -2,7 +2,6 @@
 // UPI Balance Visibility — Case Study
 // Full-width layout, no outer padding restrictors.
 
-import { GrainOverlay } from './GrainOverlay';
 import { CaseStudyFooter } from '../../CaseStudyFooter';
 import { HeroSection } from './sections/HeroSection';
 import { ThoughtExperimentSection } from './sections/ThoughtExperimentSection';
@@ -23,8 +22,6 @@ export default function UPICaseStudy() {
     // snap-none overrides the Home page snap-y snap-mandatory from Root.tsx
     // so the case study scrolls freely
     <div className="snap-none w-full bg-[#F8FAFC] min-h-screen relative">
-
-      <GrainOverlay />
 
       <main className="relative z-10 flex flex-col w-full">
         <HeroSection />
