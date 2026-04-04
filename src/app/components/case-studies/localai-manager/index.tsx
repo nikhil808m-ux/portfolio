@@ -10978,17 +10978,23 @@ export default function LocalAiManagerPage() {
   }, []);
 
   return (
-    <div className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative flex flex-col items-center">
+    <div
+      className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative flex flex-col items-center"
+      style={{ WebkitOverflowScrolling: 'touch' } as any}
+    >
       <GrainOverlay />
       <div className="w-full max-w-[1519px] relative">
         <div 
           style={{
             width: '1519px',
             height: '17050px',
-            transform: `scale(${scale})`,
+            transform: `scale(${scale}) translateZ(0)`,
             transformOrigin: 'top left',
-            marginBottom: `-${17050 * (1 - scale)}px`
-          }}
+            marginBottom: `-${17050 * (1 - scale)}px`,
+            willChange: 'transform',
+            backfaceVisibility: 'hidden',
+            WebkitBackfaceVisibility: 'hidden',
+          } as any}
           className="shrink-0 relative"
         >
           <LocalAiCaseStudyPageCopy />
