@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { CaseStudyFooter } from "../../CaseStudyFooter";
 import { GrainOverlay } from "../upi-balance/GrainOverlay";
-import Prototype4App from "./prototype4/src/app/App";
+
+const Prototype4App = lazy(() => import("./prototype4/src/app/App"));
 
 import svgPaths from "./svg-7wnnrzopjm";
 import img0021 from "/case-study/localai-manager/b6f2dd4b5e84f60e05686ff034f11c912be0fe01.png";
@@ -10617,7 +10618,14 @@ function PrototypeSectionWrapper() {
         transform: "translateZ(0)"
       } as any}
     >
-      <Prototype4App />
+      <Suspense fallback={
+        <div className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-4">
+          <div className="w-8 h-8 rounded-full border-2 border-[#111] border-t-[#C8B98A] animate-spin"></div>
+          <p className="font-['IBM_Plex_Mono:Regular',sans-serif] text-[12px] text-[#C8B98A] uppercase tracking-[1.2px]">Loading Prototype...</p>
+        </div>
+      }>
+        <Prototype4App />
+      </Suspense>
     </div>
   );
 }
@@ -10985,6 +10993,7 @@ export default function LocalAiManagerPage() {
   return (
     <div
       className="snap-none w-full bg-[#0f0f0f] overflow-x-hidden relative flex flex-col items-center"
+      style={{ WebkitOverflowScrolling: 'touch' } as any}
     >
       <GrainOverlay />
       <div className="w-full max-w-[1519px] relative">
@@ -10992,9 +11001,12 @@ export default function LocalAiManagerPage() {
           style={{
             width: '1519px',
             height: '17050px',
-            transform: `scale(${scale})`,
+            transform: `scale(${scale}) translateZ(0)`,
             transformOrigin: 'top left',
             marginBottom: `-${17050 * (1 - scale)}px`,
+            willChange: 'transform',
+            backfaceVisibility: 'hidden',
+            WebkitBackfaceVisibility: 'hidden',
           } as any}
           className="shrink-0 relative"
         >
