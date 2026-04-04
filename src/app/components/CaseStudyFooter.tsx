@@ -87,9 +87,6 @@ export function CaseStudyFooter({ currentSlug }: CaseStudyFooterProps) {
                             <span className="text-lg font-display font-medium text-stone-900 group-hover:text-stone-600 transition-colors tracking-tight leading-snug">
                                 About Me
                             </span>
-                            <span className="text-xs font-mono text-stone-500 group-hover:text-stone-900 transition-colors">
-                                Designer & Developer
-                            </span>
                         </Link>
                     )}
                 </div>
