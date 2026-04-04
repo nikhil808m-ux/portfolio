@@ -10610,7 +10610,12 @@ function PrototypeSectionWrapper() {
     <div 
       className="absolute left-0 w-[1519.2px] h-[1080px] top-[9756.51px] bg-transparent" 
       data-name="PrototypeSection"
-      style={{ "--color-accent": "#C8B98A" } as any}
+      style={{ 
+        "--color-accent": "#C8B98A",
+        contain: "strict",
+        isolation: "isolate",
+        transform: "translateZ(0)"
+      } as any}
     >
       <Prototype4App />
     </div>
