@@ -16,7 +16,7 @@ const PCSessionDropdown = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="absolute inset-0 z-50 backdrop-blur-[3px] bg-[rgba(0,0,0,0.6)]"
+      className="absolute inset-0 z-50  bg-[rgba(0,0,0,0.6)]"
       onClick={() => setOverlay('pcDropdownOpen', false)}
     >
       <motion.div
@@ -186,7 +186,7 @@ const ModeDropdown = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="absolute inset-0 z-50 backdrop-blur-[3px] bg-[rgba(0,0,0,0.6)]"
+      className="absolute inset-0 z-50  bg-[rgba(0,0,0,0.6)]"
       onClick={() => setOverlay('modeDropdownOpen', false)}
     >
       <motion.div
@@ -328,7 +328,7 @@ const SlideMenu = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="absolute inset-0 z-40 
-        backdrop-blur-[2px] 
+         
         bg-[rgba(0,0,0,0.5)] 
         flex justify-start"
       onClick={() => {
@@ -2190,3 +2190,4 @@ const ActionRow = ({ icon: Icon, label, color = "text-text-primary", hoverColor 
     </div>
   );
 };
+

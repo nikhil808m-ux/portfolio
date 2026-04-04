@@ -147,11 +147,11 @@ const DynamicGuides = () => {
   }
 
   return (
-    <div className="p-6 bg-[#111]/80 backdrop-blur-md rounded-2xl border border-[#222] shadow-2xl w-full">
+    <div className="p-6 bg-[#181818] rounded-2xl border border-[#222] shadow-2xl w-full">
       <div className="flex items-center gap-3 mb-3">
         <div className="relative flex items-center justify-center">
-          <div className="absolute w-2.5 h-2.5 rounded-full bg-accent opacity-50 animate-ping" />
-          <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+          <div className="w-2.5 h-2.5 rounded-full bg-accent opacity-50 absolute" />
+          <div className="w-1.5 h-1.5 rounded-full bg-accent relative z-10" />
         </div>
         <p className="text-[11px] text-accent font-medium uppercase tracking-[0.2em]">Context Guide</p>
       </div>
@@ -205,21 +205,27 @@ const CaseStudyLayout = ({ hasStarted, setHasStarted }: { hasStarted: boolean, s
   const [scaleProps, setScaleProps] = React.useState({ scale: 1, width: 393, height: 852 });
   
   React.useEffect(() => {
+    let windowWidth = window.innerWidth;
+    
     const handleResize = () => {
+      // On mobile Safari, scrolling changes innerHeight and fires resize constantly.
+      // We only want to trigger a full re-scale if the width actually changed.
+      if (Math.abs(window.innerWidth - windowWidth) < 20 && scaleProps.scale !== 1) {
+        // Just return if this is just a vertical scroll URL bar change
+        return;
+      }
+      windowWidth = window.innerWidth;
+
       const isMobile = window.innerWidth < 640;
       const phoneHeight = isMobile ? 736 : 852;
       const phoneWidth = isMobile ? 340 : 393;
       
       const availableHeight = window.innerHeight - 80;
-      
-      // Calculate max width for the phone portion (half screen on desktop, full screen minus padding on mobile)
       const availableWidth = isMobile ? window.innerWidth - 40 : (window.innerWidth / 2.2);
       
-      // Find the scaling factors
       const scaleH = availableHeight / phoneHeight;
       const scaleW = availableWidth / phoneWidth;
       
-      // Use the smallest scale to guarantee it fits (max 1)
       const newScale = Math.min(1, scaleH, scaleW);
       
       setScaleProps({
@@ -230,8 +236,19 @@ const CaseStudyLayout = ({ hasStarted, setHasStarted }: { hasStarted: boolean, s
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    
+    // Throttle resize listener to prevent layout thrashing
+    let timeoutId: any;
+    const throttledResize = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(handleResize, 100);
+    };
+
+    window.addEventListener('resize', throttledResize);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', throttledResize);
+    };
   }, []);
 
   // Track if user has navigated past the initial brand screen
@@ -311,3 +328,4 @@ export default function App() {
     </AppStoreProvider>
   );
 }
+
