@@ -23,9 +23,10 @@ const ScrollReveal = ({ children, className }: { children: React.ReactNode, clas
 export function Home() {
   const { setCursorType } = useCursor();
 
-  // Silently prefetch the heavy case study chunks while the user is on the home page.
-  // After a short idle delay, the browser downloads these JS bundles in the background
-  // so navigating to any case study feels near-instant.
+  // Silently prefetch all case study chunks once the browser is fully idle.
+  // requestIdleCallback fires only when the browser has nothing else to render or paint.
+  // A 3s deadline timeout ensures it still runs on slow connections.
+  // Falls back to setTimeout for Safari which doesn't support requestIdleCallback.
   useEffect(() => {
     const prefetch = () => {
       import('../components/case-studies/localai-manager/index');
@@ -33,9 +34,29 @@ export function Home() {
       import('../components/case-studies/nirmaan-financial/index');
       import('../components/case-studies/fluxkey-console/index');
     };
-    // Wait 2s after mount so it doesn't compete with the initial page render
-    const timer = setTimeout(prefetch, 2000);
-    return () => clearTimeout(timer);
+
+    let handle: number;
+    if (typeof window.requestIdleCallback === 'function') {
+      handle = window.requestIdleCallback(prefetch, { timeout: 3000 });
+    } else {
+      // Safari fallback — still waits for load event before scheduling
+      const onLoad = () => {
+        handle = window.setTimeout(prefetch, 500) as unknown as number;
+      };
+      if (document.readyState === 'complete') {
+        onLoad();
+      } else {
+        window.addEventListener('load', onLoad, { once: true });
+      }
+    }
+
+    return () => {
+      if (typeof window.cancelIdleCallback === 'function') {
+        window.cancelIdleCallback(handle);
+      } else {
+        window.clearTimeout(handle);
+      }
+    };
   }, []);
   return (
     <>
