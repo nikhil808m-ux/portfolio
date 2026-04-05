@@ -8,7 +8,7 @@ const UPIBalancePage = lazy(() => import("./components/case-studies/upi-balance/
 const LocalAIManagerPage = lazy(() => import("./components/case-studies/localai-manager/index"));
 const NirmaanFinancialPage = lazy(() => import("./components/case-studies/nirmaan-financial/index"));
 const FluxKeyConsolePage = lazy(() => import("./components/case-studies/fluxkey-console/index"));
-const AboutPage = lazy(() => import("./components/AboutPage"));
+import AboutPage from "./components/AboutPage";
 
 // Fallback component (could be replaced with a skeleton later)
 const PageLoader = () => (
