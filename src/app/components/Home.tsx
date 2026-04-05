@@ -1,5 +1,5 @@
-import { motion, useScroll, useTransform, useSpring, MotionValue, useInView } from 'motion/react';
-import React, { useRef, useEffect } from 'react';
+import { motion } from 'motion/react';
+import React, { useEffect } from 'react';
 import { ProjectCard } from './ProjectCard';
 import { Hero } from './Hero';
 import { GridBackground } from './GridBackground';
@@ -23,6 +23,20 @@ const ScrollReveal = ({ children, className }: { children: React.ReactNode, clas
 export function Home() {
   const { setCursorType } = useCursor();
 
+  // Silently prefetch the heavy case study chunks while the user is on the home page.
+  // After a short idle delay, the browser downloads these JS bundles in the background
+  // so navigating to any case study feels near-instant.
+  useEffect(() => {
+    const prefetch = () => {
+      import('../components/case-studies/localai-manager/index');
+      import('../components/case-studies/upi-balance/index');
+      import('../components/case-studies/nirmaan-financial/index');
+      import('../components/case-studies/fluxkey-console/index');
+    };
+    // Wait 2s after mount so it doesn't compete with the initial page render
+    const timer = setTimeout(prefetch, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <style>{`
