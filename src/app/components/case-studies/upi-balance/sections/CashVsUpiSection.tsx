@@ -70,7 +70,7 @@ export const CashVsUpiSection: React.FC = () => {
         <div className="relative w-full aspect-[4/3] lg:aspect-[16/9] border border-slate-200 bg-slate-50 p-2 lg:p-4">
           <div className="w-full h-full relative border border-slate-200 overflow-hidden">
             <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1655720360377-b97f6715e1ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW4lMjBwYXlpbmclMjBjYXNoJTIwd2FsbGV0JTIwSW5kaWFuJTIwcnVwZWVzfGVufDF8fHx8MTc3NTQzMDExMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/upiwallet.png"
               alt="Person checking cash in a wallet"
               className="w-full h-full object-cover filter grayscale mix-blend-multiply opacity-80"
             />
