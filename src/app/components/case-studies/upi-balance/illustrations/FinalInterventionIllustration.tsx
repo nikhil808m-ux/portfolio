@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Check, X, Share2 } from 'lucide-react';
+import { Check, Share2, X } from 'lucide-react';
 
 export const FinalInterventionIllustration: React.FC = () => {
   const [showBalance, setShowBalance] = useState(false);
@@ -28,12 +28,6 @@ export const FinalInterventionIllustration: React.FC = () => {
           <div className="absolute top-[60px] right-6">
             <button className="p-2 text-[#5F6368]">
               <Share2 size={24} strokeWidth={2} />
-            </button>
-          </div>
-
-          <div className="absolute top-[60px] left-6">
-             <button className="p-2 text-[#5F6368]">
-              <X size={28} strokeWidth={2} />
             </button>
           </div>
 

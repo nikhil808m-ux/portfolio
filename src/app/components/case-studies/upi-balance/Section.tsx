@@ -61,7 +61,10 @@ export const TextBlock: React.FC<TextBlockProps> = ({
     )}>
       {eyebrow && (
         <div className="flex items-center gap-2 mb-4">
-          <span className="px-3 py-1 bg-transparent text-slate-900 rounded-[2px] text-[11px] font-bold tracking-[0.2em] uppercase border border-slate-200">
+          <span className={clsx(
+            "px-3 py-1 bg-transparent rounded-[2px] text-[11px] font-bold tracking-[0.2em] uppercase border",
+            isDark ? "text-slate-900 border-slate-200" : "text-slate-300 border-slate-700"
+          )}>
             {eyebrow}
           </span>
         </div>

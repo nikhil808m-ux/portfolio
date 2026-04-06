@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import { Cursor } from "./components/Cursor";
 import { Header } from "./components/Header";
-import { NoiseOverlay } from "./components/NoiseOverlay";
+
 import { useRef, useEffect } from "react";
 import { useLocation } from "react-router";
 import { CursorProvider } from "./context/CursorContext";
@@ -51,7 +51,7 @@ export function Root() {
         className={`h-screen w-full overflow-y-auto overflow-x-hidden relative ${isHome ? "snap-y snap-mandatory" : "snap-none"} scroll-smooth bg-stone-50 text-stone-900 font-sans selection:bg-stone-200 selection:text-stone-900 cursor-none`}
         style={{ WebkitOverflowScrolling: 'touch', overscrollBehavior: 'none' }}
       >
-        <NoiseOverlay />
+
         <Cursor />
         <Header scrollContainerId="scroll-container" />
         <Outlet />

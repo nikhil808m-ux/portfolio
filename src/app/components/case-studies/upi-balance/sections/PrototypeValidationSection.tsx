@@ -7,14 +7,14 @@ export const PrototypeValidationSection: React.FC = () => {
       <div className="flex flex-col">
 
         {/* Header Area */}
-        <div className="max-w-3xl mb-12 md:mb-16">
+        <div className="max-w-3xl">
             <TextBlock
               eyebrow="09 — Testing"
-              title="Handed to users with zero explanation."
+              title="Initial Testing"
               subtitle=""
             >
               <p className="text-slate-500 font-light text-[17px] leading-relaxed">
-                The working prototype was tested with 30+ individuals — some from the initial interviews, most completely cold. The phone was handed over on the payment success screen with no introduction. The only prompt: "You've just paid for something. What do you do next?"
+                The prototype was handed to 30+ people on the payment success screen, without prior instruction. They were simply asked what they would do next after making a payment.
               </p>
             </TextBlock>
         </div>
@@ -23,7 +23,7 @@ export const PrototypeValidationSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border-t border-l border-slate-200">
             
             {/* Left Col - Data point */}
-            <div className="md:col-span-4 bg-slate-50 p-8 md:p-12 lg:p-16 border-r border-b border-slate-200 flex flex-col justify-center">
+            <div className="md:col-span-4 bg-slate-50 p-8 md:p-12 lg:p-16 border-r border-b border-slate-200 flex flex-col items-center justify-center text-center">
                 <span className="text-7xl lg:text-8xl font-light tracking-tighter text-slate-900 mb-4">30+</span>
                 <span className="text-[11px] text-slate-500 font-bold uppercase tracking-[0.2em]">Participants</span>
             </div>
@@ -31,12 +31,13 @@ export const PrototypeValidationSection: React.FC = () => {
             {/* Right Col - Findings */}
             <div className="md:col-span-8 bg-white p-8 md:p-12 lg:p-16 border-r border-b border-slate-200 flex flex-col justify-center gap-8">
                 <p className="text-[18px] lg:text-[20px] text-slate-600 leading-relaxed font-light max-w-2xl">
-                  The vast majority tapped "View Balance" intuitively without any prompting. A few tapped "Done" out of pure muscle memory, realized what they missed, and actively returned to try it.
+                  Most users tapped "View Balance" immediately. Some tapped "Done" out of habit, and later checked the balance once they were made aware of the option.
                 </p>
                 
                 <div className="border-l-2 border-slate-900 pl-6 mt-4 max-w-2xl">
                     <p className="text-[18px] lg:text-[20px] text-slate-900 leading-relaxed font-medium">
-                      The universal reaction across both behavioral groups was simple: <span className="italic">"Why wasn't this always there?"</span>
+                      A consistent reaction across users: <br/>
+                      <span className="italic">"This feels like something that should already exist."</span>
                     </p>
                 </div>
             </div>

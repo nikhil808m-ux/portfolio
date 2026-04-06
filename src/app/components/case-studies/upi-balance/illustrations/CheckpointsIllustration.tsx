@@ -85,7 +85,7 @@ const FlowArrow = ({ delay, left, isGap }: { delay: number, left: string, isGap?
 
 export const CheckpointsIllustration: React.FC = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto py-8 flex flex-col gap-12">
+    <div className="w-full max-w-4xl mx-auto flex flex-col gap-12">
       
       {/* Cash Flow */}
       <div className="relative p-10 md:p-12 bg-transparent rounded-[2px] border border-slate-200 overflow-hidden">

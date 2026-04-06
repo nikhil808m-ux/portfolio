@@ -5,7 +5,7 @@ import { CheckpointsIllustration } from '../illustrations/CheckpointsIllustratio
 export const CheckpointsSection: React.FC = () => {
   return (
     <Section variant="alt">
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-8">
         <TextBlock 
           eyebrow="02 — Two Financial Checkpoints"
           title={
@@ -17,7 +17,7 @@ export const CheckpointsSection: React.FC = () => {
           subtitle=""
         >
           <p className="mb-4 text-slate-500 font-light text-[17px] leading-relaxed">
-            Talking to 28 high-frequency digital payment users made one thing undeniably clear. Around every transaction, there are two natural moments of financial awareness — one before, one after. Physical currency naturally supported both. Modern interfaces only carried one of them across.
+            Checkpoint 1 is the moment before paying, when you estimate your balance. Checkpoint 2 is right after, when it updates. With cash, both happen within the interaction. With UPI, the second requires a separate check.
           </p>
         </TextBlock>
 

@@ -1,37 +1,24 @@
 import React from 'react';
 import { Section, TextBlock } from '../Section';
-import { Activity, ShieldCheck, Scale } from 'lucide-react';
 import { clsx } from 'clsx';
 
 const ImpactMetric = ({ 
   title, 
   desc, 
-  delay, 
-  icon: Icon,
   invert 
 }: { 
   title: string, 
   desc: string, 
-  delay: number,
-  icon: any,
   invert?: boolean 
 }) => (
   <div
     className={clsx(
-      "flex flex-col p-8 md:p-12 lg:p-16 border-b border-r border-slate-200",
+      "flex flex-col p-8 md:p-12 lg:p-16 border-b border-r border-slate-200 h-full",
       invert ? "bg-emerald-50" : "bg-white"
     )}
   >
-    {/* Architectural Icon Box */}
-    <div className={clsx(
-      "mb-16",
-      invert ? "text-slate-300" : "text-emerald-600"
-    )}>
-      <Icon size={24} strokeWidth={1.5} />
-    </div>
-
     {/* Content */}
-    <div className="mt-auto flex flex-col gap-6">
+    <div className="flex flex-col gap-6">
         <h4 className={clsx(
           "text-[18px] lg:text-[20px] font-medium tracking-tight",
           invert ? "text-slate-900" : "text-slate-900"
@@ -54,14 +41,14 @@ export const MeasuringImpactSection: React.FC = () => {
       <div className="flex flex-col">
 
         {/* Header Area */}
-        <div className="max-w-3xl mb-12 md:mb-16">
+        <div className="max-w-3xl">
             <TextBlock
               eyebrow="10 — Impact"
-              title="Friction that serves a purpose."
+              title="A small addition, used when needed"
               subtitle=""
             >
               <p className="text-slate-500 font-light text-[17px] leading-relaxed">
-                By analyzing the qualitative outcomes of the prototype testing, three core behavioral shifts emerged. The intervention didn't just solve a navigation issue; it restored a missing psychological need.
+                Placing balance within the confirmation changes when it is accessed, not how the payment works. Those who need it can act on it immediately, while others continue without interruption.
               </p>
             </TextBlock>
         </div>
@@ -70,22 +57,16 @@ export const MeasuringImpactSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-l border-slate-200">
             
           <ImpactMetric
-            icon={Activity}
-            title="Active Recalibration"
-            desc="Users began processing their financial standing organically post-payment, mimicking the cognitive loop of physical currency."
-            delay={0}
+            title="Used at the right moment"
+            desc="Users checked their balance right after paying, within the same context."
           />
           <ImpactMetric
-            icon={ShieldCheck}
-            title="Maintained Privacy"
-            desc="Because the action remains entirely voluntary and hidden behind standard authentication, trust and comfort levels remained high."
-            delay={0.1}
+            title="No forced interaction"
+            desc="The payment flow remains unchanged for those who choose not to engage."
           />
           <ImpactMetric
-            icon={Scale}
-            title="Balanced Efficiency"
-            desc="The primary flow remains frictionless for those who simply want to pay and leave, satisfying both behavioral archetypes perfectly."
-            delay={0.2}
+            title="Fits existing behavior"
+            desc="The action sits naturally within the confirmation, without requiring a new pattern."
           />
 
         </div>

@@ -25,11 +25,11 @@ export const ReflectionSection: React.FC = () => {
         </div>
         
         <h2 className="text-4xl md:text-6xl font-light text-white mb-10 tracking-tight leading-[1.2]">
-          Interfaces should empower speed, but <span className="font-medium text-zinc-300">protect reflection.</span>
+          Bringing balance into the moment
         </h2>
         
         <p className="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed max-w-3xl mb-16">
-          When we design strictly for metrics like completion rate and time-on-screen, we risk removing the natural human pauses that keep us grounded. True efficiency isn't just about moving fast. It's about moving with intent.
+          UPI made payments faster by removing the friction of handling cash. In doing so, it also moved balance away from the moment of payment. Placing it back within that moment doesn’t disrupt the existing flow. It simply brings awareness alongside the action.
         </p>
 
         <div className="w-24 h-px bg-gradient-to-r from-transparent via-zinc-500 to-transparent" />

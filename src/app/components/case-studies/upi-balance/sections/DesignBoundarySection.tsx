@@ -1,61 +1,38 @@
 import React from 'react';
-import { Section, TextBlock } from '../Section';
-import { Check, X } from 'lucide-react';
-
-const BoundaryPair = ({ allowText, avoidText, delay }: { allowText: string, avoidText: string, delay: number }) => (
-  <div 
-    className="flex flex-col md:flex-row gap-6 w-full"
-  >
-    <div className="flex-1 p-8 rounded-[2px] bg-transparent border border-slate-900 flex items-start gap-6">
-      <div className="mt-1 w-6 h-6 rounded-[2px] border border-slate-900 text-slate-900 flex items-center justify-center flex-shrink-0">
-        <Check size={14} strokeWidth={2.5} />
-      </div>
-      <span className="text-[17px] font-medium text-slate-900 leading-relaxed">
-        {allowText}
-      </span>
-    </div>
-    
-    <div className="hidden md:flex items-center text-slate-300">
-        <span className="tracking-[0.5em]">···</span>
-    </div>
-
-    <div className="flex-1 p-8 rounded-[2px] bg-transparent border border-slate-200 flex items-start gap-6">
-      <div className="mt-1 w-6 h-6 rounded-[2px] border border-slate-300 text-slate-400 flex items-center justify-center flex-shrink-0">
-        <X size={14} strokeWidth={2.5} />
-      </div>
-      <span className="text-[17px] text-slate-500 leading-relaxed font-light">
-        {avoidText}
-      </span>
-    </div>
-  </div>
-);
+import { Section } from '../Section';
 
 export const DesignBoundarySection: React.FC = () => {
   return (
-    <Section variant="alt" className="py-20 md:py-24">
-      <div className="flex flex-col gap-16">
-        <TextBlock 
-          eyebrow="04 — Defining the Intervention"
-          title="Restore the checkpoint. Don't rebuild the friction." 
-          subtitle=""
-        >
-          <p className="text-slate-500 font-light text-[17px] leading-relaxed max-w-3xl">
-            The goal is not to add friction or recreate what physical currency did manually. It's to put the post-payment check back into the confirmation flow — quietly, voluntarily, without getting in the way of people who don't need it. We must solve for awareness, but protect for privacy.
-          </p>
-        </TextBlock>
-
-        <div className="flex flex-col gap-6">
-          <BoundaryPair 
-            allowText="Restore the reflection moment within the confirmation screen, maintaining zero extra navigation." 
-            avoidText="Add mandatory steps before the flow is complete or route the user away from the success screen." 
-            delay={0} 
-          />
-          <BoundaryPair 
-            allowText="Make the balance check voluntary and user-initiated, keeping sensitive data hidden until requested." 
-            avoidText="Auto-display the balance or force-feed financial information, introducing major privacy risks." 
-            delay={0.1} 
-          />
+    <Section variant="dark" className="!bg-[#1C1C1C] py-20 md:py-32 relative overflow-hidden border-y border-zinc-800">
+      {/* Strict Grid Background */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-20"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)
+          `,
+          backgroundSize: '4rem 4rem',
+          transform: 'translateZ(0)'
+        }}
+      />
+      
+      <div className="max-w-4xl mx-auto flex flex-col items-center text-center relative z-10">
+        <div className="flex items-center gap-2 mb-10">
+          <span className="px-4 py-1.5 bg-zinc-800/50 text-zinc-300 rounded-none text-[11px] font-bold tracking-[0.2em] uppercase border border-zinc-700">
+            04 — Defining the Intervention
+          </span>
         </div>
+        
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-10 tracking-tight leading-[1.2]">
+          Bring the checkpoint back into the flow
+        </h2>
+        
+        <p className="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed max-w-3xl mb-16">
+          The goal is to bring the moment of balance back into the payment flow. It should exist within the confirmation itself, in a way that fits naturally into how UPI already works.
+        </p>
+
+        <div className="w-24 h-px bg-gradient-to-r from-transparent via-zinc-500 to-transparent" />
       </div>
     </Section>
   );
