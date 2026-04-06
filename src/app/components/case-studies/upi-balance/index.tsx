@@ -11,6 +11,7 @@ import { ObservedBehaviorSection } from './sections/ObservedBehaviorSection';
 import { DesignBoundarySection } from './sections/DesignBoundarySection';
 import { ExploringDirectionsSection } from './sections/ExploringDirectionsSection';
 import { TechnicalFeasibilitySection } from './sections/TechnicalFeasibilitySection';
+import { ConceptImageSection } from './sections/ConceptImageSection';
 import { FinalInterventionSection } from './sections/FinalInterventionSection';
 import { FlowComparisonSection } from './sections/FlowComparisonSection';
 import { PrototypeValidationSection } from './sections/PrototypeValidationSection';
@@ -32,6 +33,7 @@ export default function UPICaseStudy() {
         <DesignBoundarySection />
         <ExploringDirectionsSection />
         <TechnicalFeasibilitySection />
+        <ConceptImageSection />
         <FinalInterventionSection />
         <FlowComparisonSection />
         <PrototypeValidationSection />
