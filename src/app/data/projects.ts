@@ -14,6 +14,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "upi-balance",
+    title: "The Lost Reflection",
+    category: "Fintech • Behavioral UX",
+    description: "Reducing transaction anxiety by adding balance visibility to the ‘Payment Successful’ screen. A simple intervention for a common but overlooked problem.",
+    imageUrl: "/gpay.jpeg",
+    year: "2026",
+    tags: ["Behavioral UX", "Interaction Design"],
+    status: "published"
+  },
+  {
     slug: "localai-manager",
     title: "local/ai",
     category: "Mobile App \u2022 Product Design",
@@ -22,16 +32,6 @@ export const projects: Project[] = [
     imageObjectPosition: "bottom right",
     year: "2026",
     tags: ["Product Design", "UI UX", "AI"],
-    status: "published"
-  },
-  {
-    slug: "upi-balance",
-    title: "The Lost Reflection",
-    category: "Fintech • Behavioral UX",
-    description: "Reducing transaction anxiety by adding balance visibility to the ‘Payment Successful’ screen. A simple intervention for a common but overlooked problem.",
-    imageUrl: "/gpay.jpeg",
-    year: "2026",
-    tags: ["Behavioral UX", "Interaction Design"],
     status: "published"
   },
   {
